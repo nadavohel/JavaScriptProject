@@ -1,0 +1,120 @@
+div.subjects {
+    @extend %flexCenter;
+    width: 850px;
+    height: 120px;
+    margin-top: 20px;
+    z-index: 4444;
+
+    @include breakPointsTwo {
+        width: 90vw;
+        height: 90px;
+    }
+
+    @include breakPointsThree {
+        margin-top: 20px;
+    }
+
+    @include breakPointsFour {
+        height: 330px;
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+
+    div {
+        @extend %flexCenter;
+        width: 120px;
+        height: 120px;
+        margin: auto 15px;
+        border-radius: 15px;
+        background-color: #ffffff58;
+        transition: background-color 0.5s linear, box-shadow 0.5s linear;
+        cursor: pointer;
+        box-shadow:
+            4px 4px 2px $subjectsBoxShadowA,
+            -4px 8px 2px $subjectsBoxShadowB,
+            -8px -4px 2px $subjectsBoxShadowC,
+            8px -8px 2px $subjectsBoxShadowD;
+        flex-direction: column;
+        position: relative;
+
+        @include breakPointsTwo {
+            width: 90px;
+            height: 90px;
+        }
+
+        @include breakPointsThree {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include breakPointsFour {
+            width: 60vw;
+            height: 30px;
+        }
+
+        &:hover {
+            box-shadow:
+                -4px 4px 2px $subjectsBoxShadowD,
+                4px 8px 2px $subjectsBoxShadowC,
+                8px -4px 2px $subjectsBoxShadowB,
+                -8px -8px 2px $subjectsBoxShadowA;
+            
+            p{
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+
+                @include breakPointsTwo {
+                    font-size: 1.1em;
+                    width: 80px;
+                }
+
+                @include breakPointsThree {
+                    font-size: 0.9em;
+                    width: 60px;
+                }
+            }
+
+            p.pathTwo {
+                box-shadow:
+                    2px 12px 0px 0px subjectsBoxShadowA,
+                    -2px 14px 0px 0px subjectsBoxShadowB,
+                    4px 16px 0px 0px subjectsBoxShadowC,
+                    -4px 18px 0px 0px subjectsBoxShadowD;
+                margin-top: -10px;
+
+                @include breakPointsTwo {
+                    width: 80px;
+                    top: 55px;
+                }
+
+                @include breakPointsThree {
+                    width: 50px;
+                    top: 40px;
+                }
+
+                @include breakPointsFour {
+                    width: 270px;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.4em;
+            color: black;
+            width: 100px;
+            min-height: 1px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px $subjectsPTextShadow;
+            transition: text-shadow 0.5s, color 0.8s linear, box-shadow 1.2s linear;
+        }
+
+        p.pathTwo {
+            width: 100px;
+            height: 1px;
+            transition: box-shadow 0.5s linear, margin-top 0.5s linear;
+            position: absolute;
+            top: 70px;
+        }
+    }
+}

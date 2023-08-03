@@ -1,0 +1,51 @@
+div#arrowContainer {    
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 364px;
+    height: 224px;
+    /* background-color: #b04343; */
+    transform: translate(-50%);
+    z-index: 700000;
+    opacity: 0;
+    
+
+    div#arrowRightMobile {
+        @extend %arrowMobileDiv;
+        @include arrowMobilePos(260px);
+        img {
+            width: 100px;
+            transform: rotate(180deg);
+        }
+    }
+    div#arrowLeftMobile {
+        @extend %arrowMobileDiv;
+        @include arrowMobilePos(0px);
+        img {
+            width: 100px;
+            transform: rotate(0deg);
+        }   
+    }
+    div#arrowUpMobile {
+        @extend %arrowMobileDiv;
+        @include arrowMobilePos(130px, 0px);
+        img {
+            height: 100px;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            transform: rotate(90deg);
+        }
+    }
+    div#arrowDownMobile {
+        @extend %arrowMobileDiv;
+        @include arrowMobilePos(130px, 120px);
+        img {
+
+            height: 100px;
+            position: absolute;
+            right: 10px;
+            transform: rotate(270deg);
+        }
+    }
+}

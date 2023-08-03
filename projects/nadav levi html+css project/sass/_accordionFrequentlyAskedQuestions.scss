@@ -1,0 +1,584 @@
+/* ************************************************************************* */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 335px);
+    grid-template-rows:  195px 1364px 298px 228px 166px 346px 196px 166px;
+    gap: 10px;
+    width: 1370px;
+    margin: 0 auto;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 980px;
+    height: 60px;
+    margin-left: 5px;
+    border: 3px solid #000;
+    border-radius: 15px 50px 30px;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0.4px 2px 2px #0d0d0d;
+    padding-left: 40px;
+}
+
+section.accordion-faq-main-grid div.faq-grid-header h1 {
+    padding-left: 60px;
+        font-size: 2.8rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-shadow:
+            2px 2px 2px white,
+            -2px 2px 2px white,
+            2px -2px 2px white,
+            -2px -2px 2px white,
+            2px 2px 2px #0d0d0d,
+            -2px 2px 2px #0d0d0d,
+            2px -2px 2px #0d0d0d,
+            -2px -2px 2px #0d0d0d;
+}
+
+section.accordion-faq-main-grid div.accordion-grid h2 {
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow:
+            2px 2px 2px white,
+            -2px 2px 2px white,
+            2px -2px 2px white,
+            -2px -2px 2px white,
+            2px 2px 2px #0d0d0d,
+            -2px 2px 2px #0d0d0d,
+            2px -2px 2px #0d0d0d,
+            -2px -2px 2px #0d0d0d;
+}
+
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed img[alt="button open accordion"] {
+    width: 24px;
+    rotate: (180deg);
+    position: relative;
+    top: -5px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow:
+        1.7px 1.7px 1px #0d0d0d,
+        -1.7px 1.7px 1px #0d0d0d,
+        1.7px -1.7px 1px #0d0d0d,
+        -1.7px -1.7px 1px #0d0d0d;
+    color: white;
+    margin-left: 20px;
+}
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span.span-accordion-overflaw {
+    font-size: 0.9rem;
+}
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span span {
+    font-size: 2rem;
+
+    font-weight: 900;
+    color: #f3f3f3;
+    text-shadow: 2px 2px 2px #0d0d0d;
+    
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 2px;
+    width: 928px;
+    margin-left: 40px;
+    padding-top: 7px ;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 34px;
+    margin-left: 860px;
+    margin-top: -15px;
+}
+/* --panel designed-- */
+/* ******************************************** */
+/* --background color-- */
+section.accordion-faq-main-grid div.accordion-grid button.bgc-green:hover {
+    background-color: #8cbf3f48;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.bgc-purple:hover {
+    background-color: #9453a648;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.bgc-yellow:hover {
+    background-color: #f2cc0f48;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel-green {
+    background-color: #8cbf3f38;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel-purple {
+    background-color: #9453a638;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel-yellow {
+    background-color: #f2cc0f38;
+}
+/* --background color-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    padding: 20px;
+    text-align: center;
+}
+
+section.accordion-faq-main-grid div.accordion-grid {
+    width: 1025px;
+    overflow: scroll;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+section.accordion-faq-main-grid div.accordion-avsitor-grid {
+    grid-row: 2/5;
+    grid-column: 1/5;
+    height: 1910px;
+}
+
+section.accordion-faq-main-grid div.accordion-history-grid {
+    grid-row: 5/9;
+    grid-column: 1/5;
+    height: 905px; 
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(4, 292px);
+    grid-template-rows: 175px 1500px 255px 199px 232px 294px 172px 232px;
+    width: 1198px;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* accordion designed */
+section.accordion-faq-main-grid div.faq-grid-header h1 {
+    font-size: 2.8rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid h2 {
+    font-size: 2.5rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 860px;
+    padding-left: 30px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span {
+    font-size: 1.2rem;
+    margin-left: 13px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 808px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 740px;
+}
+/* --panel designed-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.accordion-grid {
+    width: 896px;
+}
+
+section.accordion-faq-main-grid div.accordion-avsitor-grid {
+    grid-row: 2/5;
+    grid-column: 1/5;
+    height: 1974px;
+}
+
+section.accordion-faq-main-grid div.accordion-history-grid {
+    grid-row: 5/7;
+    grid-column: 1/5;
+    height: 960px;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(4, 238px);
+    grid-template-rows: 194px 1567px 220px 166px 268.5px 252px 141px 268.5px;
+    width: 982px;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.faq-grid-header h1 {
+    font-size: 2.8rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid h2{
+    font-size: 2.2rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 700px;
+    padding-left: 10px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span {
+    font-size: 1rem;
+    margin-left: 13px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 648px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 580px;
+}
+/* --panel designed-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.accordion-grid {
+    width: 734px;
+}
+
+section.accordion-faq-main-grid div.accordion-avsitor-grid {
+    height: 1974px;
+}
+
+section.accordion-faq-main-grid div.accordion-history-grid {
+    height: 960px;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(3, 249px) 0.1px;
+    grid-template-rows: 222px 1974px 150px 166px 960px 166px;
+    width: 768px;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.faq-grid-header h1 {
+    font-size: 2.8rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid h2 {
+    font-size: 2.2rem;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 700px;
+    padding-left: 10px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span {
+    font-size: 1rem;
+    margin-left: 13px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 648px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 590px;
+}
+/* --panel designed-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    width: 767px;
+    grid-column: 1/4;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid {
+    width: 767px;
+}
+
+section.accordion-faq-main-grid div.accordion-avsitor-grid {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    height: 1974px;
+}
+
+section.accordion-faq-main-grid div.accordion-history-grid {
+    grid-row: 5/6;
+    grid-column: 1/5;
+    height: 960px;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 20vw 24vw 1974px 150px 980px;
+    width: 92vw;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.faq-grid-header h1 {
+    padding-left: 0px;
+    text-align: center;
+    font-size: 2.8rem;
+}
+section.accordion-faq-main-grid div.accordion-grid h2 {
+    padding-left: 00px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 87vw;
+    padding-left: 10px;
+}
+
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed span {
+    font-size: 1rem;
+    margin-left: 13px;
+    font-weight: 900;
+    text-shadow:  none;
+    color: #0d0d0d;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 80vw;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 70vw;
+}
+/* --panel designed-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    width: 92vw;
+    height: 20vw;
+}
+
+section.accordion-faq-main-grid div.faq-grid-header h1+p.p-header-faq {
+    display: none;
+}
+
+section.accordion-faq-main-grid div.accordion-grid {
+    width: 92vw;
+}
+section.accordion-faq-main-grid div.accordion-avsitor-grid {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    height: 1974px;
+}
+
+section.accordion-faq-main-grid div.accordion-history-grid {
+    grid-row: 5/6;
+    grid-column: 1/5;
+    height: 980px;
+}
+section.accordion-faq-main-grid p.p-header-faq-mobile {
+    font-size: 1em;
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 600px)------------------------ */
+@media (max-width: 600px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+.faq-grid {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 30vw 28vw 1974px 150px 980px;
+    width: 92vw;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    height: 30vw;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 87vw;
+    padding-left: 10px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 80vw;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 70vw;
+}
+/* --panel designed-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 600px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 515px)------------------------ */
+@media (max-width: 515px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 44vw 42vw 1974px 150px 980px;
+    width: 92vw;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    height: 30vw;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 80vw;
+    padding-left: 10px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 68vw;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 54vw;
+}
+/* --panel designed-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 515px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 400px)------------------------ */
+@media (max-width: 400px) {
+/* ******************************************** */
+/* --accordion Frequently Asked Questions grid-- */
+section.accordion-faq-main-grid {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 74vw 62vw 1974px 150px 980px;
+    width: 92vw;
+}
+/* --accordion Frequently Asked Questions grid-- */
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid div.faq-grid-header {
+    height: 30vw;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+/* --accordion designed-- */
+section.accordion-faq-main-grid div.accordion-grid button.accordion-designed {
+    width: 80vw;
+    padding-left: 10px;
+}
+/* --accordion designed-- */
+/* ******************************************** */
+/* --panel designed-- */
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel {
+    width: 68vw;
+}
+
+section.accordion-faq-main-grid div.accordion-grid div.accordion-panel img {
+    width: 32px;
+    margin-left: 44vw;
+}
+/* --panel designed-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 769px)------------------------ */
+@media (min-width: 769px) {
+/* ******************************************** */
+/* --accordion faq position-- */
+section.accordion-faq-main-grid p.p-header-faq-mobile {
+    display: none;
+}
+/* --accordion faq position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 769px)------------------------ */
+/* ************************************************************************* */

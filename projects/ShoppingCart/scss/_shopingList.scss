@@ -1,0 +1,200 @@
+div.letMeIn {
+    min-height: 80vh;
+
+    div.products {
+        width: 80vw;
+        max-width: 1200px;
+        min-height: 80vh;
+        background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+        position: relative;
+        border-radius: 6px;
+        padding: 2rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 30px;
+        margin: auto;
+        direction: rtl;
+        box-shadow: 
+            0 0 5px #fbab7e, 
+            0 0 8px #fbab7e, 
+            0 0 15px #8b80f9,
+            0 0 35px #8b80f9;
+        display: none;
+        
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+
+            thead {
+                tr {
+                    background: linear-gradient(147deg, #027bc1, #72c5bb);
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 600;
+
+                    th {
+                        padding: 6px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    font-size: 1em;
+                    font-weight: 600;
+
+                    td{
+                        padding: 6px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tfoot {
+                tr {
+                    font-size: 1em;
+                    font-weight: 600;
+
+                    td {
+                        padding: 6px;
+                        text-align: center;
+
+                        input {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                        }
+
+                        a {
+                            padding: 10px 20px;
+                            color: #8b80f9;
+                            font-size: 16px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            overflow: hidden;
+                            transition: 0.5s;
+                            letter-spacing: 4px;
+                            cursor: pointer;
+                            user-select: none;
+
+                            &:hover {
+                                @extend %aHover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div#productsSaveContainerId {
+        
+        @include tabletBreakPointC {
+            display: none;
+        }
+
+        div.productsSaveContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1200px;
+            left: 50%;
+            transform: translate(-50%);
+            height: 120px;
+            position: absolute;
+            bottom: 0;
+            direction: ltr;
+            user-select: none;
+
+            @include desktop {
+                width: 1000px;
+                height: 120px;
+            }
+            @include desktopSmall {
+                width: 900px;
+                height: 120px;
+            }
+            @include desktopExtraSmall {
+                width: 800px;
+                left: 50%;
+                height: 120px;
+            }
+            @include tabletBreakPointA {
+                width: 700px;
+                left: 50%;
+                height: 120px;
+            }
+
+            div {
+                @include productsSaveDiv(150px, 100px, 10px);
+                position: relative;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #f7ce68;
+                text-shadow:
+                    -1px 0 black,
+                    0 1px black,
+                    1px 0 black,
+                    0 -1px black,
+                    1px 1px 3px black;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 0.5s;
+                letter-spacing: 4px;
+
+                @include desktop {
+                    @include productsSaveDiv(90px, 60px, 20px, 15px);
+                }
+                
+                @include desktopSmall {
+                    @include productsSaveDiv(84px, 56px, 20px, 15px);
+                }
+            
+                @include desktopExtraSmall {
+                    @include productsSaveDiv(75px, 50px, 12px, 12px);
+                }
+            
+                @include tabletBreakPointA {
+                    @include productsSaveDiv(60px, 40px, 20px, 11px);
+                }
+
+                &:hover {
+                    background: #027bc1;
+                    color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 
+                        0 0 5px #027bc1, 
+                        0 0 25px #027bc1, 
+                        0 0 50px #027bc1,
+                        0 0 100px #027bc1;
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        hr {
+            position: absolute;
+            bottom: 130px;
+            width: 76vw;
+            max-width: 1160px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card Shoping</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./shopingList.js" ></script>
+    <script defer src="./shopingListFunctions.js" ></script>
+    <script defer src="./script.js" ></script>
+
+</head>
+
+<body onload="loginStatus()">
+    <header>
+        <h1>My Card Shoping</h1>
+        <div class="userIn"></div>
+        <a id="logOut" onclick="logOut()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            log-Out
+        </a>
+    </header>
+    <main>
+        
+        <div class="loginScreen">
+            <input class="inputCheckbox input__checkbox" type="checkbox" id="inputCheckbox" name="inputCheckbox" />
+            <section class="labelCheckbox caixa__label__checkbox">
+                <label for="inputCheckbox"></label>
+            </section>
+            <div class="formCardContainer">
+                <div class="cardFlip">
+                    <div class="logInFormContainer">
+                        <div class="formContainer">
+                            <h2>Login</h2>
+                            <form>
+                                <div class="inputBox">
+                                    <input type="text" required id="userNameLogin" />
+                                    <label>UserName</label>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="password" required id="passwordLogin"/>
+                                    <label>password</label>
+                                </div>
+                                <a id="logInButton" onclick="login()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    log-in
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registerFormContainer">
+                        <div class="formContainer">
+                            <h2>Register</h2>
+                            <form>
+                                <div class="inputBox" >
+                                    <input type="text" required id="fullNameRegisterId"/>
+                                    <label>FullName</label>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" required id="emailRegisterId"/>
+                                    <label>Email</label>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" required id="userNameRegisterId"/>
+                                    <label>UserName</label>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="password" required id="passwordRegisterId"/>
+                                    <label>Password</label>
+                                </div>
+                                <a id="registerButton" onclick="register()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Register Now
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="letMeIn">
+            
+            <div class="products">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>שם המוצר</th>
+                            <th>מחיר</th>
+                            <th>הנחה</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+            
+                    </tbody>
+            
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td><input id="name" type="text" placeholder="שם המוצר"></td>
+                            <td><input id="price" type="number" placeholder="מחיר"></td>
+                            <td><input id="discount" type="number" placeholder="הנחה"></td>
+                            <td><a onclick="addProduct()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                הוסף
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input id="anotherHeader" type="text" placeholder="כתוב כותרת חדשה"></td>
+                            <td></td>
+                            <td></td>
+                            <td><a onclick="addHeaderToProduct()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                הוסף
+                            </a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div id="productsSaveContainerId">
+                    <div class="productsSaveContainer" >
+                        <div onclick="addListProduct(ArmyEquipmentArray, 'ArmyEquipmentArray')" ><p>רשימת ציוד למתגייס</p></div>
+                        <div onclick="addListProduct(campingArray, 'campingArray')" ><p>רשימת ציוד קמפינג</p></div>
+                        <div onclick="addListProduct(tripArray, 'tripArray')" ><p>רשימת ציוד לחו"ל</p></div>
+                        <div onclick="addListProduct(birthArray, 'birthArray')" ><p>ציוד לקראת לידה</p></div>
+                        <div onclick="addListProduct(studiesArray, 'studiesArray')" ><p>רשימת ציוד ללימודים</p></div>
+                        <div onclick="addListProduct(winterVacationArray, 'winterVacationArray')" ><p>ציוד לחופשה בחורף</p></div>
+                    </div>
+                    <br><br><br><br><br><br><hr>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="loaderFrame">
+            <div class="loader"></div>
+        </div>
+        
+        <div id="snackbar"></div>
+        <br><br>
+    </main>
+    <footer>
+        <div class="productsSaveContainer" id="productsSaveContainerIdMobile">
+            <div onclick="addListProduct(ArmyEquipmentArray)">
+                <p>רשימת ציוד למתגייס</p>
+            </div>
+            <div onclick="addListProduct(campingArray)">
+                <p>רשימת ציוד קמפינג</p>
+            </div>
+            <div onclick="addListProduct(tripArray)">
+                <p>רשימת ציוד לחו"ל</p>
+            </div>
+            <div onclick="addListProduct(birthArray)">
+                <p>ציוד לקראת לידה</p>
+            </div>
+            <div onclick="addListProduct(studiesArray)">
+                <p>רשימת ציוד ללימודים</p>
+            </div>
+            <div onclick="addListProduct(winterVacationArray)">
+                <p>ציוד לחופשה בחורף</p>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>

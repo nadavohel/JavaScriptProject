@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $bodyBgc;
+    user-select: none;
+
+    @include mobile {
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    main {
+        h1#gameTitle {
+            font-size: $gameTitleColor;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 70px;
+            transform: translate(-50%);
+            z-index: 48875;
+            width: 470px;
+            height: 50px;
+            color: $gameTitleFontSize;
+    
+            @include mobile {
+                font-size: 4em !important;
+                top: 60px !important;
+                z-index: 48875;
+                width: 100vw;
+                height: 70px;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include aboveTablet {
+        overflow: hidden;
+        overflow-x: hidden;
+        height: 100%;
+        position: relative;
+    }
+    
+    
+    nav {
+        width: 100vw;
+        top: 0px;
+        opacity: 1;
+        z-index: 10000;
+        position: fixed;
+        background: $navBgcolor;
+    }
+    
+    main {
+        position: absolute;
+        width: 100vw;
+        background-color: $mainBgcolor;
+        transition: top 3.4s;
+    
+        @include tablet {
+            top: 80px !important;
+            transition: all 0s;
+        }
+        
+        #aboutMeJump {
+            @extend %jumpPoint;
+            top: -70px;
+        
+            @include laptopScreen {
+                top: -150px;
+            }
+        }
+        
+        #myProjectJump {
+            @extend %jumpPoint;
+            top: 320px;
+        
+            @include laptopScreen {
+                top: 240px;
+            }
+        }
+        
+        #contactJump {
+            @extend %jumpPoint;
+            top: 2000px;
+        }
+    }
+}
+
+

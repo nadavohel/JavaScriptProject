@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif !important;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  min-height: 100vh;
+  background: linear-gradient(147deg, #0093e9, #80d0c7);
+}
+html body header {
+  position: relative;
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(147deg, #027bc1, #72c5bb);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 750px) {
+  html body header {
+    height: 90px;
+  }
+}
+html body header h1 {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+@media (max-width: 750px) {
+  html body header h1 {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+  }
+}
+html body header div.userIn {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #8b80f9;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  top: 5px;
+  letter-spacing: 4px;
+}
+@media (max-width: 750px) {
+  html body header div.userIn {
+    font-size: 16px;
+  }
+}
+html body header #logOut {
+  bottom: 10px;
+  left: 20px;
+}
+@media (max-width: 750px) {
+  html body header #logOut {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    height: 40px;
+  }
+}
+html body header a#registerButton {
+  margin-top: 0px;
+}
+html body header a {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #8b80f9;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px 3px rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  top: 5px;
+  left: 10px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+html body header a:hover {
+  background: #8b80f9;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8b80f9, 0 0 25px #8b80f9, 0 0 50px #8b80f9, 0 0 100px #8b80f9;
+}
+html body main {
+  text-align: center;
+  background: linear-gradient(147deg, #0093e9, #80d0c7);
+  width: 100vw;
+}
+@media (max-width: 700px) {
+  html body footer {
+    background: linear-gradient(147deg, #0093e9, #80d0c7);
+  }
+}
+html body footer div#productsSaveContainerIdMobile {
+  display: none;
+}
+@media (max-width: 700px) {
+  html body footer div#productsSaveContainerIdMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    bottom: 0;
+    direction: ltr;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    margin-top: 50px;
+  }
+}
+html body footer div#productsSaveContainerIdMobile div {
+  width: 400px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 11px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #f7ce68;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px 3px black;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+html body footer div#productsSaveContainerIdMobile div:hover {
+  background: #027bc1;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #027bc1, 0 0 25px #027bc1, 0 0 50px #027bc1, 0 0 100px #027bc1;
+}
+html body footer div#productsSaveContainerIdMobile div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user {
+  display: none;
+}
+
+.remove,
+.save {
+  margin: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  background: none;
+  border: 0px solid #000;
+  font-size: 1em;
+}
+
+.remove:hover,
+.save:hover {
+  scale: 1.5;
+}
+
+.save {
+  visibility: hidden;
+}
+
+.nameH2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #299ae0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px 3px rgb(255, 255, 255);
+}
+
+div.loginScreen {
+  display: none;
+}
+div.loginScreen .labelCheckbox {
+  text-align: center;
+  display: inline;
+  position: relative;
+}
+div.loginScreen .labelCheckbox::before, div.loginScreen .labelCheckbox::after {
+  position: absolute;
+  font-size: 26px;
+  font-weight: bold;
+  color: #efefef;
+}
+div.loginScreen .labelCheckbox::before {
+  content: "Login";
+  top: -48px;
+  left: -100px;
+}
+div.loginScreen .labelCheckbox::after {
+  content: "Register";
+  top: -48px;
+  right: -135px;
+}
+div.loginScreen div.formCardContainer {
+  width: 440px;
+  height: 450px;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+div.loginScreen div.formCardContainer div.cardFlip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transition: all 0.6s ease-out;
+}
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form div.inputBox {
+  position: relative;
+}
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a span {
+  position: absolute;
+  display: block;
+}
+div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer {
+  transform: rotateY(180deg);
+}
+div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form div.inputBox {
+  position: relative;
+}
+div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a {
+  margin-top: 0px;
+}
+div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a span {
+  position: absolute;
+  display: block;
+}
+.inputCheckbox:checked ~ .formCardContainer .cardFlip {
+  transform: rotateY(180deg);
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+  position: absolute;
+  border-radius: 6px;
+  padding: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer {
+  position: absolute;
+  width: 100%;
+  padding: 0 35px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer h2, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form div.inputBox input, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form div.inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form div.inputBox label, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form div.inputBox label {
+  position: absolute;
+  top: -32px;
+  left: 10px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form div.inputBox input:focus ~ label, div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form div.inputBox input:valid ~ label, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form div.inputBox input:focus ~ label, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form div.inputBox input:valid ~ label {
+  top: -30px;
+  left: 0;
+  color: #8b80f9;
+  font-size: 12px;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #8b80f9;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+div.letMeIn div.products table tfoot tr td a:hover, div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a:hover, div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a:hover {
+  background: #8b80f9;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8b80f9, 0 0 25px #8b80f9, 0 0 50px #8b80f9, 0 0 100px #8b80f9;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a span:nth-child(1), div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #8b80f9);
+  animation: animacaoBotao1 1s linear infinite;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a span:nth-child(2), div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #8b80f9);
+  animation: animacaoBotao2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a span:nth-child(3), div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #8b80f9);
+  animation: animacaoBotao3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+div.loginScreen div.formCardContainer div.cardFlip div.logInFormContainer div.formContainer form a span:nth-child(4), div.loginScreen div.formCardContainer div.cardFlip div.registerFormContainer div.formContainer form a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #8b80f9);
+  animation: animacaoBotao4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animacaoBotao1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes animacaoBotao2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes animacaoBotao3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes animacaoBotao4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+[type=checkbox]:checked,
+[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.inputCheckbox:checked + section label,
+.inputCheckbox:not(:checked) + section label {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  margin: 40px auto;
+  cursor: pointer;
+  background-color: #efefef;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.inputCheckbox:checked + section label:before,
+.inputCheckbox:not(:checked) + section label:before {
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  content: "";
+  background-image: url("./ic-logo.png");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+  top: -10px;
+  left: -10px;
+  transition: all 0.5s ease;
+}
+
+.inputCheckbox:checked + section label:before {
+  transform: translateX(44px) rotate(-270deg);
+}
+
+div.letMeIn {
+  min-height: 80vh;
+}
+div.letMeIn div.products {
+  width: 80vw;
+  max-width: 1200px;
+  min-height: 80vh;
+  background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+  position: relative;
+  border-radius: 6px;
+  padding: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 30px;
+  margin: auto;
+  direction: rtl;
+  box-shadow: 0 0 5px #fbab7e, 0 0 8px #fbab7e, 0 0 15px #8b80f9, 0 0 35px #8b80f9;
+  display: none;
+}
+div.letMeIn div.products table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+div.letMeIn div.products table thead tr {
+  background: linear-gradient(147deg, #027bc1, #72c5bb);
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+}
+div.letMeIn div.products table thead tr th {
+  padding: 6px;
+  text-align: center;
+}
+div.letMeIn div.products table tbody tr {
+  font-size: 1em;
+  font-weight: 600;
+}
+div.letMeIn div.products table tbody tr td {
+  padding: 6px;
+  text-align: center;
+}
+div.letMeIn div.products table tfoot tr {
+  font-size: 1em;
+  font-weight: 600;
+}
+div.letMeIn div.products table tfoot tr td {
+  padding: 6px;
+  text-align: center;
+}
+div.letMeIn div.products table tfoot tr td input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div.letMeIn div.products table tfoot tr td a {
+  padding: 10px 20px;
+  color: #8b80f9;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 700px) {
+  div.letMeIn div#productsSaveContainerId {
+    display: none;
+  }
+}
+div.letMeIn div#productsSaveContainerId div.productsSaveContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  direction: ltr;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1300px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer {
+    width: 1000px;
+    height: 120px;
+  }
+}
+@media (max-width: 1000px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer {
+    width: 900px;
+    height: 120px;
+  }
+}
+@media (max-width: 900px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer {
+    width: 800px;
+    left: 50%;
+    height: 120px;
+  }
+}
+@media (max-width: 800px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer {
+    width: 700px;
+    left: 50%;
+    height: 120px;
+  }
+}
+div.letMeIn div#productsSaveContainerId div.productsSaveContainer div {
+  width: 150px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f7ce68;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 1px 1px 3px black;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+@media (max-width: 1300px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer div {
+    width: 90px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer div {
+    width: 84px;
+    height: 56px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer div {
+    width: 75px;
+    height: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  div.letMeIn div#productsSaveContainerId div.productsSaveContainer div {
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 11px;
+  }
+}
+div.letMeIn div#productsSaveContainerId div.productsSaveContainer div:hover {
+  background: #027bc1;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #027bc1, 0 0 25px #027bc1, 0 0 50px #027bc1, 0 0 100px #027bc1;
+}
+div.letMeIn div#productsSaveContainerId div.productsSaveContainer div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.letMeIn div#productsSaveContainerId hr {
+  position: absolute;
+  bottom: 130px;
+  width: 76vw;
+  max-width: 1160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.loaderFrame {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2705882353);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.loaderFrame .loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #6a6a6a;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

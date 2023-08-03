@@ -1,0 +1,27 @@
+@import "./style/scss/setup";
+@import "./style/scss/body";
+@import "./style/scss/navigatorBar";
+@import "./style/scss/project/welcome";
+@import "./style/scss/navNameAnimation.scss";
+@import "./style/scss/tooltipIcons.scss";
+@import "./style/scss/aboutMe";
+@import "./style/scss/myProject";
+@import "./style/scss/contact";
+/* @import "./style/scss/project/footerProject.scss"; */
+@import "./style/scss/footer";
+@import "./style/scss/projectsIcon";
+
+// slider gallery
+@import "./style/scss/sliderGallery/sliderGallery";
+@import "./style/scss/sliderGallery/imageGalleryLeftSmall";
+@import "./style/scss/sliderGallery/imageGalleryLeftMedium";
+@import "./style/scss/sliderGallery/imageGalleryLeft";
+@import "./style/scss/sliderGallery/imageGalleryLeftSkew";
+@import "./style/scss/sliderGallery/imageGalleryCenter";
+@import "./style/scss/sliderGallery/imageGalleryRightSkew";
+@import "./style/scss/sliderGallery/imageGalleryRight";
+@import "./style/scss/sliderGallery/imageGalleryRightMedium";
+@import "./style/scss/sliderGallery/imageGalleryRightSmall";
+
+// mobile and tablet
+@import "./style/scss/Mobile/navigatorBarMobile";

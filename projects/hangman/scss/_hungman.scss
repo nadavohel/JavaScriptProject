@@ -1,0 +1,133 @@
+div.container {
+    display: flex;
+    width: 850px;
+    gap: 70px;
+    padding: 60px 40px;
+    background: $gameBgc;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 5000;
+
+    @include breakPointsOne {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+        max-width: 90vw;
+    }
+
+
+    div.hangmanBox {
+        img {
+            user-select: none;
+            max-width: 270px;
+
+            @include breakPointsOne {
+                max-width: 200px;
+            }
+        }
+        
+        h1 {
+            font-size: 1.45rem;
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+
+            @include breakPointsOne {
+                display: none;
+            }
+        }
+    }
+
+    div.gameBox {
+        ul.wordDisplay {
+            @extend %flexCenter;
+            gap: 10px;
+            list-style: none;
+            flex-wrap: wrap;
+            direction: rtl;
+
+            .letter {
+                width: 28px;
+                font-size: 2rem;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 40px;
+                text-transform: uppercase;
+                border-bottom: 3px solid $bottomForLatter;
+
+                @include breakPointsOne {
+                    margin-bottom: 35px;
+                    font-size: 1.7rem;
+                }
+            }
+
+            .letter.guessed {
+                margin: -40px 0 35px;
+                border-color: transparent;
+
+                @include breakPointsOne {
+                    margin: -35px 0 25px;
+                }
+            }
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+
+            b {
+                font-weight: 600;
+            }
+
+            @include breakPointsOne {
+                font-size: 1rem;
+            }
+        }
+
+        h4.guessesText b {
+            color: $guesses;
+        }
+
+        div.keyboard {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            justify-content: center;
+            direction: rtl;
+
+            button {
+                padding: 7px;
+                width: calc(100% / 9 - 5px);
+            }
+
+            button[disabled] {
+                pointer-events: none;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+:where(.gameModal, .keyboard) button {
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: $latterButtonBgc;
+}
+
+
+:where(.gameModal, .keyboard) button:hover {
+    background: $latterButtonBgcHover;
+}

@@ -1,0 +1,97 @@
+section {
+    position: relative;
+    width: 1000px;
+    margin: 10px auto;
+    
+
+    @include laptop {
+        width: 100vw;
+        margin: 10px auto;
+    }
+
+    input {
+        width: 990px;
+        height: 40px;
+        font-weight: bold;
+        color: $colorInput;
+        border-radius: 10px;
+        border: 3px solid #000;
+        box-shadow: 2px 2px 2px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        transition: all 0.3s;
+        font-size: 1em;
+
+        @include laptop {
+            width: 95vw;
+            height: 40px;
+            left: 0;
+            transform: translate(0%);
+        }
+
+        &:hover {
+            box-shadow:
+                2px 2px 2px $boxShadowInputA,
+                4px 4px 4px $boxShadowInputB;
+        }
+    }
+
+    div {
+        background-color: #00000027;
+        border-radius: 5px;
+        font-size: 1.5em;
+        color: $color;
+        font-weight: bold;
+        text-shadow:
+            1px 1px 1px $textShadow,
+            -1px 1px 1px $textShadow,
+            1px -1px 1px $textShadow,
+            -1px -1px 1px $textShadow,
+            3px 3px 3px $color;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 1000px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+
+        @include laptop {
+            font-size: 1.3em;
+            font-weight: 500;
+            text-shadow:
+                1px 1px 1px $textShadow;
+            width: 100vw;
+        }
+    }
+
+    button {
+        box-shadow: 2px 2px 2px $buttonShadowA;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.4em;
+        width: 200px;
+        border-radius: 10px;
+        transition: all 0.3s;
+        position: relative;
+        margin-top: 15px;
+        
+        
+        &:hover {
+            box-shadow:
+                2px 2px 2px $buttonShadowA,
+                4px 4px 4px $buttonShadowB;
+        }
+    }
+}
+
+.hoverDeleteRow {
+    text-shadow:
+        2px 2px 2px $hoverDeleteA;
+    transition: all 0.3s;
+
+    &:hover {
+        text-shadow:
+            2px 2px 2px $hoverDeleteA,
+            3px 3px 3px $hoverDeleteB;
+    }
+}

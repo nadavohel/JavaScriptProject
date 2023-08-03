@@ -1,0 +1,114 @@
+.containerLeftMedium {
+    top: 75px;
+    left: 90px;
+    width: 105px;
+    height: 79px;
+    transform: skewY(10deg);
+    box-shadow:
+        1px -1px 0 #444,
+        2px -2px 0 #444,
+        3px -3px 0 #444,
+        4px -4px 0 #444,
+        5px -5px 0 #444,
+        6px -6px 0 #444;
+    transition: .5s;
+}
+.containerLeftMediumImg {
+    width: 100%;
+    height: 100%;
+}
+.containerLeftMedium:hover {
+    transform: skewY(0deg);
+    box-shadow:
+        0px -1px 0 #444,
+        0px -2px 0 #444,
+        0px -3px 0 #444,
+        0px -4px 0 #444,
+        0px -5px 0 #444,
+        0px -6px 0 #444;
+    width: 113px;
+    height: 87px;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+
+.containerLeftMedium::after {
+    content: '';
+    width: 120px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    border-bottom: 2px solid #262626;
+    border-right: 2px solid #262626;
+    filter: blur(5px);
+}
+
+@media (max-width: 1400px) {
+    .containerLeftMedium {
+        top: 64.27px;
+        left: 77.13px;
+        width: 89.98px;
+        height: 67.7px;
+    }
+
+    .containerLeftMedium:hover {
+        width: 97.98px;
+        height: 75.7px;
+    }
+
+    .containerLeftMedium::after {
+        width: 102.84px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .containerLeftMedium {
+        top: 53.54px;
+        left: 64.25px;
+        width: 74.95px;
+        height: 56.39px;
+    }
+
+    .containerLeftMedium:hover {
+        width: 82.95px;
+        height: 64.39px;
+    }
+
+    .containerLeftMedium::after {
+        width: 85.66px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerLeftMedium {
+        top: 41.12px;
+        left: 49.34px;
+        width: 57.56px;
+        height: 43.31px;
+    }
+
+    .containerLeftMedium:hover {
+        width: 65.56px;
+        height: 51.31px;
+    }
+
+    .containerLeftMedium::after {
+        width: 65.79px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerLeftMedium {
+        left: 0;
+    }
+}
+@media (max-width: 650px) {
+    .containerLeftMedium {
+        left: 20vw;
+        visibility: hidden;
+    }
+}

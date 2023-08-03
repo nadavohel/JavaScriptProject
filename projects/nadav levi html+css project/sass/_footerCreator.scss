@@ -1,0 +1,405 @@
+/* ************************************************************************* */
+/* --creator-container-- */
+section.creator-container {
+    width: 1300px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+section.creator-container p {
+    position: absolute;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 318px;
+    top: 00px;
+    text-align: center;
+    font-size: 4rem;
+    display: inline ; 
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        4px 4px 2px #9453a6,
+        -4px 4px 2px #9453a6,
+        4px -4px 2px #9453a6,
+        -4px -4px 2px #9453a6;
+}
+section.creator-container p.creator-Html-css {
+    left: 530px;
+    top: 60px;
+    text-align: center;
+    font-size: 2rem;
+    display: inline;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        3px 3px 2px #f2cc0f,
+        -3px 3px 2px #f2cc0f,
+        3px -3px 2px #f2cc0f,
+        -3px -3px 2px #f2cc0f;
+}
+section.creator-container p.creator-Developed-designed {
+    left: 700px;
+    top: 28px;
+    text-align: center;
+    font-size: 1.6rem;
+    display: inline;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        4px 4px 2px #8cbf3f,
+        -4px 4px 2px #8cbf3f,
+        4px -4px 2px #8cbf3f,
+        -4px -4px 2px #8cbf3f;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1100px)------------------------ */
+@media (max-height: 1100px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    height: 60px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 345px;
+    top: 00px;
+    font-size: 3.4rem;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 525px;
+    top: 50px;
+    font-size: 1.6rem;
+}
+
+section.creator-container p.creator-Developed-designed {
+    left: 700px;
+    top: 28px;
+    font-size: 1.2rem;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1100px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1000px)------------------------ */
+@media (max-height: 1000px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    height: 60px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 370px;
+    top: 4px;
+    font-size: 3rem;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 530px;
+    top: 48px;
+    font-size: 1.4rem;
+}
+
+section.creator-container p.creator-Developed-designed {
+    top: 28px;
+    font-size: 1.1rem;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1000px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 900px)------------------------ */
+@media (max-height: 900px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    height: 54px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 395px;
+    top: 8px;
+    font-size: 2.5rem;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 528px;
+    top: 48px;
+    font-size: 1rem;
+}
+
+section.creator-container p.creator-Developed-designed {
+    top: 28px;
+    font-size: 0.9rem;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 900px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px){
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    width: 1100px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 240px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 450px;
+}
+
+section.creator-container p.creator-Developed-designed {
+    left: 627px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 270px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 452px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 292px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 900px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 320px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 454px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    width: 920px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 140px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 352px;
+}
+
+section.creator-container p.creator-Developed-designed {
+    left: 527px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 172px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 352px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 192px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 352px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 900px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 222px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 354px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    width: 720px;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 2px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 216px;
+}
+
+section.creator-container p.creator-Developed-designed {
+    left: 385px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 992px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 30px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 212px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 992px) and (max-height: 1000px) {
+/* ******************************************** */
+    /* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 56px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 218px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (max-width: 992px) and (max-height: 900px) {
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    left: 82px;
+}
+
+section.creator-container p.creator-Html-css {
+    left: 216px;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --creator-container-- */
+section.creator-container {
+    width: 96vw;
+    height: 15vw;
+}
+/* --creator-container-- */
+/* ******************************************** */
+/* --creator paragraph style and position-- */
+section.creator-container p.creator-mardi-gras {
+    top: 5vw;
+    left: 5vw;
+    font-size: 8vw;
+}
+
+section.creator-container p.creator-Html-css {
+    top: 13vw;
+    left: 32vw;
+    font-size: 3vw;
+}
+
+section.creator-container p.creator-Developed-designed {
+    top: 7vw;
+    left: 50vw;
+    font-size: 4vw;
+}
+/* --creator paragraph style and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */

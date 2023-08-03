@@ -1,0 +1,101 @@
+/* ************************************************************************* */
+/* --mobile main navbar container-- */
+section.mobile-navbar-container {
+    width: 100vw;
+    background-color: #55555500;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 500000;
+}
+/* --mobile main navbar container-- */
+/* ******************************************** */
+/* --hidden navbar -- */
+section.mobile-navbar-container div.topnav {
+    overflow: hidden;
+    background-color: #8cbf3f;
+    position: relative;
+    z-index: 500000;
+}
+
+section.mobile-navbar-container div.topnav #myLinks {
+    display: none;
+}
+
+section.mobile-navbar-container div.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    font-family: 'Henny Penny', cursive;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+section.mobile-navbar-container div.topnav a:hover {
+    background-color: #9453a6;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 2px#8cbf3f, 4px 4px 3px#f2cc0f;
+}
+
+section.mobile-navbar-container div.topnav a.active {
+    background-color: #9453a6;
+    color: aqua;
+}
+/* --hidden navbar -- */
+/* ******************************************** */
+/* --navbar element disigned and position-- */
+section.mobile-navbar-container div.topnav a.icon {
+    background: #9453a6;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+section.mobile-navbar-container div.topnav a.icon img.icon-menu {
+    position: absolute;
+    z-index: 5000;
+    transform: rotate(180deg);
+    width: 40px;
+    right: 20px;
+    top: 4px;
+}
+
+section.mobile-navbar-container div.topnav a.icon p.navigation-mardi-gras-logo-name-mobile{
+    margin-left: 30px;
+    margin-top: -2px;
+    text-shadow: 2px 2px 0px #0d0d0d,
+            2px -2px 0px #0d0d0d,
+            -2px 2px 0px #0d0d0d,
+            -2px -2px 0px #0d0d0d,
+            5px 0px 0px #0d0d0d;
+}
+
+section.mobile-navbar-container div.topnav a img.nav-mobile-main-bar-logo {
+    width: 35px;
+    margin-left: -12px;
+    margin-top: -7px;
+    position: absolute;
+    z-index: 5000;
+}
+/* --navbar element disigned and position-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 769px)------------------------ */
+@media (min-width: 769px) {
+/* ******************************************** */
+/* --mobile main navbar container-- */
+section.mobile-navbar-container,
+section.mobile-navbar-container div.topnav {
+    display: none;
+}
+/* --mobile main navbar container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 769px)------------------------ */
+/* ************************************************************************* */

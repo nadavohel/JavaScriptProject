@@ -1,0 +1,624 @@
+/* ************************************************************************* */
+/* --links mardi grass media container-- */
+section.links-mardi-grass-media a div.div-links-media-logo,
+section.links-mardi-grass-media a img.img-links-media-logo {
+    transition: width 1s, height 1s, margin-left 1s, margin-top 1s, box-shadow 1s, z-index 0s;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    z-index: 200;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo:hover,
+section.links-mardi-grass-media a img.img-links-media-logo:hover+div.div-links-media-logo {
+    margin-top: -35px;
+    box-shadow:
+            3px 3px 3px #8cbf3f,
+            -3px -3px 3px #8cbf3f,
+            3px -3px 3px #8cbf3f,
+            -3px 3px 3px #8cbf3f;
+        z-index: 300;
+    width: 70px;
+    height: 70px;
+}
+
+section.links-mardi-grass-media a div.div-links-media-logo {
+    z-index: 100;
+}
+section.links-mardi-grass-media a img.img-links-media-logo:hover{
+    z-index: 350;
+}
+/* --links mardi grass media container-- */
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-top: -25px;
+    margin-left: 525px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+div.div-links-media-logo-1, 
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover{
+    margin-left: 515px;
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-top: -25px;
+    margin-left: 575px;
+    padding: 3px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+div.div-links-media-logo-2, 
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover{
+    margin-left: 565px;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-top: -25px;
+    margin-left: 625px;
+    padding: 3px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+div.div-links-media-logo-3, 
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover{
+    margin-left: 615px;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-top: -25px;
+    margin-left: 675px;
+    padding: 3px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+div.div-links-media-logo-4, 
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover{
+    margin-left: 665px;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-top: -25px;
+    margin-left: 725px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+div.div-links-media-logo-5, 
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover{
+    margin-left: 715px;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-top: -25px;
+    margin-left: 775px;
+    padding: 5px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+div.div-links-media-logo-6, 
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover{
+    margin-left: 765px;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-top: -25px;
+    margin-left: 825px;
+    padding: 3px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+div.div-links-media-logo-7, 
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover{
+    margin-left: 815px;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-top: -25px;
+    margin-left: 1300px;
+    border: 4px solid #000;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+div.div-links-media-logo-8, 
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover{
+    margin-left: 1290px;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-left: 450px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+div.div-links-media-logo-1, 
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover {
+    margin-left: 440px;
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-left: 500px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+div.div-links-media-logo-2, 
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover{
+    margin-left: 490px;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-left: 550px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+div.div-links-media-logo-3, 
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover {
+    margin-left: 540px;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-left: 600px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+div.div-links-media-logo-4, 
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover {
+    margin-left: 590px;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-left: 650px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+div.div-links-media-logo-5, 
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover {
+    margin-left: 640px;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-left: 700px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+div.div-links-media-logo-6, 
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover{
+    margin-left: 690px;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-left: 750px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+div.div-links-media-logo-7, 
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover{
+    margin-left: 740px;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-left: 1100px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+div.div-links-media-logo-8, 
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover{
+    margin-left: 1090px;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-left: 350px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover {
+    margin-left: 340px;
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-left: 400px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover {
+    margin-left: 390px;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-left: 450px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover {
+    margin-left: 440px;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-left: 500px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover {
+    margin-left: 490px;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-left: 550px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover {
+    margin-left: 540px;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-left: 600px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover {
+    margin-left: 590px;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-left: 650px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover {
+    margin-left: 640px;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-left: 900px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover {
+    margin-left: 890px;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-left: 210px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover {
+    margin-left: 200px;
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-left: 260px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover {
+    margin-left: 250px;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-left: 310px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover {
+    margin-left: 300px;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-left: 360px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover {
+    margin-left: 350px;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-left: 410px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover {
+    margin-left: 400px;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-left: 460px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover {
+    margin-left: 450px;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-left: 510px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover {
+    margin-left: 500px;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-left: 700px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover {
+    margin-left: 690px;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --links mardi grass media container-- */
+section.links-mardi-grass-media a div.div-links-media-logo,
+section.links-mardi-grass-media a img.img-links-media-logo {
+    width: 50px;
+    height: 50px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo:hover+div.div-links-media-logo,
+section.links-mardi-grass-media a img.img-links-media-logo:hover {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+}
+/* --links mardi grass media container-- */
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1, 
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+div.div-links-media-logo-1, 
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-left: 15vw;   
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2, 
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+div.div-links-media-logo-2, 
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-left: 25vw;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3, 
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+div.div-links-media-logo-3, 
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-left: 35vw;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4, 
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+div.div-links-media-logo-4, 
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-left: 45vw;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5, 
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+div.div-links-media-logo-5, 
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-left: 55vw;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6, 
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+div.div-links-media-logo-6, 
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-left: 65vw;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7, 
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+div.div-links-media-logo-7, 
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-left: 75vw;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8, 
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+div.div-links-media-logo-8, 
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover, 
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-left: 90vw;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 600px)------------------------ */
+@media (max-width: 600px) {
+/* ******************************************** */
+/* --links-media-logo position-- */
+/* --links-media-logo-1-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover+div.div-links-media-logo-1,
+section.links-mardi-grass-media a img.img-links-media-logo-1:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-1 {
+    margin-left: 10vw;
+}
+/* --links-media-logo-2-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover+div.div-links-media-logo-2,
+section.links-mardi-grass-media a img.img-links-media-logo-2:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-2 {
+    margin-left: 20vw;
+}
+/* --links-media-logo-3-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover+div.div-links-media-logo-3,
+section.links-mardi-grass-media a img.img-links-media-logo-3:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-3 {
+    margin-left: 30vw;
+}
+/* --links-media-logo-4-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover+div.div-links-media-logo-4,
+section.links-mardi-grass-media a img.img-links-media-logo-4:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-4 {
+    margin-left: 40vw;
+}
+/* --links-media-logo-5-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover+div.div-links-media-logo-5,
+section.links-mardi-grass-media a img.img-links-media-logo-5:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-5 {
+    margin-left: 50vw;
+}
+/* --links-media-logo-6-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover+div.div-links-media-logo-6,
+section.links-mardi-grass-media a img.img-links-media-logo-6:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-6 {
+    margin-left: 60vw;
+}
+/* --links-media-logo-7-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover+div.div-links-media-logo-7,
+section.links-mardi-grass-media a img.img-links-media-logo-7:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-7 {
+    margin-left: 70vw;
+}
+/* --links-media-logo-8-- */
+/* ---------------------- */
+section.links-mardi-grass-media a div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover+div.div-links-media-logo-8,
+section.links-mardi-grass-media a img.img-links-media-logo-8:hover,
+section.links-mardi-grass-media a img.img-links-media-logo-8 {
+    margin-left: 85vw;
+}
+/* --links-media-logo position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 600px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 500px)------------------------ */
+@media (max-width: 500px) {
+/* ******************************************** */
+    /* --links mardi grass media container-- */
+section.links-mardi-grass-media a div.div-links-media-logo,
+section.links-mardi-grass-media a img.img-links-media-logo {
+    width: 40px;
+    height: 40px;
+}
+
+section.links-mardi-grass-media a img.img-links-media-logo:hover+div.div-links-media-logo,
+section.links-mardi-grass-media a img.img-links-media-logo:hover {
+    width: 40px;
+    height: 40px;
+}
+/* --links mardi grass media container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 500px)------------------------ */
+/* ************************************************************************* */

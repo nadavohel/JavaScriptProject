@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>משחק הזיכרון</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="./script/GameDataBase.js" defer></script>
+    <script src="./script/MenuGame.js" defer></script>
+    <script src="./script/PlayTheGame.js" defer></script>
+    <script src="./script/PlayGameAgain.js" defer></script>
+    <script src="./script/Checks.js" defer></script>
+    <script src="./script/MixEverything.js" defer></script>
+    <script src="./script/AllOnresize.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="landscape-wrapper">
+            <h1 class="gmaeh1">משחק הזיכרון</h1>
+            <p>מספר ניסיונות: <b class="counter">0</b> <span class="margin"></span> טיימר: <b class="timer">00:00</b></p>
+            <div id="buttonsContainer">
+                <button class="buttonsOnGame" id="mobileRemoveButton" onclick="MenuGame.startMenuGame()">Game Menu</button>
+                <button class="buttonsOnGame" onclick="PlayGameAgain.playAgain()">Play Again</button>
+            </div>
+            <div id="timePlayerContainer">
+                <p id="playerOneTime">00:10</p>
+                <p id="playerTwoTime">00:10</p>
+            </div>
+            
+            
+            <div class="frame">
+                <div class="board" id="boardId"></div>
+            </div>
+
+            <div id="screenContainer">
+                <div id="playerImgOneContainer">
+                    <img id="playerImgOne" src="images/batMan.png" alt=""></div>
+                <div id="playerImgTwoContainer">
+                    <img id="playerImgTwo" src="images/batMan.png" alt=""></div>
+                <p id="nameTurn">Captain America</p>
+                <p id="resultsScreen">0 - 0</p>
+            </div>
+
+            <div class="popGame" id="popGameId">
+                <h1 class="menuh1">Memory Game</h1>
+                <div id="menuContainer">
+                    <div id="menuGame">
+                        <h1>Menu Game</h1>
+                        <div id="players" onclick="MenuGame.goPageInMenu(playersMenu, '540px', '0.2s')">שחקנים</div>
+                        <div id="bordSize" onclick="MenuGame.goPageInMenu(bordSizeMenu, '312px', '0.4s')">גודל לוח</div>
+                        <div id="colorCardGame" onclick="MenuGame.goPageInMenu(colorCardGameMenu, '550px', '0.2s')">צבע כרטיס</div>
+                        <div id="typeCardGame" onclick="MenuGame.goPageInMenu(typeCardGameMenu, '516px', '0.2s')">סוג כרטיסים</div>
+                        <div id="gameType" onclick="MenuGame.goPageInMenu(gameTypeMenu, '660px', '0.2s')">סגנון משחק</div>
+                        <button class="goPlay" id="goPlayId" onclick="MenuGame.goPlay()">Go Play</button>
+                        <p id="errorMessage">In the exclusive game two players must choose</p>
+                    </div>
+                    <div id="playersMenu">
+                        <h1>Menu Game</h1>
+                        <div class="menuDiv" id="onePlayerGame">שחקן בודד</div>
+                        <div class="playersContainer">
+                            <div id="playerOne">
+                                <img id="playerOneBatMan" onclick="MenuGame.characterplayers(this, 'one', 0)" src="./images/batMan.png" alt="">
+                                <img id="playerOneCaptainAmerica" onclick="MenuGame.characterplayers(this, 'one', 1)" src="./images/CaptainAmerica.png" alt="">
+                                <img id="playerOnespiderMan" onclick="MenuGame.characterplayers(this, 'one', 2)" src="./images/spiderMan.png" alt="">
+                                <img id="playerOnesuperGirl" onclick="MenuGame.characterplayers(this, 'one', 3)" src="./images/superGirl.png" alt="">
+                                <img id="playerOnesuperMan" onclick="MenuGame.characterplayers(this, 'one', 4)" src="./images/superMan.png" alt="">
+                                <img id="playerOneThor" onclick="MenuGame.characterplayers(this, 'one', 5)" src="./images/Thor.png" alt="">
+                            </div>
+                        </div>
+                        <div class="menuDiv" id="twoPlayerGame">שתי שחקנים</div>
+                        <div class="playersContainer">
+                            <div id="playerTwo">
+                                <img id="playerTwoBatMan" onclick="MenuGame.characterplayers(this, 'two', 0)" src="./images/batMan.png" alt="">
+                                <img id="playerTwoCaptainAmerica" onclick="MenuGame.characterplayers(this, 'two', 1)" src="./images/CaptainAmerica.png" alt="">
+                                <img id="playerTwospiderMan" onclick="MenuGame.characterplayers(this, 'two', 2)" src="./images/spiderMan.png" alt="">
+                                <img id="playerTwosuperGirl" onclick="MenuGame.characterplayers(this, 'two', 3)" src="./images/superGirl.png" alt="">
+                                <img id="playerTwosuperMan" onclick="MenuGame.characterplayers(this, 'two', 4)" src="./images/superMan.png" alt="">
+                                <img id="playerTwoThor" onclick="MenuGame.characterplayers(this, 'two', 5)" src="./images/Thor.png" alt="">
+                            </div>
+                        </div>
+                        <button class="goBack" onclick="MenuGame.backToMenu(playersMenu)">חזור לתפריט</button>
+                    </div>
+                    <div id="bordSizeMenu">
+                        <h1>Menu Game</h1>
+                        <div onclick="MenuGame.changeBoard(this, 4,8)" id="tinyBoard">Tiny (4X4)</div>
+                        <div onclick="MenuGame.changeBoard(this, 5,10)" id="smallBoard">Small (5X4)</div>
+                        <div onclick="MenuGame.changeBoard(this, 6,12)" id="mediumBoard">Medium (6X4)</div>
+                        <div onclick="MenuGame.changeBoard(this, 6,15)" id="largeBoard">Large (6X5)</div>
+                        <div onclick="MenuGame.changeBoard(this, 6,18)" id="hugeBoard">Huge (6X6)</div>
+                        <div onclick="MenuGame.changeBoard(this, 7,21)" id="giganticBoard">Gigantic (7X6)</div>
+                        <button class="goBack" onclick="MenuGame.backToMenu(bordSizeMenu)">חזור לתפריט</button>
+                    </div>
+                    <div id="colorCardGameMenu">
+                        <h1>Menu Game</h1>
+                        <div class="colorbox" id="tomato"  
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.tomatoBox, 'tomato')">
+                            tomato
+                        </div>
+                        <div class="colorbox" id="yellowgreen" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.yellowgreenBox, 'yellowgreen')">
+                            yellowgreen
+                        </div>
+                        <div class="colorbox" id="steelblue" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.steelblueBox, 'steelblue')">
+                            steelblue
+                        </div>
+                        <div class="colorbox" id="sandybrown" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.sandybrownBox, 'sandybrown')">
+                            sandybrown
+                        </div>
+                        <div class="colorbox" id="crimson" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.crimsonBox, 'crimson')">
+                            crimson
+                        </div>
+                        <div class="colorbox" id="deepskyblue" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.deepskyblueBox, 'deepskyblue')">
+                            deepskyblue
+                        </div>
+                        <div class="colorbox" id="darkorange" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.darkorangeBox, 'darkorange')">
+                            darkorange
+                        </div>
+                        <div class="colorbox" id="yellow" 
+                            onclick="MenuGame.selectedColor(this,  GameDataBase.yellowBox, 'yellow')">
+                            yellow
+                        </div>
+                        <div class="colorContainer">
+                            <div id="tomatoBox" 
+                                onclick="MenuGame.selectedColor(tomato , this, 'tomato')" >
+                            </div>
+                            <div id="yellowgreenBox" 
+                                onclick="MenuGame.selectedColor(yellowgreen , this, 'yellowgreen')">
+                            </div>
+                            <div id="steelblueBox" 
+                                onclick="MenuGame.selectedColor(steelblue , this, 'steelblue')">
+                            </div>
+                            <div id="sandybrownBox" 
+                                onclick="MenuGame.selectedColor(sandybrown , this, 'sandybrown')">
+                            </div>
+                            <div id="crimsonBox" 
+                                onclick="MenuGame.selectedColor(crimson , this, 'crimson')">
+                            </div>
+                            <div id="deepskyblueBox" 
+                                onclick="MenuGame.selectedColor(deepskyblue , this, 'deepskyblue')">
+                            </div>
+                            <div id="darkorangeBox" 
+                                onclick="MenuGame.selectedColor(darkorange , this, 'darkorange')">
+                            </div>
+                            <div id="yellowBox" 
+                                onclick="MenuGame.selectedColor(yellow , this, 'yellow')">
+                            </div>
+                        </div>
+                        <button class="goBack" onclick="MenuGame.backToMenu(colorCardGameMenu)">חזור לתפריט</button>
+                    </div>
+                    <div id="typeCardGameMenu">
+                        <h1>Menu Game</h1>
+                        <div class="cardRow" id="numbersCard" onclick="MenuGame.cardsType(this, GameDataBase.numbersCardImg, GameDataBase.numbersArray, false)">מספרים</div>
+                        <div class="cardRow" id="hebrewCard" onclick="MenuGame.cardsType(this, GameDataBase.hebrewCardImg, GameDataBase.lattersHebArray, false)">אותיות בעברית</div>
+                        <div class="cardRow" id="englishCard" onclick="MenuGame.cardsType(this, GameDataBase.englishCardImg, GameDataBase.lattersEngArray, false)">אותיות באנגלית</div>
+                        <div class="cardRow" id="emojiCard" onclick="MenuGame.cardsType(this, GameDataBase.emojiCardImg, GameDataBase.imojiArray, false)">פרצופים</div>
+                        <div class="cardRow" id="natureCard" onclick="MenuGame.cardsType(this, GameDataBase.natureCardImg, natureArray, true)">תמונות נופים</div>
+                        <div class="cardRow" id="hapoelBeerShevaCard" onclick="MenuGame.cardsType(this, GameDataBase.hapoelBeerShevaCardImg, hapoelArray, true)">תמונות הפועל באר שבע</div>
+                        <div class="cardRow" id="manUtdCard" onclick="MenuGame.cardsType(this, GameDataBase.manUtdCardImg, unitedArray, true)">תמונות מנצ'סטר יונייטד</div>
+                        <div class="cardContainer">
+                            <div id="numbersCardImg" onclick="MenuGame.cardsType(GameDataBase.numbersCard, this, GameDataBase.numbersArray, false)">8</div>
+                            <div id="hebrewCardImg" onclick="MenuGame.cardsType(GameDataBase.hebrewCard, this, GameDataBase.lattersHebArray, false)">ב</div>
+                            <div id="englishCardImg" onclick="MenuGame.cardsType(GameDataBase.englishCard, this, GameDataBase.lattersEngArray, false)">S</div>
+                            <div id="emojiCardImg" onclick="MenuGame.cardsType(GameDataBase.emojiCard, this, GameDataBase.imojiArray, false)">🤠</div>
+                            <div id="natureCardImg" onclick="MenuGame.cardsType(GameDataBase.natureCard, this, natureArray, true)"><img src="images/cardType/nature/nature6.jpg" alt=""></div>
+                            <div id="hapoelBeerShevaCardImg" onclick="MenuGame.cardsType(GameDataBase.hapoelBeerShevaCard, this, hapoelArray, true)"><img src="images/cardType/hapoelBeerSheva/hapoel6.jpg" alt=""></div>
+                            <div id="manUtdCardImg" onclick="MenuGame.cardsType(GameDataBase.manUtdCard, this, unitedArray, true)"><img src="images/cardType/manUtd/manUtd3.png" alt=""></div>
+                        </div>
+                        <button class="goBack" onclick="MenuGame.backToMenu(typeCardGameMenu)">חזור לתפריט</button>
+                    </div>
+                    <div id="gameTypeMenu">
+                        <h1>Menu Game</h1>
+                        <div onclick="MenuGame.modeGame(false)" id="classicGame">Classic Game
+                            <p>המשחק הזיכרון הוא משחק תודעה וריכוז המתבסס על היכולת לזכור ולאתר פרטים נתונים בזמן קצר ולהשוות ביניהם. במשחק זה, מציגים
+                            סדרה של פרטים, כמו כרטיסים, מספרים או תמונות, ולאחר מכן מסתירים אותם. המשתתפים צריכים לנסות לאתר את הפרטים הנכונים על
+                            ידי זכירת המיקום והזמן בהם הם היו חשים על הפרטים במהלך המשחק.</p>
+                        </div>
+                        <div onclick="MenuGame.modeGame(true)" id="exclusiveGame">Exclusive Game
+                            <p>משחק הזיכרון בגרסה האקסקלוסיבית. בגרסה זאת הקלפים נטרפים ומתערבבים במהלך המשחק, לכל שחקן יש זמן מוגבל לכל תור. כאשר שחקן
+                            אינו מצליח למצוא זוג תואם, זמן התור הבא יוקצר. עם זאת, במקרה שהצליח למצוא זוג תואם, זמן התור הבא יוארך.</p>
+                            <p>ONLY 2 players!</p>
+                        </div>
+                        <button class="goBack" onclick="MenuGame.backToMenu(gameTypeMenu)">חזור לתפריט</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+nav#navMobile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+    opacity: 1;
+
+    @include aboveTablet {
+        display: none;
+    }
+
+    section {
+        position: fixed;
+        top: 0px;
+        width: 100vw;
+        height: 80px;
+
+        div.menoMobileHContainer{
+            width: 100vw;
+            height: 80px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            direction: rtl;
+
+
+            div.menoMobileH {
+                height: 60px;
+                margin-top: 10px;
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                background-color: #ffffff;
+                padding: 0 20px;
+                border-radius: 40px;
+                box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+                width: 90vw;
+                cursor: pointer;
+    
+                div.menuMobileOpenContainer {
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 2;
+    
+                    div.menuMobileButtonOpen {
+                        width: 30px;
+                        height: 6px;
+                        background-color: #000;
+                    }
+    
+                    div#menuMobileButtonOpen01 {
+                        transition: transform 0.2s;
+                    }
+                    div#menuMobileButtonOpen02 {
+                        margin-top: 2px;
+                    }
+                    div#menuMobileButtonOpen03 {
+                        margin-top: 2px;
+                        transition: transform 0.2s, margin-top 0.2s;
+                    }
+    
+                }
+
+                p.nameMenuMobile {
+                    position: absolute;
+                    font-size: 40px;
+                    margin-top: 6px;
+                    font-weight: 600;
+                    width: 90vw;
+                    text-align: center;
+                    filter: drop-shadow(5px 5px 5px #000000);
+                }
+            }
+        }
+        
+        
+        div.menuMobileContainer{
+
+            position: absolute;
+            top: 80px;
+            height: 300px;
+            width: 100vw;
+            overflow: hidden;
+
+            div.menuMobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                left: 50%;
+                top: -300px;
+                width: 100vw;
+                height: 300px;
+                transform: translate(-50%);
+                background: #e3b9b971;
+                transition: top 0.5s;
+    
+                a.nav-item {
+                    height: 60px;
+                    background-color: #ffffff;
+                    padding: 0 20px;
+                    border-radius: 40px;
+                    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+                    width: 90vw;
+                    color: #000000;
+                    padding: 20px;
+                    text-decoration: none;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 1.4em;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    border-bottom: 5px solid rgb(0, 0, 0);
+                }
+            }
+        }
+
+    }
+
+}
+section.footer {
+    display: flex;
+    width: 100vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+
+    @include aboveTablet {
+        display: none;
+    }
+
+    img {
+        width: 13vw;
+        height: 13vw;
+        margin: 0 1vw;
+    }
+}

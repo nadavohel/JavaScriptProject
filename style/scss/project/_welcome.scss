@@ -1,0 +1,118 @@
+nav#navIndexId {
+
+    @include tablet {
+        display: none;
+    }
+
+    section#welcomeScreen {
+        width: 100vw;
+
+        img#backgroundWelcome {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            opacity: 0.05;
+            transition: all 0s;
+        }
+
+        div#welcomeDivContainer {
+            visibility: visible;
+            position: relative;
+            opacity: 1;
+            width: 100%;
+
+            @include tablet {
+                display: none;
+            }
+
+            div#creator-container {
+                width: 760px;
+                position: absolute;
+                left: 10px;
+                height: 200px;
+                transition: all 0s;
+
+                p {
+                    position: absolute;
+                }
+
+                p#projectName {
+                    @include creatorStyle(480px, $projectNameFSize, $projectNameShadowColor, 0s);
+                }
+
+                p#knowledge {
+                    @include creatorStyle(300px, $knowledgeFSize, $knowledgeShadowColor, 0s);
+                    display: inline;
+                }
+
+                p#personalInformation {
+                    @include creatorStyle(40vw, $personalInformationFSize, $personalInformationShadowColor, 0s);
+                    display: inline;
+                    font-family: $personalInformationFFamily;
+                }
+            }
+
+            div {
+                img.iconBar {
+                    position: absolute;
+                }
+
+                img#profilePic {
+                    position: fixed;
+                    width: 150px;
+                    height: 150px;
+                    top: 20px;
+                    right: 5vw;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: all 0s;
+                }
+
+                img#iconOnWelcomeScreenId01 {
+                    @include iconOnWelcomeScreenStyle(90px, 90px, 10vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId02 {
+                    @include iconOnWelcomeScreenStyle(82px, 82px, 35vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId03 {
+                    @include iconOnWelcomeScreenStyle(140px, 140px, 82vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId04 {
+                    @include iconOnWelcomeScreenStyle(60px, 60px, 10vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId05 {
+                    @include iconOnWelcomeScreenStyle(80px, 80px, 29vw, 0s);
+
+                    @include laptopScreenB {
+                        left: 26vw;
+                    }
+                }
+
+                img#iconOnWelcomeScreenId06 {
+                    @include iconOnWelcomeScreenStyle(190px, 190px, 67vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId07 {
+                    @include iconOnWelcomeScreenStyle(100px, 80px, 20vw, 0s);
+                }
+
+                img#iconOnWelcomeScreenId08 {
+                    @include iconOnWelcomeScreenStyle(120px, 120px, 52vw, 0s);
+                }
+            }
+        }
+
+        div.BreakLine {
+            height: 10px;
+            width: 100%;
+            background-color: #000000;
+        }
+    }
+}

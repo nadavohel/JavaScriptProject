@@ -1,0 +1,52 @@
+section {
+    @include positions($bgc);
+    overflow: hidden;
+
+    div.air {
+        @include positions( url(./images/wave.png), bottom, 100px,);
+        /* background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png); */
+        background: url(./images/wave.png);
+        background-size: 1000px 100px
+    }
+    
+    div.air.air1 {
+        animation: wave 30s linear infinite;
+        @include airDiv(1000, 1, 0s, 0);
+    }
+    
+    div.air.air2 {
+        animation: wave2 15s linear infinite;
+        @include airDiv(999, 0.5, -5s, 10px);
+    }
+    
+    div.air.air3 {
+        animation: wave 30s linear infinite;
+        @include airDiv(998, 0.2, -2s, 15px);
+    }
+    
+    div.air.air4 {
+        animation: wave2 5s linear infinite;
+        @include airDiv(997, 0.7, -5s, 20px);
+
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}

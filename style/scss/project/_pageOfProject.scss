@@ -1,0 +1,150 @@
+h1 {
+    font-size: $projectH1FSize;
+    font-weight: $projectH1FWeight;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: $fontFamilyD;
+    filter: drop-shadow(5px 5px 5px $projectH1ShadowColor);
+    
+    @include tablet {
+        width: 100vw;
+        font-size: $projectH1FSizeTable;
+    }
+    @include miniTablet {
+        font-size: $projectH1FSizeMiniTablet;
+    }
+    @include mobile {
+        font-size: $projectH1FSizeMobile;
+    }
+}
+
+div.containerSlider {
+    display: flex;
+    top: 180px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    div.conteudo__geral {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+
+        div.elemento__cartao {
+            width: 10vw;
+            height: 30vh;
+            background-position: center;
+            background-size: 60vh;
+            margin: 1vw;
+            border-radius: 3vw;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}
+
+div.detaOnProject {
+    @extend %flexCenter;
+    top: 600px;
+    width: 800px;
+    font-size: $projectPFSize;
+    align-content: center;
+    text-align: center;
+    direction: rtl;
+    font-family: $fontFamilyC;
+
+    @include laptopScreenB {
+        width: 90vw;
+    }
+    @include tablet {
+        font-size: $projectPFSizeTable;
+    }
+
+    @include miniTablet {
+        font-size: $projectPFSizeMiniTablet;
+    }
+
+    @include mobile {
+        font-size: $projectPFSizeMobile;
+    }
+}
+
+div.aflex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    margin-top: 10px;
+
+    a.kallyas-button {
+        width: 210px;
+        padding: 18px 30px;
+        font-family: $projectButtonFFamily;
+        font-weight: $projectButtonFWeight;
+        align-items: center;
+        background-color: $projectButtonBgcColor;
+        border: 1px solid $projectButtonBorderColor;
+        border-radius: .25rem;
+        box-shadow: $projectButtonShadowColor 0 1px 3px 0;
+        box-sizing: border-box;
+        color: $projectButtonColor;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: $fontFamilyA;
+        font-size: $projectButtonFSize;
+        font-weight: $projectButtonFWeight;
+        justify-content: center;
+        line-height: 1.25;
+        margin: 0;
+        min-height: 3rem;
+        padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+        position: relative;
+        text-decoration: none;
+        transition: all 250ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+
+        @include mobile {
+            width: 160px;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        &:hover,
+        &:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+        
+        &:hover {
+            transform: translateY(-1px);
+        }
+        
+        &:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
+    }
+
+    a.kallyasButtonLeft {
+        margin-right: 5px;
+    }
+    
+    a.kallyasButtonRight {
+        margin-left: 5px;
+    }
+}
+
+
+
+
+

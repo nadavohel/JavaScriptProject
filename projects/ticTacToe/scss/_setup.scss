@@ -1,0 +1,88 @@
+$gameTitleFontSize: rgb(106, 237, 89);
+$gameTitleColor: 6em;
+$bodyBgc: #5a5959;
+$cellBgc: rgba(255, 235, 235, 0.265);
+$cellBorder: black;
+$nameTurnFontSize: 2.3em;
+$nameTurnColor: black;
+$errorFormeFontSize: 1.4em;
+$errorFormeColor: rgb(222, 112, 112);
+$heartSizeMobile: 1.2em;
+$headerBgc: #234b54;
+$popupBgcBackground:rgba(0, 0, 0, .5);
+$popupBgc: #fff;
+$popupNameWinnerColor: rgb(3, 210, 203);
+$popupBorder: #000;
+
+
+
+
+
+@mixin mobile {
+    @media (max-width:470px) {
+        @content;
+    }
+}
+
+// game center
+
+%inputStyle {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 40px;
+    cursor: pointer;
+}
+
+%radioLabel {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+}
+
+%radioInput {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0;
+}
+
+%radioInputBefore {
+    position: absolute;
+    background-color: #333;
+    margin-top: -170px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 418px;
+    height: 110px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+%heartsBox {
+    position: absolute;
+    top: 5px;
+    font-size: 1.4em;
+    direction: rtl;
+}
+
+// header
+
+%buttonBefore {
+    margin-top: 46px;
+    width: 160px;
+    height: 40px;
+}
+
+%buttonCenter {
+    margin: 0 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    width: 180px;
+    font-size: 1.4em;
+}

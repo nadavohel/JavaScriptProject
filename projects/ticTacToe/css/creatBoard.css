@@ -1,0 +1,29 @@
+.board {
+    position: relative;
+    left: 50%;
+    top: 400px;
+    display: grid;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%);
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+
+}
+
+.cell {
+    font-family: 'Alkatra', cursive;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 235, 235, 0.265);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5.5em;
+    user-select: none;
+    cursor: pointer;
+    padding-top: 20px;
+}

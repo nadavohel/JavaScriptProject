@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+* {
+  font-family: "Rubik", sans-serif !important;
+  margin: 0;
+}
+
+body {
+  direction: rtl;
+  background-color: #1b6fb3;
+  padding-bottom: 200px;
+  position: relative;
+}
+body h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  font-size: 72pt;
+  font-family: "Luckiest Guy";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 14px 0 #212121, 0px 14px 0 #212121, 6px 14px 0 #212121, 0 19px 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1), 0 6px 3px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2), 0 12px 12px rgba(0, 0, 0, 0.25), 0 18px 18px rgba(0, 0, 0, 0.2), 0 24px 24px rgba(0, 0, 0, 0.15);
+}
+body h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 32pt;
+  font-family: "Luckiest Guy";
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+body img {
+  width: 100%;
+}
+
+div.frame {
+  width: 80%;
+  max-width: 900px;
+  /* min-height: 300px; */
+  background-color: rgba(255, 255, 255, 0.7882352941);
+  margin: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.7) 0px 30px 60px -30px, rgba(10, 37, 64, 0.75) 0px -2px 6px 0px inset;
+}
+div.frame div.arrow {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 0 10px;
+  font-size: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+}
+div.frame div.arrow:hover {
+  background: black;
+}
+div.frame div.arrow.right {
+  border-radius: 8px 0 0 8px;
+}
+div.frame div.arrow.left {
+  border-radius: 0 8px 8px 0;
+  left: 0;
+}
+div.frame div.arrow.right::after {
+  content: "<<";
+}
+div.frame div.arrow.left::after {
+  content: ">>";
+}
+div.frame div.gallery {
+  position: relative;
+}
+div.frame div.gallery:hover .arrow {
+  opacity: 1;
+}
+div.frame div.albumsContainer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+div.frame div.albumsContainer:hover {
+  opacity: 1;
+}
+div.frame div.albumsContainer div {
+  width: 240px;
+  margin: auto 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  position: relative;
+}
+div.frame div.albumsContainer div img {
+  border-radius: 25px;
+  border: 5px solid rgba(255, 255, 255, 0.7882352941);
+  box-shadow: rgba(50, 50, 93, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.7) 0px 30px 60px -30px, rgba(10, 37, 64, 0.75) 0px -2px 6px 0px inset;
+}
+div.frame div.albumsContainer div:hover img {
+  opacity: 1;
+  filter: brightness(50%);
+  border: 5px solid yellowgreen;
+}
+div.frame div.albumsContainer div p.nameOfThisAlbum {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.4em;
+  color: red;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0px #212121, 1px -1px 0px #212121, -1px 1px 0px #212121, -1px -1px 0px #212121, 2px 2px 2px rgba(255, 255, 255, 0.7882352941);
+  z-index: 500;
+}
+@media (max-width: 768px) {
+  div.frame div.albumsContainer div p.nameOfThisAlbum {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 500px) {
+  div.frame div.albumsContainer div p.nameOfThisAlbum {
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+nav#navIndexId {
+    section#welcomeScreen {
+        div#welcomeDivContainer {
+            div.waviy {
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+                transition: bottom 1s;
+                span {
+                    position: relative;
+                    display: inline-block;
+                    font-size: $loadingFSize;
+                    color: $loadingColor;
+                    text-transform: uppercase;
+                    animation: flip 2s infinite;
+                }
+            }
+        }
+    }
+}
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+#loadingLogo{
+    opacity: 1;
+    transition: opacity 1s;
+}

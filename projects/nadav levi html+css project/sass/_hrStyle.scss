@@ -1,0 +1,70 @@
+/* ************************************************************************* */
+/* --div like hr container-- */
+div.divider {
+    font-size: 24px;
+    text-align: center;
+    margin: 0px auto;
+    height: 4px;
+}
+
+div.divider div {
+    display: table-cell;
+    position: relative;
+    height: 4px;
+}
+/* --div like hr container-- */
+/* ******************************************** */
+/* --div like hr disigned and size-- */
+div.divider div:first-child,
+div.divider div:last-child {
+    height: 4px;
+    width: 50vw;
+    top: 13px;
+    -moz-background-size: 100% 2px;
+    background-size: 100% 2px;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+div.divider div:first-child {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #9c3131);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #000);
+    height: 4px;
+}
+
+div.divider div:nth-child(2) {
+    color: #000;
+    width: 0vw;
+    white-space: nowrap;
+    height: 4px;
+}
+
+div.divider div:last-child {
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #000, transparent);
+    height: 4px;
+}
+/* --div like hr disigned and size-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 769px)------------------------ */
+@media (max-width: 769px) {
+/* ******************************************** */
+/* --div like hr container-- */
+div.divider {
+    width: 100vw;
+}
+div.divider-nobile-drop{
+    display: none;
+}
+/* --div like hr container-- */
+/* ******************************************** */
+
+}

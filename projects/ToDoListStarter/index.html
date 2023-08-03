@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>אתר לניהול משימות</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./script/MissionDataBase.js"></script>
+    <script defer src="./script/script.js"></script>
+    <script defer src="./script/CounterMission.js"></script>
+    <script defer src="./script/focusInput.js"></script>
+    <script defer src="./script/methodOnMissions.js"></script>
+    <script defer src="./script/StartApp.js"></script>
+
+</head>
+
+<body>
+    <div class="backgroundContainer">
+        
+        <img src="./images/paperPencilWorkTouchBusinessBackground.jpg" alt="" class="backgroundImg">
+        <section>
+            <div id="particles-js"></div>
+            <input autocomplete="off" onblur="FocusMission.setFocusOnTxtMission()" type="text" id="txtMission"
+            placeholder="הזן את המשימה הבאה שלך!" onkeydown="StartApp.writeMissionOnScreen(event)">
+            <h1>
+                להלן רשימת המשימות:
+            </h1>
+            <div id="container"></div>
+            <button onclick="methodOnMissions.clearAllMissions()">Clear All</button>
+            <button onclick="methodOnMissions.saveAllMision()">SAVE all</button>
+            <br>
+        </section>
+    </div>
+</body>
+
+</html>

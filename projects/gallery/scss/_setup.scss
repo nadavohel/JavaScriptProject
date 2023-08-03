@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+$color: white;
+$bgc: #1b6fb3;
+$shadowText: #212121;
+$arrowBgcolor: #0000009e;
+$arrowBgcolorHover: black;
+$border: #ffffffc9;
+$borderHover: yellowgreen;
+
+
+
+//Mixin Media
+@mixin table {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:500px) {
+        @content;
+    }
+}
+

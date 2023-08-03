@@ -1,0 +1,380 @@
+ /* ************************************************************************* */
+/* --about main grid container-- */
+section.about-main-grid-container {
+    display: grid;
+    margin: 0 auto;
+}
+/* --about main grid container-- */
+/* ******************************************** */
+/* --article grid designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 h1 {
+    padding-left: 60px;
+    font-size: 4.2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+}
+section.about-main-grid-container div.article-mardi-gras-1 h2, 
+section.about-main-grid-container div.article-mardi-gras-2 h2, 
+section.about-main-grid-container div.article-mardi-gras-3 h2, 
+section.about-main-grid-container div.article-mardi-gras-4 h2,
+section.about-main-grid-container div.article-mardi-gras-5 h2,
+section.about-main-grid-container div.article-mardi-gras-6 h2 {
+    padding-left: 10px;
+    font-size: 2.7rem;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+}
+section.about-main-grid-container div.article-mardi-gras-1 h3,
+section.about-main-grid-container div.article-mardi-gras-2 h3,
+section.about-main-grid-container div.article-mardi-gras-3 h3,
+section.about-main-grid-container div.article-mardi-gras-4 h3,
+section.about-main-grid-container div.article-mardi-gras-5 h3,
+section.about-main-grid-container div.article-mardi-gras-6 h3 {
+    padding-left: 10px;
+    font-size: 1.6rem;
+    text-shadow:
+        2px 2px 2px white,
+        2px 2px 2px #0d0d0d;
+}
+section.about-main-grid-container div.article-mardi-gras-1 p {
+    font-size: 1rem;
+}
+/* --article grid designed-- */
+/* ******************************************** */
+/* ---article mardi gras img designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 div.article-mardi-gras-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+section.about-main-grid-container div.article-mardi-gras-1 div.article-mardi-gras-img-container img.article-mardi-gras-img {
+    border-radius: 20px;
+    border: 4px solid #0d0d0d;
+    box-shadow: 2px 2px 2px #0d0d0d86;
+}
+/* ---article mardi gras img designed-- */
+/* ******************************************** */
+/* ---laToya Cantrell grid designed-- */
+section.about-main-grid-container div.about-laToya-Cantrell-h2 {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+    text-align: center;
+}
+section.about-main-grid-container div.about-laToya-Cantrell-pic-grid img.about-laToya-Cantrell-pic {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;  
+}
+section.about-main-grid-container div.about-laToya-Cantrell {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+} 
+/* ---laToya Cantrell grid designed-- */
+/* ******************************************** */
+/* ---aside grid about sponsers ad-- */
+section.about-main-grid-container div.aside-about-ads div.aside-flex-ads-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 10px;
+}
+section.about-main-grid-container div.aside-about-ads {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+section.about-main-grid-container div.aside-about-ads img {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+section.about-main-grid-container div.aside-about-ads h1{
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+section.about-main-grid-container div.aside-about-ads p {
+    text-align: center;
+    margin: 20px auto;
+    color: rgb(151, 83, 15);
+}
+section.about-main-grid-container div.aside-about-ads a {
+    color: #0d0d0d!important;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+/* ---aside grid about sponsers ad-- */
+/* ******************************************** */
+/* ---side Mardi Gras img-- */
+section.about-main-grid-container div.about-mardi-gras-pic {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+section.about-main-grid-container div.about-mardi-gras-side-1 img {
+    border-radius: 20px;
+}
+
+section.about-main-grid-container div.about-mardi-gras-side-2 img {
+    border-radius: 20px;
+}
+
+section.about-main-grid-container div.about-mardi-gras-side-3 img {
+    border-radius: 20px;
+}
+/* ---side Mardi Gras img-- */
+/* ******************************************** */
+/* ---side Mardi Gras sayings-- */
+section.about-main-grid-container div.side-Mardi-Gras-sayings {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+section.about-main-grid-container div.side-Mardi-Gras-sayings p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f2f2f2;
+    text-shadow: 
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+    font-family: 'Henny Penny',
+        cursive;
+    margin-top: 4px;
+}
+
+section.about-main-grid-container div.side-Mardi-Gras-sayings span {
+    font-size: 1.1rem;
+}
+/* ---side Mardi Gras sayings-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --article grid designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 h1 {
+    padding-left: 50px;
+    font-size: 3.7rem;
+}
+/* --article grid designed-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --article grid designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 h1 {
+    padding-left: 50px;
+    font-size: 3.2rem;
+}
+/* --article grid designed-- */
+/* ******************************************** */
+/* ---aside grid about sponsers ad-- */
+section.about-main-grid-container div.aside-about-ads img {
+    width: 65px;
+    height: 65px;
+}
+
+section.about-main-grid-container div.aside-about-ads h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 9px auto;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+
+section.about-main-grid-container div.aside-about-ads p {
+    text-align: center;
+    margin: 15px auto;
+    color: rgb(151, 83, 15);
+}
+
+section.about-main-grid-container div.aside-about-ads a {
+    color: #0d0d0d !important;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+/* ---aside grid about sponsers ad-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --article grid designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 h1 {
+    padding-left: 20px;
+    font-size: 2.3rem;
+}
+/* --article grid designed-- */
+/* ******************************************** */
+/* ---aside grid about sponsers ad-- */
+section.about-main-grid-container div.aside-about-ads img {
+    /* border-radius: 20px; */
+    width: 65px;
+    height: 65px;
+}
+
+section.about-main-grid-container div.aside-about-ads h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 9px auto;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+
+section.about-main-grid-container div.aside-about-ads p {
+    /* font-size: 1rem; */
+    text-align: center;
+    margin: 15px auto;
+    color: rgb(151, 83, 15);
+}
+
+section.about-main-grid-container div.aside-about-ads a {
+    color: #0d0d0d !important;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+/* ---aside grid about sponsers ad-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --article grid designed-- */
+section.about-main-grid-container div.article-mardi-gras-1 h1 {
+    padding-left: 5vw;
+    font-size: 6vw;
+}
+
+section.about-main-grid-container div.article-mardi-gras-1 h2,
+section.about-main-grid-container div.article-mardi-gras-2 h2,
+section.about-main-grid-container div.article-mardi-gras-3 h2,
+section.about-main-grid-container div.article-mardi-gras-4 h2,
+section.about-main-grid-container div.article-mardi-gras-5 h2, 
+section.about-main-grid-container div.article-mardi-gras-6 h2 {
+    padding-left: 2vw;
+    font-size: 4vw;
+}
+
+section.about-main-grid-container div.article-mardi-gras-1 p,
+section.about-main-grid-container div.article-mardi-gras-2 p,
+section.about-main-grid-container div.article-mardi-gras-3 p,
+section.about-main-grid-container div.article-mardi-gras-4 p,
+section.about-main-grid-container div.article-mardi-gras-5 p,
+section.about-main-grid-container div.article-mardi-gras-6 p {
+    font-size: 2.5vw;
+}
+section.about-main-grid-container div.article-mardi-gras-1 h2,
+section.about-main-grid-container div.article-mardi-gras-2 h2,
+section.about-main-grid-container div.article-mardi-gras-3 h2,
+section.about-main-grid-container div.article-mardi-gras-4 h2,
+section.about-main-grid-container div.article-mardi-gras-5 h2,
+section.about-main-grid-container div.article-mardi-gras-6 h2 {
+
+    text-align: center;
+}
+section.about-main-grid-container div.article-mardi-gras-1 h3,
+section.about-main-grid-container div.article-mardi-gras-2 h3,
+section.about-main-grid-container div.article-mardi-gras-3 h3,
+section.about-main-grid-container div.article-mardi-gras-4 h3,
+section.about-main-grid-container div.article-mardi-gras-5 h3,
+section.about-main-grid-container div.article-mardi-gras-6 h3 {
+    text-align: center;
+}
+section.about-main-grid-container div.article-mardi-gras-1 h4,
+section.about-main-grid-container div.article-mardi-gras-2 h4,
+section.about-main-grid-container div.article-mardi-gras-3 h4,
+section.about-main-grid-container div.article-mardi-gras-4 h4,
+section.about-main-grid-container div.article-mardi-gras-5 h4,
+section.about-main-grid-container div.article-mardi-gras-6 h4 {
+    text-align: center;
+}
+/* --article grid designed-- */
+/* ******************************************** */
+/* ---laToya Cantrell grid designed-- */
+section.about-main-grid-container div.about-laToya-Cantrell-h2 {
+padding-top: 1vw;
+font-size: 3vw;
+}
+
+section.about-main-grid-container div.about-laToya-Cantrell {
+padding: 1vw;
+font-size: 2.8vw;
+}
+/* ---laToya Cantrell grid designed-- */
+/* ******************************************** */
+/* ---aside grid about sponsers ad-- */
+section.about-main-grid-container div.aside-about-ads img {
+    width: 8vw;
+    height: 8vw;
+}
+
+section.about-main-grid-container div.aside-about-ads h1 {
+    font-size: 3vw;
+    margin: 1vw auto;
+}
+
+section.about-main-grid-container div.aside-about-ads p {
+    text-align: center;
+    margin: 1vw auto;
+}
+
+section.about-main-grid-container div.aside-about-ads a {
+    font-size: 2.3vw;
+}
+/* ---aside grid about sponsers ad-- */
+/* ******************************************** */
+/* ---side Mardi Gras sayings-- */
+section.about-main-grid-container div.side-Mardi-Gras-sayings p {
+    font-size: 4vw;
+    margin-top: 1vw;
+    font-size: 4vw;
+}
+
+section.about-main-grid-container div.side-Mardi-Gras-sayings span {
+    font-size: 3vw;
+}
+/* ---side Mardi Gras sayings-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 768px)------------------------ */
+/* ************************************************************************* */

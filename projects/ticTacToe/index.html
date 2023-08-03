@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="./main.css">
+    <!-- javaScript files -->
+    <script defer src="./js/GameDataBase.js"></script>
+    <script defer src="./js/HideTittle.js"></script>
+    <script defer src="./js/CheckWinner.js"></script>
+    <script defer src="./js/CellClick.js"></script>
+    <script defer src="./js/WinnerStatement.js"></script>
+    <script defer src="./js/PlayAgain.js"></script>
+    <script defer src="./js/RestartGame.js"></script>
+    <script defer src="./js/Heartandbomb.js"></script>
+    <script defer src="./js/LetsPlay.js"></script>
+    <script defer src="./js/Index.js"></script>
+    <script defer src="./js/Popup.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header game -->
+    <header>
+        <div class="center">
+            <button onmouseover="HideTittle.ReduceTitle(this)" onmouseout="HideTittle.IncreaseTitle(this)" onclick="restartGame.restart(), Heartandbomb.puthBombAndHearts()" id="startNewGame">start new game</button>
+            <button onmouseover="HideTittle.ReduceTitle(this)" onmouseout="HideTittle.IncreaseTitle(this)" onclick="PlayAgain.playAgain(), Heartandbomb.puthBombAndHearts()" id="playAgain">play again</button>
+        </div>
+    </header>
+    <main>
+        <!-- game title -->
+        <h1 id="gameTitle">Tic Tac Toe</h1>
+        <!-- section gameCenter => infirmation for game -->
+        <section id="gameCenter">
+            <!-- from to know game style and name -->
+            <form action="namesOfPlayer" id="formeGame">
+                <div class="inputNameMobile">
+                    <label for="namePlayerOne"></label>
+                    <input type="text" autocomplete="off" name="namePlayerOne" placeholder="Enter player 1 name" id="namePlayerOne">
+                    <label for="namePlayerOne"></label>
+                    <input type="text" autocomplete="off" name="namePlayerTwo" placeholder="Enter player 2 name" id="namePlayerTwo">
+                </div>
+                
+                <div class="radioContainer">
+                    <div class="radioContainerFlexMobile">
+                        <label for="classicGame" onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)" >Classic Game</label>
+                        <input type="radio" name="witchGame" id="classicGame" checked onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)">
+                    </div>
+                    <div class="radioContainerFlexMobile">
+                        <label for="exclusiveGame" onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)" >Exclusive Game</label>
+                        <input type="radio" name="witchGame" id="exclusiveGame" onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)">
+                    </div>
+                    <div class="radioContainerFlexMobile">
+                        <label for="onlineGame" onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)" >Online Game</label>
+                        <input type="radio" name="witchGame" id="onlineGame" onmouseover="HideTittle.hideTittle(this)" onmouseout="HideTittle.showTittle(this)">
+                    </div>
+                    
+                </div>
+                
+                <input type="button" value="let's play!" onclick="LetsPlay.letsPlay(), Heartandbomb.puthBombAndHearts()">
+            </form>
+            <!-- box of scores screen and information -->
+            <div id="screenGameCenter">
+                <p id="nameTurn"></p>
+            </div>  
+            <div id="heartOfPlayer">
+                <button onclick="PlayAgain.playAgain(), Heartandbomb.puthBombAndHearts()" id="playAnother">play again</button>
+                <p id="errorForme"></p>
+                <p id="heartsBoxPlayerOne">❤️❤️❤️</p>
+                <p id="heartsBoxPlayerTwo">❤️❤️❤️</p>
+            </div>
+        </section>
+        <!-- section popup -->
+        <section>
+            <div id="popupWrapper">
+                <div id="popup">
+                    <div id="closePopupX" onclick="Popup.popupClose()">X</div>
+                    <p id="declarWinnerName"></p>
+                    <button id="closePopupButton" onclick="Popup.popupClose()">let's GO</button>
+                </div>
+            </div>
+        </section>
+        <!-- section board game -->
+        <section>
+            <div class="board">
+                <div class="cell" onclick="CellClick.mark(this,1), CheckWinner.cellPos('1')" id="boxGame01"></div>
+                <div class="cell" onclick="CellClick.mark(this,2), CheckWinner.cellPos('2')" id="boxGame02"></div>
+                <div class="cell" onclick="CellClick.mark(this,3), CheckWinner.cellPos('3')" id="boxGame03"></div>
+                <div class="cell" onclick="CellClick.mark(this,4), CheckWinner.cellPos('4')" id="boxGame04"></div>
+                <div class="cell" onclick="CellClick.mark(this,5), CheckWinner.cellPos('5')" id="boxGame05"></div>
+                <div class="cell" onclick="CellClick.mark(this,6), CheckWinner.cellPos('6')" id="boxGame06"></div>
+                <div class="cell" onclick="CellClick.mark(this,7), CheckWinner.cellPos('7')" id="boxGame07"></div>
+                <div class="cell" onclick="CellClick.mark(this,8), CheckWinner.cellPos('8')" id="boxGame08"></div>
+                <div class="cell" onclick="CellClick.mark(this,9), CheckWinner.cellPos('9')" id="boxGame09"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

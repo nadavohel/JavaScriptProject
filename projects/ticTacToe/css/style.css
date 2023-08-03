@@ -1,0 +1,34 @@
+@import url(./creatBoard.css);
+@import url(./removeBorders.css);
+@import url(./popup.css);
+@import url(./header.css);
+@import url(./gameCenter.css);
+@import url(./screenGameCenter.css);
+
+body {
+    margin: 0;
+    background-color: #5a5959;
+    user-select: none;
+}
+h1#gameTitle {
+    font-size: 6em;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%);
+    z-index: 48875;
+    width: 470px;
+    height: 50px;
+    color: rgb(106, 237, 89);
+}
+
+@media (max-width: 470px) {
+    h1#gameTitle {
+        font-size: 4em !important;
+        top: 30px !important;
+        z-index: 48875;
+        width: 100vw;
+        height: 70px;
+    }
+}

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+html {
+    height: 100%;
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana;
+        min-height: 100vh;
+        background: linear-gradient(147deg, #0093e9, #80d0c7);
+
+        header {
+            position: relative;
+            width: 100vw;
+            height: 60px;
+            background: linear-gradient(147deg, #027bc1, #72c5bb);
+            user-select: none;
+
+            @include tabletBreakPointB {
+                height: 90px;
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+                padding-top: 10px;
+
+                @include tabletBreakPointB {
+                    text-align: center;
+                    color: white;
+                    padding-top: 40px;
+                }
+            }
+
+            div.userIn {
+                position: absolute;
+                right: 10px;
+                display: inline-block;
+                padding: 10px 20px;
+                color: #8b80f9;
+                text-shadow:
+                    -2px 0 black,
+                    0 2px black,
+                    2px 0 black,
+                    0 -2px black;
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 0.5s;
+                top: 5px;
+                letter-spacing: 4px;
+
+                @include tabletBreakPointB {
+                    font-size: 16px;
+                }
+            }
+
+            #logOut {
+                bottom: 10px;
+                left: 20px;
+
+                @include tabletBreakPointB {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 20px;
+                    height: 40px;
+                }
+            }
+
+            a#registerButton {
+                margin-top: 0px;
+            }
+
+            a {
+                position: absolute;
+                display: inline-block;
+                padding: 10px 20px;
+                color: #8b80f9;
+                text-shadow:
+                    -1px 0 black,
+                    0 1px black,
+                    1px 0 black,
+                    0 -1px black,
+                    1px 1px 3px rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 0.5s;
+                top: 5px;
+                left: 10px;
+                letter-spacing: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background: #8b80f9;
+                    color: #fff;
+                    border-radius: 5px;
+                    box-shadow:
+                        0 0 5px #8b80f9,
+                        0 0 25px #8b80f9,
+                        0 0 50px #8b80f9,
+                        0 0 100px #8b80f9;
+                }
+            }
+        }
+
+        main {
+            text-align: center;
+            background: linear-gradient(147deg, #0093e9, #80d0c7);
+            width: 100vw;
+        }
+
+        footer {
+            @include tabletBreakPointC {
+                background: linear-gradient(147deg, #0093e9, #80d0c7);
+            }
+
+            div#productsSaveContainerIdMobile {
+                display: none;
+
+                @include tabletBreakPointC {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 70vw;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                    height: 200px;
+                    bottom: 0;
+                    direction: ltr;
+                    user-select: none;
+                    margin-top: 50px;
+                }
+
+                div {
+                    @include productsSaveDiv(400px, 40px, 20px, 11px);
+                    position: relative;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    color: #f7ce68;
+                    text-shadow:
+                        -1px 0 black,
+                        0 1px black,
+                        1px 0 black,
+                        0 -1px black,
+                        1px 1px 3px black;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    letter-spacing: 4px;
+
+                    &:hover {
+                        background: #027bc1;
+                        color: #fff;
+                        border-radius: 5px;
+                        box-shadow:
+                            0 0 5px #027bc1,
+                            0 0 25px #027bc1,
+                            0 0 50px #027bc1,
+                            0 0 100px #027bc1;
+                    }
+
+                    p {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user {
+    display: none;
+}
+
+.remove,
+.save {
+    margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    background: none;
+    border: 0px solid #000;
+    font-size: 1em;
+}
+
+.remove:hover,
+.save:hover {
+    scale: 1.5;
+}
+
+.save {
+    visibility: hidden;
+}
+
+.nameH2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #299ae0;
+    text-shadow:
+        -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black,
+        1px 1px 3px rgb(255, 255, 255);
+}

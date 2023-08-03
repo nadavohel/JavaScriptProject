@@ -1,0 +1,137 @@
+div.menuGameContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #5b535373;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+
+
+    div#menuGame {
+        background-color: #ffffff82;
+        box-shadow: 
+            4px 4px 4px white,
+            4px -4px 4px white,
+            -4px 4px 4px white,
+            -4px -4px 4px white;
+        color: azure;
+        text-shadow: 
+            4px 4px 4px black,
+            4px -4px 4px black,
+            -4px 4px 4px black,
+            -4px -4px 4px black;
+        width: 400px;
+        height: 470px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        div.rowMenuFlex {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 380px;
+            div.tdLeft {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 20px;
+                margin-right: 2px;
+                transition: font-size 0.2s, padding-top 0.2s;
+                font-weight: 900;
+
+                &:hover {
+                    font-size: 30px;
+                    padding-top: -5px;
+                }
+            }
+            div.tdCenter {
+                width: 300px;
+                text-align: center;
+                font-size: 20px;
+            }
+            div.tdRight {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 2px;
+                transition: font-size 0.2s, padding-top 0.2s;
+                font-weight: 900;
+            
+                &:hover {
+                    font-size: 30px;
+                    padding-top: -5px;
+                }
+            }
+            div#snakeTypeId {
+                letter-spacing: -8px;
+            }
+            div#fruitTypeId {
+                font-size: 30px;
+            }
+        }
+
+        div.buttonMenuContainer {
+            margin-top: 50px;
+            button {
+                align-items: center;
+                background-color: #fff;
+                border-radius: 12px;
+                box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+                box-sizing: border-box;
+                color: #121212;
+                cursor: pointer;
+                display: inline-flex;
+                flex: 1 1 auto;
+                font-family: Inter, sans-serif;
+                font-size: 1.2rem;
+                font-weight: 700;
+                justify-content: center;
+                line-height: 1;
+                margin: 0;
+                outline: none;
+                padding: 1rem 1.2rem;
+                text-align: center;
+                text-decoration: none;
+                transition: box-shadow .2s, -webkit-box-shadow .2s;
+                white-space: nowrap;
+                border: 0;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                
+            
+                &:hover {
+                    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+                }
+
+            }
+        }
+    }
+}
+div#popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%);
+    filter: drop-shadow(5px 5px 5px #fffefe);
+
+    div {
+        font-size: 6em;
+        color: red;
+    }
+}

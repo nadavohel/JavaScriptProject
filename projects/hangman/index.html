@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./classes/WordList.js"></script>
+    <script src="./classes/HangmanDataBase.js" defer></script>
+    <script src="./classes/Hangman.js" defer></script>
+    <script src="./classes/script.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+    </section>
+
+    <div class="gameModal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="playAgain">Play Again</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="hangmanBox">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="gameBox">
+            <ul class="wordDisplay"></ul>
+            <h4 class="hintText">רמז: <b></b></h4>
+            <h4 class="guessesText">Incorrect guesses: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    <div class="subjects">
+        <div onclick="HangmanDataBase.changeSubject(WordList.citiesQuestions)"><p>ערים</p><p class="pathTwo"></p></div>
+        <div onclick="HangmanDataBase.changeSubject(WordList.countriesQuestions)"><p>מדינות</p><p class="pathTwo"></p></div>
+        <div onclick="HangmanDataBase.changeSubject(WordList.famousQuestions)"><p>מפורסמים</p><p class="pathTwo"></p></div>
+        <div onclick="HangmanDataBase.changeSubject(WordList.sportQuestions)"><p>ספורט</p><p class="pathTwo"></p></div>
+        <div onclick="HangmanDataBase.changeSubject(WordList.questions)"><p>כללי</p><p class="pathTwo"></p></div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+/* ************************************************************************* */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container {
+    display: grid;
+    grid-template-rows: repeat(5, 164px);
+    grid-template-columns: repeat(1400px) ;
+    gap: 20px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    height: 162px;
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+main h1.header-media {
+    text-align: center;
+    padding-left: 60px;
+    font-size: 2.8rem;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+    margin-bottom: 20px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 300px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 300px;
+    height: 162PX;
+    padding: 2px;
+    box-shadow:     
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+    transition: all 0.3s;
+}
+
+
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container {
+    grid-template-rows: repeat(5, 139px);
+    grid-template-columns: repeat(1200px);
+    gap: 30px;
+    width: 1200px;
+}
+section.fancybox-mardi-gras-container div.fancybox-div {
+    height: 139px;
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 257px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 257px;
+    height: 139px;
+    box-shadow:
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container {
+    grid-template-rows: repeat(5, 114.6px);
+    grid-template-columns: repeat(992px);
+    gap: 20px;
+    width: 992px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div {
+    gap: 25px;
+    height: 114.6px;
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 212px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 212px;
+    height: 114.5px;
+    box-shadow:
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container {
+    grid-template-rows: repeat(5, 104px);
+    grid-template-columns: repeat(768px);
+    gap: 20px;
+    width: 768px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div {
+    gap: 25px;
+    height: 104px;
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 164px;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 164px;
+    height: 104px;
+    box-shadow:
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container{
+    grid-template-rows: repeat(5, 12.68vw);
+    grid-template-columns: repeat(89vw);
+    gap: 3vw;
+    width: 89vw;
+    margin: 0 auto;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div {
+    gap: 3vw;
+    height: 12.68vw;
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 20vw;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 20vw;
+    height: 12.68vw;
+    box-shadow:
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 600px)------------------------ */
+@media (max-width: 600px) {
+/* ******************************************** */
+/* --fancybox container-- */
+section.fancybox-mardi-gras-container {
+    grid-template-rows: repeat(5, 57.26vw);
+    grid-template-columns: repeat(88vw);
+    gap: 4vw;
+    width: 88vw;
+    margin: 0 auto;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div {
+    gap: 4vw;
+    height: 26.63vw;
+    display: grid;
+    justify-content: none;
+    grid-template-rows: repeat(2, 26.63vw);
+    grid-template-columns: repeat(2,42vw);
+}
+/* --fancybox container-- */
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] {
+    width: 42vw;
+}
+
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img {
+    width: 42vw;
+    height: 26.63vw;
+    box-shadow:
+        4px 0px 4px #0d0d0d,
+        -4px 0px 4px #0d0d0d;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 600px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 769px)------------------------ */
+@media (min-width: 769px) {
+
+    /* ******************************************** */
+    /* --fancybox container designed and position-- */
+    section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img:hover {
+        width: 184px;
+        height: 124px;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+
+    /* --fancybox container designed and position-- */
+    /* ******************************************** */
+}
+
+/* ------------------------@media (min-width: 769px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 993px)------------------------ */
+@media (min-width: 993px) {
+
+    /* ******************************************** */
+    /* --fancybox container designed and position-- */
+    section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img:hover {
+        width: 232px;
+        height: 134.5px;
+    }
+
+    /* --fancybox container designed and position-- */
+    /* ******************************************** */
+}
+
+/* ------------------------@media (min-width: 993px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 1201px)------------------------ */
+@media (min-width: 1201px) {
+
+    /* ******************************************** */
+    /* --fancybox container designed and position-- */
+    section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img:hover {
+        width: 277px;
+        height: 155px;
+    }
+
+    /* --fancybox container designed and position-- */
+    /* ******************************************** */
+}
+
+/* ------------------------@media (min-width: 1201px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 1401px)------------------------ */
+@media (min-width: 1401px) {
+/* ******************************************** */
+/* --fancybox container designed and position-- */
+section.fancybox-mardi-gras-container div.fancybox-div a[data-fancybox="gallery"] img:hover {
+    width: 320px;
+    height: 182px;
+}
+/* --fancybox container designed and position-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 1401px)------------------------ */
+/* ************************************************************************* */

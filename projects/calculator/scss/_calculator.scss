@@ -1,0 +1,130 @@
+div.wrapper {
+    @extend %flexCenter;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(57deg, $backgroundLinearGradient);
+    flex-direction: column;
+
+    div.hero {
+        @extend %flexCenter;
+        @include heroContainer(420px);
+        border-radius: 32px;
+        background: $calculatorBgc;
+        box-shadow: 
+            0px 12px 20px 8px rgba(204, 194, 194, 0.292), 
+            0px 12px 20px 8px rgba(255, 255, 255, 0.041);
+        border: 1px solid rgba(255, 255, 255, 0.055);
+        flex-direction: column;
+    
+        @include mobile {
+            @include heroContainer(350px);
+        }
+    
+        @include smallMobile {
+            @include heroContainer(270px);
+        }
+    
+        h1.head {
+            font-size: 48px;
+            color: $textH1Color;
+            margin-bottom: 12px;
+        }
+
+        table {
+            height: 70%;
+            width: 100%;
+    
+            @include mobile {
+                height: 70%;
+                width: 100%;
+            }
+        
+            @include smallMobile {
+                height: 70%;
+                width: 100%;
+            }
+    
+    
+            div#res {
+                @include resShow(306px, 70px);
+                box-shadow: 
+                    0px 0px 7px 2px rgba(124, 124, 124, 0.041), 
+                    0px 12px 20px 8px rgba(255, 255, 255, 0.041);
+                background: rgb(210, 206, 255);
+                border: 1px solid rebeccapurple;
+                border-radius: 12px;
+                margin: 3px;
+                display: flex;
+                align-items: center;
+                overflow-x: hidden;
+    
+                @include mobile {
+                    @include resShow(266px, 60px);
+                }
+            
+                @include smallMobile {
+                    @include resShow(208px, 45px);
+                }
+            }
+    
+            button {
+                cursor: pointer;
+                box-shadow: 
+                    0px 0px 7px 2px rgba(124, 124, 124, 0.041), 
+                    0px 12px 20px 8px rgba(255, 255, 255, 0.041);
+                background: rgb(210, 206, 255);
+                border: 1px solid rgba(255, 255, 255, 0.055);
+                outline: none;
+                font-size: 29px;
+                border-radius: 12px;
+                height: 70px;
+                width: 70px;
+                margin: 3px;
+    
+                &:hover {
+                    background: rgba(255, 255, 255, 0.267);
+                    color: $textHoverColor;
+                }
+    
+                @include mobile {
+                    height: 60px;
+                    width: 60px;
+                }
+    
+                @include smallMobile {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+        }
+    }
+    
+    
+    div.errorContainer {
+        @extend %flexCenter;
+        width: 400px;
+        height: 60px;
+        margin-top: 20px;
+    
+        @include mobile {
+            width: 340px;
+            height: 90px;
+        }
+    
+        p#errorMassage {
+            width: 400px;
+            margin-top: 20px;
+            text-align: center;
+            color: $textErrorColor;
+            font-size: 1.4em;
+            visibility: hidden;
+            border-radius: 20px;
+            border: 2px solid #ff0000;
+    
+            @include mobile {
+                width: 340px;
+                font-size: 1em;
+            }
+        }
+    }
+}

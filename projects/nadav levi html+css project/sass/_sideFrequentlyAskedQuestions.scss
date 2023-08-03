@@ -1,0 +1,562 @@
+/* ************************************************************************* */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    border: 3px solid #000;
+    border-radius: 10px;
+    width: 335px;
+    height: 1364px;
+    overflow: scroll;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions h1.Popular-Mardi-Gras-Traditions-h1 {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions h3 {
+    padding: 10px;
+    margin-top: -16px;
+}
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions p {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions h3 span.span-number {
+    font-size: 4rem;
+    color: #9453a6;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions div.side-story-img {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions-mobile-h1 {
+    display: none;
+}
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions a.Popular-Mardi-Gras-Traditions-mobile-h1 {
+    text-decoration: none;
+    color: #0d0d0d;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+}
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions a.Popular-Mardi-Gras-Traditions-mobile-h1:hover {
+    color: #8cbf3f;
+    text-shadow:
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+/* --aside ad sponsers-- */
+section.accordion-faq-main-grid div.aside-ad-sponsers div.aside-flex-ad {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers div.aside-flex-ad img {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1 {
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p {
+    text-align: center;
+    margin: 20px auto;
+    color: rgb(151, 83, 15);
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p a {
+    color: #0d0d0d;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px #0d0d0d67;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-walkon {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    width: 335px;
+    height: 298px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-ace-hotel-new-orleans {
+    grid-row: 6/7;
+    grid-column: 4/5;
+    width: 335px;
+    height: 346px;
+}
+/* --aside ad sponsers-- */
+/* ******************************************** */
+/* --side Mardi Gras img-- */
+section.accordion-faq-main-grid div.faq-mardi-gras-pic {
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 {
+    grid-row: 4/5;
+    grid-column: 4/5;
+    width: 335px;
+    height: 228px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 img {
+    width: 320px;
+    height: 213px;
+    border-radius: 20px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 {
+    grid-row: 7/8;
+    grid-column: 4/5;
+    width: 332px;
+    height: 196px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 img {
+    width: 320px;
+    height: 180px;
+    border-radius: 20px;
+}
+/* --side Mardi Gras img-- */
+/* ******************************************** */
+/* --side Mardi Gras sayings-- */
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f2f2f2;
+    text-shadow:
+        2px 2px 2px #0d0d0d,
+        -2px 2px 2px #0d0d0d,
+        2px -2px 2px #0d0d0d,
+        -2px -2px 2px #0d0d0d;
+    font-family: 'Henny Penny',
+        cursive;
+    margin-top: 4px;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p span {
+    font-size: 1.1rem;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings {
+    width: 335px;
+    height: 166px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #0d0d0d;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-1 {
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-2 {
+    grid-row: 8/9;
+    grid-column: 4/5;
+}
+/* --side Mardi Gras sayings-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    width: 292px;
+    height: 1500px;
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+/* --aside ad sponsers-- */
+section.accordion-faq-main-grid div.aside-ad-sponsers div.aside-flex-ad img {
+    border-radius: 17px;
+    width: 85.7px;
+    height: 85.7px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1 {
+    margin: 17px auto;
+    font-size: 2rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p {
+    margin: 17px auto;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p a {
+    font-size: 1.1rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-walkon {
+    width: 292px;
+    height: 255px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-ace-hotel-new-orleans {
+    width: 292px;
+    height: 294px;
+}
+/* --aside ad sponsers-- */
+/* ******************************************** */
+/* --side Mardi Gras img-- */
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 {
+    width: 292px;
+    height: 199px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 img {
+    width: 276px;
+    height: 184px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 {
+    width: 292px;
+    height: 172px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 img {
+    width: 277px;
+    height: 156px;
+}
+/* --side Mardi Gras img-- */
+/* ******************************************** */
+/* --side Mardi Gras sayings-- */
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p {
+    font-size: 1.5rem;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p span {
+    font-size: 1.1rem;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings {
+    width: 292px;
+    height: 232px;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-1 p {
+    margin-top: 22px;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-2 p {
+    margin-top: 32px;
+}
+/* --side Mardi Gras sayings-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    width: 238px;
+    height: 1567px;
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+/* --aside ad sponsers-- */
+section.accordion-faq-main-grid div.aside-ad-sponsers div.aside-flex-ad img {
+    border-radius: 14px;
+    width: 70px;
+    height: 70px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1 {
+    margin: 14px auto;
+    font-size: 1.7rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p {
+    margin: 14px auto;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p a {
+    font-size: 1rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-walkon {
+    width: 238px;
+    height: 220px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-ace-hotel-new-orleans {
+    width: 238px;
+    height: 252px;
+}
+/* --aside ad sponsers-- */
+/* ******************************************** */
+/* --side Mardi Gras img-- */
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 {
+    width: 238px;
+    height: 166px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 img {
+    width: 223px;
+    height: 150px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 {
+    width: 238px;
+    height: 141px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 img {
+    width: 223px;
+    height: 126px;
+}
+/* --side Mardi Gras img-- */
+/* ******************************************** */
+/* --side Mardi Gras sayings-- */
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p {
+    font-size: 1.5rem;
+        margin-top: 22px;   
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p span {
+    font-size: 1.1rem;
+}
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings {
+    width: 238px;
+    height: 268.5px;
+}
+/* --side Mardi Gras sayings-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    width: 767px;
+    height: 150px;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions a h1.Popular-Mardi-Gras-Traditions-h1, 
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions p,div.side-story h3,
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions div.side-story-img{
+    display: none;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+/* --aside ad sponsers-- */
+section.accordion-faq-main-grid div.aside-ad-sponsers div.aside-flex-ad img {
+    border-radius: 13px;
+    width: 65px;
+    height: 65px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1 {
+    margin: 2px auto;
+    font-size: 1.4rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p {
+    margin: 0px auto;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers h1+p a {
+    font-size: 1rem;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-walkon {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 249px;
+    height: 166px;
+}
+
+section.accordion-faq-main-grid div.aside-ad-sponsers-ace-hotel-new-orleans {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    width: 249px;
+    height: 166px;
+}
+/* --aside ad sponsers-- */
+/* ******************************************** */
+/* --side Mardi Gras img-- */
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    width: 249px;
+    height: 166px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-1 img {
+    width: 233px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 {
+    grid-row: 6/7;
+    grid-column: 3/4;
+    width: 249px;
+    height: 166px;
+}
+
+section.accordion-faq-main-grid div.side-faq-mardi-gras-img-2 img {
+    width: 233px;
+    height: 150px;
+}
+/* --side Mardi Gras img-- */
+/* ******************************************** */
+/* --side Mardi Gras sayings-- */
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p {
+    font-size: 1.26rem;
+    margin-top: 6px;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings p span {
+    font-size: 1rem;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings {
+    width: 249px;
+    height: 166px;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-1 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings-2 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+/* --side Mardi Gras sayings-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    grid-row: 4/5;
+    width: 92vw;
+    height: 150px;
+}
+
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    padding-top: 2vw;
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+/* --aside ad sponsers-- */
+section.accordion-faq-main-grid div.aside-ad-sponsers {
+    display: none;
+}
+/* --aside ad sponsers-- */
+/* ******************************************** */
+/* --side Mardi Gras img-- */
+section.accordion-faq-main-grid div.faq-mardi-gras-pic {
+    display: none;
+}
+/* --side Mardi Gras img-- */
+/* ******************************************** */
+/* --side Mardi Gras sayings-- */
+section.accordion-faq-main-grid div.side-faq-Mardi-Gras-sayings {
+    display: none;
+}
+/* --side Mardi Gras sayings-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 600px)------------------------ */
+
+@media (max-width: 600px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions {
+    grid-row: 4/5;
+    width: 92vw;
+    height: 150px;
+    /* padding-top: 2vw; */
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 600px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 993px)------------------------ */
+@media (min-width: 993px) {
+/* ******************************************** */
+/* --Popular Mardi Gras Traditions-- */
+section.accordion-faq-main-grid div.Popular-Mardi-Gras-Traditions a.Popular-Mardi-Gras-Traditions-mobile-h1 {
+    display: none;
+}
+/* --Popular Mardi Gras Traditions-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 993px)------------------------ */
+/* ************************************************************************* */

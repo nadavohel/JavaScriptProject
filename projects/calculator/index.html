@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./classes/CalculatorDataBase.js"></script>
+    <script defer src="./classes/SaddowButtons.js"></script>
+    <script defer src="./classes/ClickOnKey.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero">
+            <h1 class="head" >Calculator</h1>
+            <table>
+                <tbody>
+                <tr>
+                    <td colspan="4">
+                        <div class="res" id="res">0</div>
+                    </td>
+                    <td>
+                        <button  
+                            id="buttonIdDelete" 
+                            onmousedown="SaddowButtons.mouseDown(this)" 
+                            onmousemove="SaddowButtons.mouseUp(this)" 
+                            onclick="ClickOnKey.main('Delete')">C</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="buttonId1" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)" 
+                        onclick="ClickOnKey.main('1')">1</button>
+                    </td>
+                    <td><button id="buttonId2" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)" 
+                        onclick="ClickOnKey.main('2')">2</button>
+                    </td>
+                    <td><button id="buttonId3" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)" 
+                        onclick="ClickOnKey.main('3')">3</button>
+                    </td>
+                    <td><button id="buttonIddivide" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)" 
+                        onclick="ClickOnKey.main('/')">/</button>
+                    </td>
+                    <td><button id="buttonIdPercent" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)" 
+                        onclick="ClickOnKey.main('%')">%</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="buttonId4" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('4')">4</button>
+                    </td>
+                    <td><button id="buttonId5" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('5')">5</button>
+                    </td>
+                    <td><button id="buttonId6" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('6')">6</button>
+                    </td>
+                    <td><button id="buttonIdMinus" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('-')">-</button>
+                    </td>
+                    <td><button id="buttonIdParenthesisLeft" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('(')">(</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="buttonId7" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('7')">7</button>
+                    </td>
+                    <td><button id="buttonId8" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('8')">8</button>
+                    </td>
+                    <td><button id="buttonId9" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('9')">9</button>
+                    </td>
+                    <td><button id="buttonIdPlus" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('+')">+</button>
+                    </td>
+                    <td><button id="buttonIdParenthesisright" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main(')')">)</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="buttonIdPoint" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('.')">.</button>
+                    </td>
+                    <td><button id="buttonId0" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('0')">0</button>
+                    </td>
+                    <td><button id="buttonIdEqual" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('Enter')" >=</button>
+                    </td>
+                    <td><button id="buttonIddouble" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('*')">*</button>
+                    </td>
+                    <td><button id="buttonIdAns" 
+                        onmousedown="SaddowButtons.mouseDown(this)" 
+                        onmousemove="SaddowButtons.mouseUp(this)"  
+                        onclick="ClickOnKey.main('Ans')">Ans</button>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="errorContainer">
+            <p id="errorMassage"></p>
+        </div>
+    </div>
+</body>
+</html>

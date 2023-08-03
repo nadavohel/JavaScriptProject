@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadav-Levi</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./script/navBar/elementsDataBase.js"></script>
+    <script defer src="./script/navBar/welcome.js"></script>
+    <script defer src="script/navBar/welcomeAnimation.js"></script>
+    <script defer src="./script/navBar/nav.js"></script>
+    <script defer src="./script/navBar/allOnresize.js"></script>    
+    <script defer src="./script/navBar/mobile.js"></script>    
+    <script defer src="./script/home/carousel.js"></script>    
+    <script defer src="./script/home/contact.js"></script>    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&family=David+Libre:wght@400;500;700&family=Pacifico&display=swap"
+            rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navIndexId">
+        
+        <section id="welcomeScreen"> <!-- welcome screen -->
+        <img src="images/background/backgroundAbstract.png" alt="background Abstract" id="backgroundWelcome">
+        <div id="welcomeDivContainer">
+            <!-- creator container -->
+            <div id="creator-container">
+                <p class="font-header-second-creator" id="projectName">
+                    Application Project
+                </p>
+                <p class="font-header-second-creator" id="knowledge">
+                    Html, css, JavaScript, Typescript <br>, Api, Oop and JSON
+                </p>
+                <p class="font-header-creator" id="personalInformation">
+                    Developed and designed:<br><span>Nadav Levi</span>
+                </p>
+
+            </div><!-- creator close -->
+            <div>
+                <img src="images/myProfile/nadavLevi.jpg" alt="Nadav Levi" id="profilePic">
+                <img src="./images/icons/html5.png" class="iconBar" id="iconOnWelcomeScreenId01">
+                <img src="./images/icons/css3.png" alt="css" class="iconBar" id="iconOnWelcomeScreenId02">
+                <img src="./images/icons/sass.png" alt="sass" class="iconBar" id="iconOnWelcomeScreenId03">
+                <img src="./images/icons/bootstrap.png" alt="bootstrap" class="iconBar" id="iconOnWelcomeScreenId04">
+                <img src="./images/icons/javaScript.png" alt="JavaScript" class="iconBar" id="iconOnWelcomeScreenId05">
+                <img src="images/icons/typeScript.png" alt="Typescript" class="iconBar" id="iconOnWelcomeScreenId06">
+                <img src="./images/icons/OOP.svg" alt="oop" class="iconBar" id="iconOnWelcomeScreenId07">
+                <img src="./images/icons/rest-api.png" alt="api" class="iconBar" id="iconOnWelcomeScreenId08">
+            </div>
+            
+            <div class="waviy" id="loadingLogo">
+                <span style="--i:1">L</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">a</span>
+                <span style="--i:4">d</span>
+                <span style="--i:5">i</span>
+                <span style="--i:6">n</span>
+                <span style="--i:7">g</span>
+                <span style="--i:8">.</span>
+                <span style="--i:9">.</span>
+                <span style="--i:10">.</span>
+            </div>
+            
+        </div>
+        <div class="BreakLine"></div>
+        </section>
+        <section id="navMainBar"> <!-- navigation bar -->
+            <div class="nav">
+                <img src="images/myProfile/nadavLevi.jpg" alt="Nadav-Levi"class="profilePic2">
+                <a href="#" class="nav-item is-active" active-color="orange">Home</a>
+                <a href="#aboutMeJump" class="nav-item" active-color="green">About Me</a>
+                <a href="#myProjectJump" id="jump" class="nav-item" active-color="blue">My Project</a>
+                <a href="#contactJump" class="nav-item" active-color="red">Contact Me</a>
+                <!-- <a href="#" class="nav-item" active-color="rebeccapurple">Contact</a> -->
+                <span class="nav-indicator"></span>
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle" id="changeNameOnBar"></text>
+                </svg>
+                <img src="images/emoji/emoji02.png" alt="emoji" class="emojiNav" id="emojiNav01">
+                <img src="images/emoji/emoji02.png" alt="emoji" class="emojiNav" id="emojiNav02">
+                <img src="images/emoji/emoji02.png" alt="emoji" class="emojiNav" id="emojiNav03">
+            </div>
+        </section>
+        <div id="divBoxForIconsHover">
+            <div class="BoxForIcon" id="ForIconsHover01"></div>
+            <div class="BoxForIcon" id="ForIconsHover02"></div>
+            <div class="BoxForIcon" id="ForIconsHover03"></div>
+            <div class="BoxForIcon" id="ForIconsHover04"></div>
+            <div class="BoxForIcon" id="ForIconsHover05"></div>
+            <div class="BoxForIcon" id="ForIconsHover06"></div>
+            <div class="BoxForIcon" id="ForIconsHover07"></div>
+            <div class="BoxForIcon" id="ForIconsHover08"></div>
+        </div>
+    </nav>
+    <nav id="navMobile">
+        <section> <!-- navigation bar -->
+            <div class="menoMobileHContainer">
+                <div class="menoMobileH">
+                    <div class="menuMobileOpenContainer" id="menuMobileOpenContainerId" onclick="openMenuMobile()">
+                        <div class="menuMobileButtonOpen" id="menuMobileButtonOpen01"></div>
+                        <div class="menuMobileButtonOpen" id="menuMobileButtonOpen02"></div>
+                        <div class="menuMobileButtonOpen" id="menuMobileButtonOpen03"></div>
+                    </div>
+                    <p class="nameMenuMobile">Nadav Levi</p>
+                </div>
+            </div>
+            
+            <div class="menuMobileContainer">
+                <div class="menuMobile" id="menuMobileId">
+                    <a href="#" class="nav-item is-active" active-color="orange">Home</a>
+                    <a href="#aboutMeJump" class="nav-item" active-color="green">About Me</a>
+                    <a href="#myProjectJump" id="jump" class="nav-item" active-color="blue">My Project</a>
+                    <a href="#contactJump" class="nav-item" active-color="red">Contact Me</a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <main id="mainIndexId">
+        <!-- <div class="namnam"></div> -->
+        <!--Slider gallery-->
+        <section id="sliderGallery"  >
+            <div class="flexContainer" onmouseup="myStopFunction()">
+                <div class="divGallery containerRightSmall">
+                    <img 
+                        src="./images/icons/right.png" 
+                        alt="move right on gallery" 
+                        class="containerRightSmallImg" 
+                        id="imageGalleryRightSmall" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()" 
+                        onclick="goRightPic()">
+                </div>
+                <div class="divGallery containerRightMedium">
+                    <img 
+                        class="containerRightMediumImg" 
+                        id="imageGalleryRightMedium"
+                        src="" 
+                        alt="" 
+                        onmouseover="myStopFunction()"
+                        onmouseout="aa()">
+                </div>
+                <div class="divGallery containerRight">
+                    <img 
+                        class="containerRightImg" 
+                        id="imageGalleryRight" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerRightSkew">
+                    <img 
+                        class="containerRightSkewImg" 
+                        id="imageGalleryRightSkew" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerCenter">
+                    <img 
+                        class="containerCenterImg" 
+                        id="imageGalleryCenter" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerLeftSkew">
+                    <img 
+                        class="containerLeftSkewImg" 
+                        id="imageGalleryLeftSkew" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerLeft">
+                    <img 
+                        class="containerLeftImg" 
+                        id="imageGalleryLeft" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerLeftMedium">
+                    <img 
+                        class="containerLeftMediumImg" 
+                        id="imageGalleryLeftMedium" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        src="" 
+                        alt="">
+                </div>
+                <div class="divGallery containerLeftSmall">
+                    <img 
+                        class="containerLeftSmallImg" 
+                        id="imageGalleryLeftSmall" 
+                        onmouseover="myStopFunction()" 
+                        onmouseout="aa()"
+                        onclick="goLeftPic()"
+                        src="./images/icons/left.png" 
+                        alt="">
+                </div>
+                <!-- <img src="./images/icons/left.png" alt="move right on gallery" class="imageGallery containerLeftSmall" id="imageGalleryLeftSmall" onmouseover="myStopFunction()" onmouseout="aa()" onclick="goLeftPic()"> -->
+            </div>
+        </section>
+        <!--About me-->
+        <div id="aboutMeJump"></div>
+        <section id="aboutMe">
+            <img src="images/myProfile/nadavLevi.jpg" alt="Nadav Levi" id="aboutPic">
+            <h1>קצת עליי</h1>
+            <p>
+                בעברי הייתי טבח ובמסעדן במשך 15 שנה. חוויתי הצלחות וכישלונות והרבה ניסיון גם בשטח וגם בניהול עובדים ועסק. אם השנים יצא
+                לי גם להדריך ולהעביר קורסים. ואם השנים ראיתי שאני צריך לעשות הסבת מקצוע ולצאת לדרך חדשה.
+                <br>
+                הי קוראים לי נדב לוי. אני גר בלהבים מרחק קצר צפנית לבאר שבע.
+                <br>
+                בחרתי בהייטק כי אני מאוד אוהב מתמטיקה ומצד שני מאוד אוהב עיצוב. מאוד התחברתי לזה, מאמין בעצמי שהתגבר על המחשולים שבדרך
+                ושאלמד ואתפתח בתחום.
+            </p>
+            <hr>
+            <form method="get" action="./zips/myResume.rar">
+                <button type="submit">הורדת קורות חיים</button>
+            </form>
+            <!-- <button>הורדת קורות חיים</button> -->
+        </section>
+        <!--My project-->
+        <div id="myProjectJump"></div>
+        <section id="myProject">
+            <div class="centerflipcards">
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/tocTacToe/tocTacToe00.jpg"
+                                    class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Toc Tac Toe Game</h2>
+                            <h3 class="textshadow">משחק איקס עיגול הנקרא גם איקס מיקס דריקס עם סגנון חדש!</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Toc Tac Toe</h1>
+                            <p class="parahCard">איקס עיגול (tic-tac-toe), הנקרא גם איקס מיקס דריקס הוא משחק לשני שחקנים המשוחק על לוח של 3x3 משבצות. כל שחקן בתורו מסמן
+                            סימן באחת המשבצות (לרוב איקס או עיגול, ומכאן שם המשחק) השחקן המנצח הוא זה שהצליח למלא שורה, טור או אלכסון בסימנים שלו.
+                            אם אף שחקן לא הצליח לעשות זאת עד שכל המשבצות מלאות, המשחק נגמר בתיקו.</p>
+                            <div class="aflex">
+                                <a href="./html/ticTacToe.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/ticTacToe.rar" download="ticTacToe" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                            
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/snake/snake00.jpg" class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Snake Game</h2>
+                            <h3 class="textshadow">הנחש חייב לאכול אך ככול שאוכל ככה הוא גדל. <br> למשחק יש גם אופציה לשלבים עם הרבה הפתעות</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Snake Game</h1>
+                            <p class="parahCard">במשחק שולט השחקן על נחש דק ההולך ומתארך, המשוטט באזור מבודד, אוסף אוכל, ומנסה להימנע מלהתנגש בזנב שלו או בקירות המקיפים
+                            את אזור המשחק.</p>
+                            <div class="aflex">
+                                <a href="./html/snake.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/snake.rar" download="snake" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                            
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/calculator/calculator.jpg"
+                                    class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Calculator Projct</h2>
+                            <h3 class="textshadow">מחשבון כיס ממוחשב. בעיצוב מרהים, נוח, עובד גם עם העבר וגם במקלדת.</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Calculator Projct</h1>
+                            <p class="parahCard">אחד הפרוייקטים עם הכי פחות עיצוב אך הרבה חשיבה מאחורי כל לחצן נעשים חישובים רבים. המחשבון עושה סדר פעולות חשבון אחוזים
+                            וזוכר את התוצאה האחרונה ANS. המחשבון כרגע בלימדה של קוסינוס וסינוס אז תצפו לעדכון😎</p>
+                            <div class="aflex">
+                                <a href="./html/calculatorPage.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/calculator.rar" download="calculator" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                    
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerflipcards">
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/memory/memory00.jpg"
+                                    class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Memory Game</h2>
+                            <h3 class="textshadow">משחק הזיכרון בו תצטרכו לחדד את החושים ותוכלו לעשות זאת בעזרת כוכבי על.</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Memory Game</h1>
+                            <p class="parahCard">במשחק זה המשתתפים פורסים חבילת קלפים, המורכבת מזוגות זהים של קלפים, כאשר התמונה כלפי מטה. כל שחקן בתורו מרים שני קלפים
+                            במטרה למצוא שני קלפים זהים. אם שני הקלפים זהים, השחקן ייקח את הקלפים אליו והם ייצברו לזכותו, אחרת יחזיר את הקלפים למקומם
+                            כאשר פניהם כלפי מטה. בנוסף שידרגנו לכם את המשחק עם זמנים וקלפים שנטרפים.</p>
+                            <div class="aflex">
+                                <a href="./html/memoryGame.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/memory.rar" download="MemoryGame" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                    
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/shoppingCard/shoppingCard00.jpg" class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">shopping Card Project</h2>
+                            <h3 class="textshadow">אתר בו תוכלו לרשום רשימת קניות מסודרת!. <br> עובד עם שרת!</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/rest-api.png" alt="api">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">shopping Card Project</h1>
+                            <p class="parahCard">פרוייקט אתר קניות מבוסס על api ועובד ישירות מו השרת אחרי כל פעולה. באתר קניות תוכלו להכניס מוצרים ולשמור אותם, לעדכן להם
+                            מחיר ולייבא מוצרים ורעיונות והרשימות השמורות שלנו!</p>
+                            <div class="aflex">
+                                <a href="./html/ShoppingCart.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/ShoppingCart.rar" download="shopping Card" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                    
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            
+                <div class="square-flip">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/hangman/hangman00.jpg"
+                                    class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Hangman Game</h2>
+                            <h3 class="textshadow">משחק איש תלוי בו צריך לנחש את המילה על ידי בחירת אותיות</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Hangman Game</h1>
+                            <p class="parahCard">"איש תלוי" (נקרא גם "התליין") הוא משחק עט ונייר המיועד לשני שחקנים ומעלה. מטרת המשחק היא לנחש נכונה מילה או ביטוי שנבחרו
+                            על ידי אחד השחקנים באמצעות ניחוש של האותיות המרכיבות אותם. המשחק הוא הבסיס לשעשועון "גלגל המזל". כמו משחקים אחרים, עבר
+                            גם משחק זה התאמה למחשב</p>
+                            <div class="aflex">
+                                <a href="./html/hangman.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/hangman.rar" download="Hangman Game" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                    
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerflipcards centerflipcardslast">
+                <div class="flexWhenWeNeed">
+                    <div class="square-flip">
+                        <div class='square'>
+                            <div class="square-container">
+                                <div class="align-center"><img src="./images/projects/gallery/gallery00.jpg"
+                                        class="boxshadow" alt=""></div>
+                                <h2 class="textshadow">Gallery Page Project</h2>
+                                <h3 class="textshadow">אתר גלרייה מכיל אלבומים ותצוגת תמונות</h3>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class="projectUsedIcon">
+                            <img src="./images/icons/html5.png" alt="html">
+                            <img src="./images/icons/css3.png" alt="css">
+                            <img src="./images/icons/sass.png" alt="sass">
+                            <img src="./images/icons/javaScript.png" alt="JavaScript">
+                            <img src="./images/icons/OOP.svg" alt="oop">
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h1 class="cardsH1">Gallery Page</h1>
+                                <p class="parahCard">אתר גלריה מכיל מספר אלבומים עם נושאים שונים וסלידר גדול מרכזי . ניתן לשנות את מה שיוצג במרכז על ידי לחיצה על אחד מהאלבומים. הסליידר רץ לבד אבל אפשר לעצור העת שהעכבר על התמונה.</p>
+                                <div class="aflex">
+                                    <a href="./html/galleryPage.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                    <a href="./zips/gallery.rar" download="Gallery Page" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                                </div>
+                        
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+                
+                    <div class="square-flip" id="moveRightWhenWeNeed">
+                        <div class='square'>
+                            <div class="square-container">
+                                <div class="align-center"><img src="./images/projects/toDoList/toDoList00.jpg" class="boxshadow" alt=""></div>
+                                <h2 class="textshadow">To Do List Project</h2>
+                                <h3 class="textshadow">רשימת משימות עם אפשרות שמירה</h3>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                        <div class="projectUsedIcon">
+                            <img src="./images/icons/html5.png" alt="html">
+                            <img src="./images/icons/css3.png" alt="css">
+                            <img src="./images/icons/sass.png" alt="sass">
+                            <img src="./images/icons/javaScript.png" alt="JavaScript">
+                            <img src="./images/icons/OOP.svg" alt="oop">
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h1 class="cardsH1">To Do List</h1>
+                                <p class="parahCard">To do list הוא פרוייקט שנותן את האפשרות להכניס משימות שצריך לעשות. לערוך אותם אם צריך ולשמור אותם ב - localStorage כך
+                                שנוכל לחזור אליהם מתי שרק נרצה.</p>
+                                <div class="aflex">
+                                    <a href="./html/ToDoList.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                    <a href="./zips/ToDoListStarter.rar" download="To Do List" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                                </div>
+                        
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="square-flip" id="lastCard">
+                    <div class='square'>
+                        <div class="square-container">
+                            <div class="align-center"><img src="./images/projects/mardiGras/mardiGras00.jpg"
+                                    class="boxshadow" alt=""></div>
+                            <h2 class="textshadow">Mrdi Grass Site</h2>
+                            <h3 class="textshadow">פרוייקט אתר של פסטיבל mardi grass בניו אורלינס.</h3>
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                    <div class="projectUsedIcon">
+                        <img src="./images/icons/html5.png" alt="html">
+                        <img src="./images/icons/css3.png" alt="css">
+                        <img src="./images/icons/sass.png" alt="sass">
+                        <img src="./images/icons/bootstrap.png" alt="bootstrap">
+                        <img src="./images/icons/javaScript.png" alt="JavaScript">
+                        <img src="./images/icons/OOP.svg" alt="oop">
+                    </div>
+                    <div class='square2'>
+                        <div class="square-container2">
+                            <div class="align-center"></div>
+                            <h1 class="cardsH1">Mardi Grass</h1>
+                            <p class="parahCard">המרדי גרא הוא חג נוצרי ותופעה תרבותית פופולרית שראשיתה אלפי שנים לטקסי האביב והפוריות הפגניים. ידוע גם בשם קרנבל או
+                            קרנבל, הוא נחגג במדינות רבות ברחבי העולם - בעיקר באלה עם אוכלוסיות רומא-קתוליות גדולות - ביום שלפני תחילת העונה הדתית של
+                            התענית. ברזיל, ונציה וניו אורלינס מארחות כמה מהחגיגות הפומביות המפורסמות ביותר של החג, ומושכות אליהן אלפי תיירים וחוגגים
+                            מדי שנה.</p>
+                            <div class="aflex">
+                                <a href="./html/mardiGras.html" class="boxshadow kallyas-button kallyasButtonLeft">go to project</a>
+                                <a href="./zips/mardiGras.rar" download="Mardi Grass" class="boxshadow kallyas-button kallyasButtonRight">Download</a>
+                            </div>
+                    
+                        </div>
+                        <div class="flip-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <div id="contactJump"></div>
+        <section id="contact">
+            <div class="title">
+                <h2>Contact</h2>
+                <p>
+                    יש לכם מה לומר? כתבו לי. אני מחכה לשמוע! אשתדל להגיב לכל פניה במהירות האפשרית, אולם אנא, קבלו איחור או חוסר מענה
+                    בהבנה.
+                </p>
+            </div>
+            <div class="form">
+                <div class="row">
+                    <input id="fNameIdForm" type="text" name="" placeholder="First Name" />
+                    <input id="lNameIdForm" type="text" name="" placeholder="Last Name" />
+                </div>
+                <div class="row">
+                    <input id="emailIdForm" type="email" name="" placeholder="Email Address" />
+                    <input id="numberIdForm" type="tel" name="" placeholder="Mobile No" />
+                </div>
+                <div class="row2">
+                    <textarea id="textareaIdForm" placeholder="Message"></textarea>
+                </div>
+                <div class="row2">
+                    <input onclick="sendMessage()" type="submit" value="Send" />
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <a 
+                href="callto:0545816220" 
+                target="_blank">
+                <img class="divFooterImg" src="./images/linkIconLogo/Black-viber-icon-design.png" alt="viber">
+            </a>
+            <a 
+                aria-label="Chat on WhatsApp" href="https://wa.me/+972545816220?text=I%20love%20your%20projects%20so%20much!%20You%20got%20100!!%20">
+                <img class="divFooterImg" src="./images/linkIconLogo/Black-whatsapp-icon-design.png" alt="whatsapp">
+            </a>
+            <a 
+                href="https://www.facebook.com/nadav.levi.359/"
+                target="_blank">
+                <img class="divFooterImg" src="./images/linkIconLogo/Facebook-icon-design.png" alt="Facebook">
+            </a>
+            <a 
+                href="https://www.instagram.com/nadavohel_22/"
+                target="_blank">
+                <img class="divFooterImg" src="./images/linkIconLogo/Black-instragram-icon-design.png" alt="instragram">
+            </a>
+            <a 
+                href="https://www.youtube.com/channel/UCjUxgRWRoQp1j4tjrBAbWMA"
+                target="_blank">
+                <img class="divFooterImg" src="./images/linkIconLogo/Black-youtube-icon-design.png" alt="youtube">
+            </a>
+            <a 
+                href="https://twitter.com/nadavle25949261"
+                target="_blank">
+                <img class="divFooterImg" src="./images/linkIconLogo/Black-Twitter-icon-design.png" alt="Twitter">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="iconFooterContainer iconFooterContainerViber" >
+                
+                <a 
+                    href="callto:0545816220" 
+                    target="_blank">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Black-viber-icon-design.png" alt="viber">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+            <div onclick="linkToWhatsapp()" class="iconFooterContainer iconFooterContainerWhatsapp" >
+                <a 
+                    aria-label="Chat on WhatsApp" href="https://wa.me/+972545816220?text=I%20love%20your%20projects%20so%20much!%20You%20got%20100!!%20">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Black-whatsapp-icon-design.png" alt="whatsapp">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+            <div onclick="linkToFaceBook()" class="iconFooterContainer iconFooterContainerFaceBook" >
+                <a 
+                    href="https://www.facebook.com/nadav.levi.359/"
+                    target="_blank">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Facebook-icon-design.png" alt="Facebook">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+            <div onclick="linkToInstegram()" class="iconFooterContainer iconFooterContainerInstegram" >
+                <a 
+                    href="https://www.instagram.com/nadavohel_22/"
+                    target="_blank">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Black-instragram-icon-design.png" alt="instragram">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+            <div onclick="linkToYouTube()" class="iconFooterContainer iconFooterContainerYouTube" >
+                <a  
+                    href="https://www.youtube.com/channel/UCjUxgRWRoQp1j4tjrBAbWMA"
+                    target="_blank">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Black-youtube-icon-design.png" alt="youtube">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+            <div onclick="linkToTwitter()" class="iconFooterContainer iconFooterContainerTwitter" >
+                <a 
+                    href="https://twitter.com/nadavle25949261"
+                    target="_blank">
+                    <img class="divFooterImg" src="./images/linkIconLogo/Black-Twitter-icon-design.png" alt="Twitter">
+                    <div class="divFooterColor"></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

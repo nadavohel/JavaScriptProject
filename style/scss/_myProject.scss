@@ -1,0 +1,541 @@
+section#myProject {
+    margin-top: 65px;
+
+    @include laptopScreen {
+        width: 645px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    @include miniTablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mobile {
+        margin-top: 130px;
+    }
+
+
+    div.centerflipcards {
+        display: block;
+        width: 1330px;
+        height: 440px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 25px;
+
+        @include extraScreen {
+            width: 1139.81px;
+            height: 377.08px;
+        }
+
+        @include largeScreen {
+            width: 949.46px;
+            height: 314.11px;
+        }
+
+        @include laptopScreen {
+            width: 320.46px;
+            height: 890px;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        div.square-flip {
+            -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+            -ms-perspective: 1000;
+            perspective: 1000;
+        
+            -webkit-transform: perspective(1000px);
+            -moz-transform: perspective(1000px);
+            -ms-transform: perspective(1000px);
+            transform: perspective(1000px);
+        
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        
+            position: relative;
+            float: left;
+            margin: 20px;
+            width: 400px;
+            height: 400px;
+            direction: rtl;
+
+            @include extraScreen {
+                width: 342.8px;
+                height: 342.8px;
+                margin: 17.14px;
+            }
+
+            @include largeScreen {
+                width: 285.55px;
+                height: 285.55px;
+                margin: 14.28px;
+            }
+            &:hover {
+
+                div.square {
+                    -webkit-transform: rotateY(-180deg);
+                    -moz-transform: rotateY(-180deg);
+                    -o-transform: rotateY(-180deg);
+                    -ms-transform: rotateY(-180deg);
+                    transform: rotateY(-180deg);
+                    transform-style: preserve-3d;
+                    
+                    div.square-container {
+                        -webkit-transform: translateY(-50%) translateX(-650px) scale(.88);
+                        -ms-transform: translateY(-50%) translateX(-650px) scale(.88);
+                        transform: translateY(-50%) translateX(-650px) scale(.88);
+                        transform-style: preserve-3d;
+                    
+                    }
+                }
+
+                div.square2 {
+                    -webkit-transform: rotateY(0deg);
+                    -moz-transform: rotateY(0deg);
+                    -o-transform: rotateY(0deg);
+                    -ms-transform: rotateY(0deg);
+                    transform: rotateY(0deg);
+                    transform-style: preserve-3d;
+
+                    div.square-container2 {
+                        -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+                        -ms-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+                        transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+                        transform-style: preserve-3d;
+                    }
+                }
+            }
+
+            div.square,
+            div.square2 {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            
+            }
+            
+            div.square {
+            
+                background-size: cover;
+                background-position: center center;
+            
+                -ms-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                -webkit-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                overflow: hidden;
+            
+                position: absolute;
+                top: 0;
+            
+            
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+                z-index: 1;
+
+                div.square-container {
+                    padding: 40px;
+                    text-align: center;
+                    position: relative;
+                    top: 50%;
+                
+                    -ms-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                    transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                    -webkit-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                
+                
+                    -webkit-transform: translateY(-50%) translateX(0px) scale(1);
+                    -ms-transform: translateY(-50%) translateX(0px) scale(1);
+                    transform: translateY(-50%) translateX(0px) scale(1);
+                    transform-style: preserve-3d;
+                    z-index: 2;
+
+                    @include largeScreen {
+                        padding: 20px;
+                    }
+                    
+                    div.align-center {
+                        margin: 0 auto;
+                    }
+
+                    h2 {
+                        color: $colorthree;
+                        font-family: $fontFamilyB;
+                        font-weight: 700;
+                        font-size: 22px;
+
+                        @include extraScreen {
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+
+                        @include largeScreen {
+                            font-size: 16px;
+                        }
+                    }
+
+                    h3 {
+                        color: $colorthree;
+                        font-family: $fontFamilyC;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        @include extraScreen {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+
+                        @include largeScreen {
+                            font-weight: 300;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #000;
+                        } 
+                    }
+                }
+                
+                img {
+                    width: 300px;
+                    height: 300px;
+
+                    @include extraScreen {
+                        width: 257.1px;
+                        height: 257.1px;
+                    }
+
+                    @include largeScreen {
+                        width: 214.16px;
+                        height: 214.16px;
+                    }
+                }
+
+                div.flip-overlay {
+                    display: block;
+                    background: #f2b2637c;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+
+            }
+
+            div.square2 {
+            
+                background-size: cover;
+                background-position: center center;
+            
+                -ms-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                -webkit-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                overflow: hidden;
+            
+                position: absolute;
+                top: 0;
+            
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+                transform-style: preserve-3d;
+                z-index: 1;
+                
+                div.square-container2 {
+                    padding: 40px;
+                    padding-top: 20px;
+                    text-align: center;
+                    position: relative;
+                    top: 50%;
+                    height: 400px;
+                    
+                    @include extraScreen {
+                        height: 342.8px;
+                    }
+
+                    @include largeScreen {
+                        height: 285.55px;
+                    }
+                
+                    -ms-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                    transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                    -webkit-transition: transform 0.60s cubic-bezier(.5, .3, .3, 1);
+                
+                
+                    -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+                    -ms-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+                    transform: translateY(-50%) translateX(650px) translateZ(60px) scale(.88);
+                
+                    transform-style: preserve-3d;
+                    z-index: 2;
+
+                    div.align-center {
+                        margin: 0 auto;
+                    }
+
+                    h1.cardsH1 {
+                        font-weight: 800;
+                        font-size: 3em;
+                        filter: drop-shadow(5px 5px 5px #fffefe);
+                        font-family: $fontFamilyB;
+
+                        @include extraScreen {
+                            font-size: 2.27em;
+                        }
+
+                        @include largeScreen {
+                            font-size: 1.8em;
+                        }
+                    }
+
+                    p.parahCard {
+                        font-size: 1.2em;
+                        margin-top: 10px;
+                        font-weight: 700;
+                        font-family: $fontFamilyC;
+
+                        @include extraScreen {
+                            font-size: 1.03em;
+                            margin-top: 8px;
+                        }
+
+                        @include largeScreen {
+                            font-size: 0.9em;
+                            margin-top: 4px;
+                        }
+                    }
+
+                    div.aflex {
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        top: 320px;
+
+                        @include extraScreen {
+                            top: 274.24px;
+                        }
+                        
+                        @include largeScreen {
+                            top: 228.44px;
+                        }
+
+                        a.kallyas-button {
+                            width: 160px;
+                            padding: 18px 30px;
+                            font-family: "Open Sans";
+                            font-weight: 600;
+
+                            align-items: center;
+                            background-color: $colorthree;
+                            border: 1px solid rgba(0, 0, 0, 0.1);
+                            border-radius: .25rem;
+                            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                            box-sizing: border-box;
+                            color: rgba(0, 0, 0, 0.85);
+                            cursor: pointer;
+                            display: inline-flex;
+                            font-family: $fontFamilyA;
+                            font-size: 16px;
+                            font-weight: 600;
+                            justify-content: center;
+                            line-height: 1.25;
+                            margin: 0;
+                            min-height: 3rem;
+                            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+                            position: relative;
+
+                            text-decoration: none;
+                            transition: all 250ms;
+                            user-select: none;
+                            -webkit-user-select: none;
+                            touch-action: manipulation;
+                            vertical-align: baseline;
+
+                            @include extraScreen {
+                                width: 137.12px;
+                                min-height: 2.57rem;
+                            }
+
+                            @include largeScreen {
+                                width: 114.22px;
+                                height: 1.5rem;
+                            }
+
+                            &:hover,
+                            &:focus {
+                                border-color: rgba(0, 0, 0, 0.15);
+                                box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+                                color: rgba(0, 0, 0, 0.65);
+                            }
+
+                            &:hover {
+                                transform: translateY(-1px);
+                            }
+
+                            &:active {
+                                background-color: #F0F0F1;
+                                border-color: rgba(0, 0, 0, 0.15);
+                                box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+                                color: rgba(0, 0, 0, 0.65);
+                                transform: translateY(0);
+                            }
+                        }
+
+                        a.kallyasButtonLeft {
+                            margin-left: 5px;
+
+                            @include extraScreen {
+                                margin-right: -15px;
+                            }
+                        }
+
+                        a.kallyasButtonRight {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                div.flip-overlay {
+                    display: block;
+                    background: #f2b2637c;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            
+            
+            
+
+            
+            
+        }    
+    }    
+}    
+
+
+/*ADD SHADOWS OPTIONAL*/
+.square-flip .square .boxshadow,
+.square-flip .square .textshadow,
+.square-flip .square2 .boxshadow,
+.square-flip .square2 .textshadow {
+    -ms-transition: 0.60s;
+    transition: 0.60s;
+    -webkit-transition: 0.60s;
+    direction: rtl;
+}
+
+.square-flip .square .boxshadow {
+    -webkit-box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+    box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+}
+
+.square-flip .square .textshadow {
+    -webkit-text-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+    text-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+}
+
+.square-flip:hover .square .boxshadow,
+.square-flip:hover .square .textshadow {
+    -webkit-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    -moz-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+}
+
+
+.square-flip .square2 .boxshadow {
+    -webkit-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    -moz-box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    box-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+}
+
+.square-flip .square2 .textshadow {
+    -webkit-text-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    -moz-text-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+    text-shadow: 240px 42px 58px -8px rgba(0, 0, 0, 0.0);
+}
+
+.square-flip:hover .square2 .boxshadow,
+.square-flip:hover .square2 .textshadow {
+    -webkit-box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.847);
+    -moz-box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+    box-shadow: 24px 42px 58px -8px rgba(0, 0, 0, 0.3);
+}
+
+.square-flip:hover .square2 .boxshadow:hover,
+.square-flip:hover .square2 .textshadow:hover {
+    -webkit-box-shadow: 24px 42px 58px -8px #48240d;
+    -moz-box-shadow: 24px 42px 58px -8px #48240d;
+    box-shadow: 24px 42px 58px -8px #48240d;
+}
+
+.centerflipcardslast {
+    @include laptopScreen {
+        display: block;
+        height: 640px !important;
+
+        @include miniTablet {
+            display: flex;
+            flex-direction: column;
+            height: 620px !important;
+            width: 100vw;
+            align-items: center;
+        }
+    }
+}
+.flexWhenWeNeed {
+    @include laptopScreen {
+        display: flex;
+        width: 645px;
+        position: relative;
+        left: 0;
+        /* transform: translate(-50%); */
+        margin-top: -20px;
+
+        div#moveRightWhenWeNeed {
+            margin-left: 25px !important;
+        }
+    }
+    @include miniTablet {
+        /* left: 0 !important;
+        transform: translate(25%) !important; */
+        flex-direction: column;
+        width: 325px;
+        margin-top: -20px;
+
+        div#moveRightWhenWeNeed {
+            margin-left: 14.28px !important;
+        }
+    }
+}
+
+
+#lastCard {
+    @include laptopScreen {
+        margin-left: 173px !important;
+    }
+    @include miniTablet {
+        margin-right: 25px !important;
+    }
+}

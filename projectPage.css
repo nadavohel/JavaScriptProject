@@ -1,0 +1,1189 @@
+/* 
+@include extraScreen {}
+*/
+/* 
+@include largeScreen {}
+*/
+/* 
+@include laptopScreen {}
+*/
+/* 
+@include laptopScreenB {}
+*/
+/* 
+@include tablet {}
+*/
+/* 
+@include miniTablet {}
+*/
+/* 
+@include mobile {}
+*/
+/* 
+@include aboveTablet {}
+*/
+section#contact div.form div.row2 textarea, section#contact div.form div.row input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #2c2c2c;
+  background: #F2E8DF;
+  font-size: 15px;
+  box-shadow: 0px 0px 0px 1px rgba(212, 139, 139, 0.4117647059), 0px 4px 8px rgba(212, 139, 139, 0.4117647059), 0px 8px 16px rgba(212, 139, 139, 0.4117647059), 0px 16px 32px rgba(212, 139, 139, 0.4117647059);
+  border-radius: 5px;
+  font-family: "Caveat", cursive;
+}
+
+section#contact div.form div.row2 textarea:hover, section#contact div.form div.row input:hover {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #2c2c2c;
+  background: #fff;
+  font-size: 16px;
+  box-shadow: 0px 0px 0px 1px rgba(212, 139, 139, 0.737254902), 0px 4px 8px rgba(212, 139, 139, 0.737254902), 0px 8px 16px rgba(212, 139, 139, 0.737254902), 0px 16px 32px rgba(212, 139, 139, 0.737254902);
+  border-radius: 5px;
+  font-family: "Caveat", cursive;
+}
+
+section#contact div.form div.row2, section#contact, div.detaOnProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#divBoxForIconsHover div#ForIconsHover08:hover::before, div#divBoxForIconsHover div#ForIconsHover07:hover::before, div#divBoxForIconsHover div#ForIconsHover06:hover::before, div#divBoxForIconsHover div#ForIconsHover05:hover::before, div#divBoxForIconsHover div#ForIconsHover04:hover::before, div#divBoxForIconsHover div#ForIconsHover03:hover::before, div#divBoxForIconsHover div#ForIconsHover02:hover::before, div#divBoxForIconsHover div#ForIconsHover01:hover::before {
+  position: absolute;
+  background-color: #333;
+  margin-top: 61px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  height: 20px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+/* 
+@extend %boxIconBefore;
+*/
+div#divBoxForIconsHover div#ForIconsHover08:hover::after, div#divBoxForIconsHover div#ForIconsHover07:hover::after, div#divBoxForIconsHover div#ForIconsHover06:hover::after, div#divBoxForIconsHover div#ForIconsHover05:hover::after, div#divBoxForIconsHover div#ForIconsHover04:hover::after, div#divBoxForIconsHover div#ForIconsHover03:hover::after, div#divBoxForIconsHover div#ForIconsHover02:hover::after, div#divBoxForIconsHover div#ForIconsHover01:hover::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 7px solid #333;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(225deg);
+  margin-top: 40px;
+}
+
+/* 
+@extend %boxIconAfter;
+*/
+/* 
+@include creatorStyle(200px, 50px, purple);
+*/
+/* 
+@include iconOnWelcomeScreenStyle(200px, 50px, purple, 0s);
+*/
+/* 
+@extend %jumpPoint;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+    background-color: #F28585;
+  }
+}
+body nav {
+  width: 100vw;
+  top: 0px;
+  background-color: #000;
+  opacity: 0;
+  z-index: 10000;
+  position: fixed;
+}
+body main {
+  position: relative;
+  width: 100vw;
+  background-color: #F28585;
+  transition: top 0s;
+  opacity: 1;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 306px;
+}
+@media (max-width: 1000px) {
+  body main {
+    top: 386px;
+  }
+}
+@media (max-width: 768px) {
+  body main {
+    top: 80px !important;
+  }
+}
+
+nav#navIndexId section#navMainBar {
+  position: fixed;
+  top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+}
+nav#navIndexId section#navMainBar div.nav {
+  height: 60px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5921568627);
+  padding: 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+nav#navIndexId section#navMainBar div.nav img.profilePic2 {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.422), -2px 2px rgba(255, 0, 0, 0.422), 2px -2px rgba(255, 0, 0, 0.422), -2px -2px rgba(255, 0, 0, 0.422);
+}
+nav#navIndexId section#navMainBar div.nav a.nav-item {
+  color: #83818c;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 1400px) {
+  nav#navIndexId section#navMainBar div.nav a.nav-item {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1200px) {
+  nav#navIndexId section#navMainBar div.nav a.nav-item {
+    font-size: 0.82em;
+  }
+}
+nav#navIndexId section#navMainBar div.nav a.nav-item:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #F2E8DF;
+  opacity: 0;
+  transition: 0.3s;
+}
+nav#navIndexId section#navMainBar div.nav a.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+nav#navIndexId section#navMainBar div.nav a.nav-item:not(.is-active):hover {
+  color: #333;
+}
+nav#navIndexId section#navMainBar div.nav span.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: 0.4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+nav#navIndexId section#navMainBar div.nav img.emojiNav {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  opacity: 0.3;
+  margin-right: 4px;
+}
+nav#navIndexId section#navMainBar div.nav img.emojiNav:hover {
+  opacity: 1;
+}
+
+footer {
+  position: relative;
+  top: 276px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100vw;
+  height: 224px;
+  background-color: #F2B263;
+  transition: top 0s;
+  opacity: 1;
+}
+@media (max-width: 1200px) {
+  footer {
+    height: 185px;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    top: 360px;
+    height: 145px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+footer div {
+  margin-top: 24px;
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+@media (max-width: 1200px) {
+  footer div {
+    height: 185px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div {
+    height: 145px;
+  }
+}
+footer div div.iconFooterContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 1px;
+}
+@media (max-width: 1200px) {
+  footer div div.iconFooterContainer {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div div.iconFooterContainer {
+    width: 120px;
+    height: 120px;
+  }
+}
+footer div div.iconFooterContainer:hover::before {
+  position: absolute;
+  background-color: #333;
+  margin-top: -58px;
+  margin-left: -15px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  height: 20px;
+  font-size: 1rem;
+  color: #F2E8DF;
+  font-weight: 700;
+}
+footer div div.iconFooterContainer:hover::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 7px solid #333;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+  margin-top: -27px;
+  margin-left: -10px;
+}
+footer div div.iconFooterContainer img.divFooterImg {
+  position: absolute;
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+  transition: width 0.3s, height 0.3s, margin-left 0.3s, margin-top 0.3s;
+  z-index: 6;
+}
+@media (max-width: 1200px) {
+  footer div div.iconFooterContainer img.divFooterImg {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div div.iconFooterContainer img.divFooterImg {
+    width: 100px;
+    height: 100px;
+  }
+}
+footer div div.iconFooterContainer div.divFooterColor {
+  background-color: #F2C6C2;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  margin-top: 2px;
+  opacity: 0;
+  z-index: 3;
+  transition: width 0.3s, height 0.3s, margin-left 0.3s, margin-top 0.3s, opacity 0.3s;
+}
+@media (max-width: 1200px) {
+  footer div div.iconFooterContainer div.divFooterColor {
+    width: 135px;
+    height: 135px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div div.iconFooterContainer div.divFooterColor {
+    width: 115px;
+    height: 115px;
+  }
+}
+footer div div.iconFooterContainer:hover img.divFooterImg {
+  width: 200px;
+  height: 200px;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+@media (max-width: 1200px) {
+  footer div div.iconFooterContainer:hover img.divFooterImg {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div div.iconFooterContainer:hover img.divFooterImg {
+    width: 120px;
+    height: 120px;
+  }
+}
+footer div div.iconFooterContainer:hover div.divFooterColor {
+  width: 195px;
+  height: 195px;
+  margin-top: -8px;
+  margin-left: -10px;
+  opacity: 1;
+}
+@media (max-width: 1200px) {
+  footer div div.iconFooterContainer:hover div.divFooterColor {
+    width: 155px;
+    height: 155px;
+  }
+}
+@media (max-width: 1000px) {
+  footer div div.iconFooterContainer:hover div.divFooterColor {
+    width: 120px;
+    height: 120px;
+  }
+}
+footer div div.iconFooterContainerViber:hover::before {
+  content: "Call Me";
+}
+footer div div.iconFooterContainerWhatsapp:hover::before {
+  content: "Whatsapp";
+}
+footer div div.iconFooterContainerFaceBook:hover::before {
+  content: "FaceBook";
+}
+footer div div.iconFooterContainerInstegram:hover::before {
+  content: "Instegram";
+}
+footer div div.iconFooterContainerYouTube:hover::before {
+  content: "YouTube";
+}
+footer div div.iconFooterContainerTwitter:hover::before {
+  content: "Twitter";
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-family: "Pacifico", cursive;
+  filter: drop-shadow(5px 5px 5px #F2E8DF);
+}
+@media (max-width: 768px) {
+  h1 {
+    width: 100vw;
+    font-size: 4em;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+div.containerSlider {
+  display: flex;
+  top: 180px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+div.containerSlider div.conteudo__geral {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+div.containerSlider div.conteudo__geral div.elemento__cartao {
+  width: 10vw;
+  height: 30vh;
+  background-position: center;
+  background-size: 60vh;
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+}
+
+div.detaOnProject {
+  top: 600px;
+  width: 800px;
+  font-size: 1.5em;
+  align-content: center;
+  text-align: center;
+  direction: rtl;
+  font-family: "David Libre", serif;
+}
+@media (max-width: 992px) {
+  div.detaOnProject {
+    width: 90vw;
+  }
+}
+@media (max-width: 768px) {
+  div.detaOnProject {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 650px) {
+  div.detaOnProject {
+    font-size: 1em;
+  }
+}
+@media (max-width: 500px) {
+  div.detaOnProject {
+    font-size: 0.9em;
+  }
+}
+
+div.aflex {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  margin-top: 10px;
+}
+div.aflex a.kallyas-button {
+  width: 210px;
+  padding: 18px 30px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  align-items: center;
+  background-color: #F2E8DF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+@media (max-width: 500px) {
+  div.aflex a.kallyas-button {
+    width: 160px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+div.aflex a.kallyas-button:hover, div.aflex a.kallyas-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+div.aflex a.kallyas-button:hover {
+  transform: translateY(-1px);
+}
+div.aflex a.kallyas-button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+div.aflex a.kallyasButtonLeft {
+  margin-right: 5px;
+}
+div.aflex a.kallyasButtonRight {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  nav#navIndexId {
+    display: none;
+  }
+}
+nav#navIndexId section#welcomeScreen {
+  width: 100vw;
+}
+nav#navIndexId section#welcomeScreen img#backgroundWelcome {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0.05;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer {
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  nav#navIndexId section#welcomeScreen div#welcomeDivContainer {
+    display: none;
+  }
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div#creator-container {
+  width: 760px;
+  position: absolute;
+  left: 10px;
+  height: 200px;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div#creator-container p {
+  position: absolute;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div#creator-container p#projectName {
+  width: 480px;
+  text-align: center;
+  font-size: 3.4rem;
+  text-shadow: 2px 2px 2px white, -2px 2px 2px white, 2px -2px 2px white, -2px -2px 2px white, 4px 4px 2px #86A69D, -4px 4px 2px #86A69D, 4px -4px 2px #86A69D, -4px -4px 2px #86A69D;
+  transition: all 0s;
+  font-family: "Cabin", sans-serif;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div#creator-container p#knowledge {
+  width: 300px;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px white, -2px 2px 2px white, 2px -2px 2px white, -2px -2px 2px white, 4px 4px 2px #F2B263, -4px 4px 2px #F2B263, 4px -4px 2px #F2B263, -4px -4px 2px #F2B263;
+  transition: all 0s;
+  font-family: "Cabin", sans-serif;
+  display: inline;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div#creator-container p#personalInformation {
+  width: 40vw;
+  text-align: center;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 2px white, -2px 2px 2px white, 2px -2px 2px white, -2px -2px 2px white, 4px 4px 2px #F28585, -4px 4px 2px #F28585, 4px -4px 2px #F28585, -4px -4px 2px #F28585;
+  transition: all 0s;
+  font-family: "Cabin", sans-serif;
+  display: inline;
+  font-family: "Caveat", cursive;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img.iconBar {
+  position: absolute;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#profilePic {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  top: 20px;
+  right: 5vw;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId01 {
+  width: 90px;
+  height: 90px;
+  left: 10vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId02 {
+  width: 82px;
+  height: 82px;
+  left: 35vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId03 {
+  width: 140px;
+  height: 140px;
+  left: 82vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId04 {
+  width: 60px;
+  height: 60px;
+  left: 10vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId05 {
+  width: 80px;
+  height: 80px;
+  left: 29vw;
+  opacity: 0;
+  transition: all 0s;
+}
+@media (max-width: 992px) {
+  nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId05 {
+    left: 26vw;
+  }
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId06 {
+  width: 190px;
+  height: 190px;
+  left: 67vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId07 {
+  width: 100px;
+  height: 80px;
+  left: 20vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div#welcomeDivContainer div img#iconOnWelcomeScreenId08 {
+  width: 120px;
+  height: 120px;
+  left: 52vw;
+  opacity: 0;
+  transition: all 0s;
+}
+nav#navIndexId section#welcomeScreen div.BreakLine {
+  height: 10px;
+  width: 100%;
+  background-color: #000000;
+}
+
+div.projectUsedIcon {
+  width: 400px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1.2s;
+}
+div.projectUsedIcon img {
+  width: 40px;
+  height: 40px;
+}
+
+div.square-flip:hover div.projectUsedIcon {
+  opacity: 1;
+}
+
+div#divBoxForIconsHover {
+  position: fixed;
+  display: flex;
+  width: 1000px;
+  display: flex;
+  opacity: 0.7;
+  top: 270px;
+  transition: left 1s, top 1s;
+  z-index: 5555555;
+}
+@media (max-width: 1000px) {
+  div#divBoxForIconsHover {
+    top: 350px;
+  }
+}
+div#divBoxForIconsHover div.BoxForIcon {
+  height: 40px;
+}
+div#divBoxForIconsHover div#ForIconsHover01 {
+  width: 50px;
+}
+div#divBoxForIconsHover div#ForIconsHover01:hover::before {
+  content: "HTML5";
+  margin-left: -15px;
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover01:hover::after {
+  margin-left: 13px;
+}
+div#divBoxForIconsHover div#ForIconsHover02 {
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover02:hover::before {
+  content: "Cascading Style Sheets";
+  margin-left: -55px;
+  width: 160px;
+}
+div#divBoxForIconsHover div#ForIconsHover02:hover::after {
+  margin-left: 23px;
+}
+div#divBoxForIconsHover div#ForIconsHover03 {
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover03:hover::before {
+  content: "Sass";
+  margin-left: 9px;
+  width: 30px;
+}
+div#divBoxForIconsHover div#ForIconsHover03:hover::after {
+  margin-left: 22px;
+}
+div#divBoxForIconsHover div#ForIconsHover04 {
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover04:hover::before {
+  content: "Bootstrap";
+  margin-left: -10px;
+  width: 68px;
+}
+div#divBoxForIconsHover div#ForIconsHover04:hover::after {
+  margin-left: 22px;
+}
+div#divBoxForIconsHover div#ForIconsHover05 {
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover05:hover::before {
+  content: "Javascript";
+  margin-left: -10px;
+  width: 72px;
+}
+div#divBoxForIconsHover div#ForIconsHover05:hover::after {
+  margin-left: 24px;
+}
+div#divBoxForIconsHover div#ForIconsHover06 {
+  width: 120px;
+}
+div#divBoxForIconsHover div#ForIconsHover06:hover::before {
+  content: "TypeScript";
+  margin-left: 18px;
+  width: 76px;
+}
+div#divBoxForIconsHover div#ForIconsHover06:hover::after {
+  margin-left: 52px;
+}
+div#divBoxForIconsHover div#ForIconsHover07 {
+  width: 80px;
+}
+div#divBoxForIconsHover div#ForIconsHover07:hover::before {
+  content: "Object Oriented Programming";
+  margin-left: -68px;
+  width: 216px;
+}
+div#divBoxForIconsHover div#ForIconsHover07:hover::after {
+  margin-left: 33px;
+}
+div#divBoxForIconsHover div#ForIconsHover08 {
+  width: 60px;
+}
+div#divBoxForIconsHover div#ForIconsHover08:hover::before {
+  content: "React Api";
+  margin-left: -10px;
+  width: 68px;
+}
+div#divBoxForIconsHover div#ForIconsHover08:hover::after {
+  margin-left: 22px;
+}
+
+section#aboutMe {
+  position: relative;
+  height: 360px;
+}
+section#aboutMe img#aboutPic {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translate(-50%);
+}
+section#aboutMe h1 {
+  text-align: center;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%);
+  font-size: 1.8em;
+  font-family: "Pacifico", cursive;
+  filter: drop-shadow(5px 5px 5px #fffefe);
+}
+section#aboutMe p {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 560px;
+  direction: rtl;
+  font-size: 1.2em;
+  text-align: center;
+  height: 150px;
+  border-radius: 50%;
+  transform: translate(-50%);
+  font-family: "Pacifico", cursive;
+  line-height: 1.1;
+}
+@media (max-width: 768px) {
+  section#aboutMe p {
+    width: 80vw;
+    font-size: 1.1em;
+  }
+}
+section#aboutMe hr {
+  position: absolute;
+  top: 353px;
+  width: 700px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 768px) {
+  section#aboutMe hr {
+    width: 90vw;
+  }
+}
+@media (max-width: 650px) {
+  section#aboutMe hr {
+    top: 413px;
+  }
+}
+@media (max-width: 500px) {
+  section#aboutMe hr {
+    top: 463px;
+  }
+}
+section#aboutMe button {
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 0px -4px 0 #444;
+  background-color: #F2B263;
+  transform: translate(-50%);
+}
+@media (max-width: 650px) {
+  section#aboutMe button {
+    top: 400px;
+  }
+}
+@media (max-width: 500px) {
+  section#aboutMe button {
+    top: 450px;
+  }
+}
+section#aboutMe button:hover {
+  box-shadow: 0px 4px 0 #444;
+  cursor: pointer;
+  font-weight: bold;
+}
+section#aboutMe button::after {
+  content: "";
+  width: 150px;
+  height: 4px;
+  background: #262626;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%) translateY(36px);
+  border-bottom: 2px solid #262626;
+  border-right: 2px solid #262626;
+  filter: blur(5px);
+}
+
+section#contact {
+  height: 520px;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  font-family: "David Libre", serif;
+}
+@media (max-width: 768px) {
+  section#contact {
+    width: 100vw;
+  }
+}
+section#contact div.title h2 {
+  font-size: 2.5em;
+  font-family: "Cabin", sans-serif;
+  filter: drop-shadow(5px 5px 5px #fffefe);
+}
+section#contact div.title p {
+  direction: rtl;
+}
+section#contact div.form {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  section#contact div.form {
+    width: 90vw;
+  }
+}
+section#contact div.form div.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+section#contact div.form div.row input {
+  font-family: "Caveat", cursive;
+}
+section#contact div.form div.row2 {
+  width: 100%;
+  margin-top: 20px;
+}
+section#contact div.form div.row2 textarea {
+  resize: none;
+  height: 200px;
+}
+section#contact div.form div.row2 input[type=submit] {
+  height: 40px;
+  margin: 10px;
+  width: 150px;
+  line-height: 43px;
+  padding: 0 40px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  background: #ccc;
+  border-radius: 5px;
+  border: 0.5px solid #c0c0c0;
+  font-family: "Pacifico", cursive;
+  cursor: pointer;
+}
+section#contact div.form div.row2 input[type=submit]:hover {
+  color: #000;
+  background-color: #c0c0c0;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15), inset 0px 4px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  transform: translateY(2px);
+}
+
+svg {
+  font-family: "Russo One", sans-serif;
+  width: 480px;
+  height: 60px;
+}
+
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #86A69D;
+  font-size: 20em;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #86A69D;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #86A69D;
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #86A69D;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #86A69D;
+    stroke: rgba(150, 14, 138, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+nav#navMobile {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  nav#navMobile {
+    display: none;
+  }
+}
+nav#navMobile section {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 80px;
+}
+nav#navMobile section div.menoMobileHContainer {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  direction: rtl;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH {
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+  width: 90vw;
+  cursor: pointer;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH div.menuMobileOpenContainer {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH div.menuMobileOpenContainer div.menuMobileButtonOpen {
+  width: 30px;
+  height: 6px;
+  background-color: #000;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH div.menuMobileOpenContainer div#menuMobileButtonOpen01 {
+  transition: transform 0.2s;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH div.menuMobileOpenContainer div#menuMobileButtonOpen02 {
+  margin-top: 2px;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH div.menuMobileOpenContainer div#menuMobileButtonOpen03 {
+  margin-top: 2px;
+  transition: transform 0.2s, margin-top 0.2s;
+}
+nav#navMobile section div.menoMobileHContainer div.menoMobileH p.nameMenuMobile {
+  position: absolute;
+  font-size: 40px;
+  margin-top: 6px;
+  font-weight: 600;
+  width: 90vw;
+  text-align: center;
+  filter: drop-shadow(5px 5px 5px #000000);
+}
+nav#navMobile section div.menuMobileContainer {
+  position: absolute;
+  top: 80px;
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+}
+nav#navMobile section div.menuMobileContainer div.menuMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: -300px;
+  width: 100vw;
+  height: 300px;
+  transform: translate(-50%);
+  background: rgba(227, 185, 185, 0.4431372549);
+  transition: top 0.5s;
+}
+nav#navMobile section div.menuMobileContainer div.menuMobile a.nav-item {
+  height: 60px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+  width: 90vw;
+  color: #000000;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-top: 10px;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+section.footer {
+  display: flex;
+  width: 100vw;
+  height: 20vw;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  section.footer {
+    display: none;
+  }
+}
+section.footer img {
+  width: 13vw;
+  height: 13vw;
+  margin: 0 1vw;
+}/*# sourceMappingURL=projectPage.css.map */

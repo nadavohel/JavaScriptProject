@@ -1,0 +1,297 @@
+$fontFamilyA: 'Cabin',
+sans-serif;
+$fontFamilyB: 'Caveat',
+cursive;
+$fontFamilyC: 'David Libre',
+serif;
+$fontFamilyD: 'Pacifico',
+cursive;
+
+$filters: drop-shadow(5px 5px 5px #fffefe);
+
+$colorOne: #86A69D;
+$colorTwo: #F2B263;
+$colorthree: #F2E8DF;
+$colorfour: #F2C6C2;
+$colorFive:  #F28585;
+$colorblack:  #333;
+
+$mainBgcolor: $colorFive;
+$navBgcolor: #000;
+// navbar
+$navRowBgcolor: #ffffff97;
+$navRowBoxShadowBgcolor: rgba(159, 162, 177, 0.8);
+$navRowProfileImgBoxShadow: rgba(255, 0, 0, 0.422);
+$navRowColor: #83818c;
+$navRowFSize: 1em;
+$navRowFSizeExtraScreen: 0.9em;
+$navRowFSizeLargeScreen: 00.82em;
+$navRowFFamily: "DM Sans",sans-serif;
+$navRowHoverBorderBottom: $colorthree;
+$navRowHoverColor: $colorblack;
+// welcome
+$projectNameShadowColor: $colorOne;
+$projectNameFSize: 3.4rem;
+$cratorFFamily: $fontFamilyA;
+$knowledgeShadowColor: $colorTwo;
+$knowledgeFSize: 2rem;
+$personalInformationShadowColor: $colorFive;
+$personalInformationFSize: 2.6rem;
+$personalInformationFFamily: $fontFamilyB;
+// loading
+$loadingColor: #4c6692;
+$loadingFSize: 40px;
+// nav Name Animation
+$nameAnimationFSize: 20em;
+$nameAnimationColor: $colorOne;
+$nameAnimationFillColor: rgba(72, 138, 20, 0);
+$nameAnimationStrokeColor: $colorOne;
+$nameAnimationFillChangeColor: $colorOne;
+$nameAnimationStrokeChangeColor: rgba(150, 14, 138, 0);
+// about me
+$aboutMeH1FSize: 1.8em;
+$aboutMePFSize: 1.2em;
+$aboutMePTabletFSize: 1.1em;
+$aboutMeButtonBgcolor: $colorTwo;
+$aboutMeButtonShadowColor: #444;
+$aboutMeButtonAfterColor: #262626;
+// my projects
+
+//contact
+$contactInputColor: #2c2c2c;
+$contactInputFSize: 15px;
+$contactInputBgcolor: $colorthree;
+$contactInputShadowColor: #d48b8b69;
+$contactInputColorHover: #2c2c2c;
+$contactInputBgcolorHover: #fff;
+$contactInputShadowColorHover: #d48b8bbc;
+$contactSubmitColor: #2c2c2c;
+$contactSubmitBgcolor: #ccc;
+$contactSubmitFSize: 1rem;
+$contactSubmitFWeight: 600;
+$contactSubmitBorderColor: #c0c0c0;
+$contactSubmitColorHover: #000;
+$contactSubmitBgcolorHover: #c0c0c0;
+$contactSubmitShadowColorHover: rgba(0, 0, 0, 0.15);
+// footer
+$footerBgcolor: $colorTwo;
+
+// projects page
+$projectH1ShadowColor: $colorthree;
+$projectH1FSize: 5em;
+$projectH1FSizeTable: 4em;
+$projectH1FSizeMiniTablet: 3.5em;
+$projectH1FSizeMobile: 2.5em;
+$projectH1FWeight: 900;
+
+$projectPFSize: 1.5em;
+$projectPFSizeTable: 1.2em;
+$projectPFSizeMiniTablet: 1em;
+$projectPFSizeMobile: 0.9em;
+
+$projectButtonFFamily: "Open Sans";
+$projectButtonFWeight: 600;
+$projectButtonShadowColor: rgba(0, 0, 0, 0.02);
+$projectButtonBorderColor: rgba(0, 0, 0, 0.1);
+$projectButtonColor: rgba(0, 0, 0, 0.85);
+$projectButtonFFamily: "Open Sans";
+$projectButtonBgcColor: $colorthree;
+$projectButtonFSize: 16px;
+$projectButtonFWeight: 600;
+
+
+
+
+
+
+
+
+
+// media queries
+@mixin extraScreen {
+    @media (max-width:1400px) {
+        @content;
+    }
+}
+/* 
+@include extraScreen {}
+*/
+@mixin largeScreen {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+/* 
+@include largeScreen {}
+*/
+@mixin laptopScreen {
+    @media (max-width:1000px) {
+        @content;
+    }
+}
+/* 
+@include laptopScreen {}
+*/
+@mixin laptopScreenB {
+    @media (max-width:992px) {
+        @content;
+    }
+}
+/* 
+@include laptopScreenB {}
+*/
+@mixin tablet {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+/* 
+@include tablet {}
+*/
+@mixin miniTablet {
+    @media (max-width:650px) {
+        @content;
+    }
+}
+/* 
+@include miniTablet {}
+*/
+@mixin mobile {
+    @media (max-width:500px) {
+        @content;
+    }
+}
+/* 
+@include mobile {}
+*/
+@mixin aboveTablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+/* 
+@include aboveTablet {}
+*/
+
+
+// _contact.scss file
+
+
+%inputContact {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: $contactInputColor;
+    background: $contactInputBgcolor;
+    font-size: $contactInputFSize;
+    box-shadow:
+        0px 0px 0px 1px $contactInputShadowColor,
+        0px 4px 8px $contactInputShadowColor,
+        0px 8px 16px $contactInputShadowColor,
+        0px 16px 32px $contactInputShadowColor;
+    border-radius: 5px;
+    font-family: $fontFamilyB;
+}
+
+%inputContactHover {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: $contactInputColorHover;
+    background: $contactInputBgcolorHover;
+    font-size: 16px;
+    box-shadow:
+        0px 0px 0px 1px $contactInputShadowColorHover,
+        0px 4px 8px $contactInputShadowColorHover,
+        0px 8px 16px $contactInputShadowColorHover,
+        0px 16px 32px $contactInputShadowColorHover;
+    border-radius: 5px;
+    font-family: $fontFamilyB;
+}
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// _tooltipIcons.scss file
+%boxIconBefore {
+    position: absolute;
+    background-color: #333;
+    margin-top: 61px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    height: 20px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+/* 
+@extend %boxIconBefore;
+*/
+
+%boxIconAfter {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 7px solid #333;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(225deg);
+    margin-top: 40px;
+}
+
+/* 
+@extend %boxIconAfter;
+*/
+
+// _welcome.scss file
+@mixin creatorStyle($width, $fontSize, $color, $transition: 2s) {
+    width: $width;
+    text-align: center;
+    font-size: $fontSize;
+    text-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        2px -2px 2px white,
+        -2px -2px 2px white,
+        4px 4px 2px $color,
+        -4px 4px 2px $color,
+        4px -4px 2px $color,
+        -4px -4px 2px $color;
+    transition: all $transition;
+    font-family: $cratorFFamily;
+}
+/* 
+@include creatorStyle(200px, 50px, purple);
+*/
+
+@mixin iconOnWelcomeScreenStyle($width, $height, $left, $transition: 1s) {
+    width: $width;
+    height: $height;
+    left: $left;
+    opacity: 0;
+    transition: all $transition;
+}
+
+/* 
+@include iconOnWelcomeScreenStyle(200px, 50px, purple, 0s);
+*/
+
+// _body.scss file
+
+%jumpPoint {
+    position: absolute;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+}
+/* 
+@extend %jumpPoint;
+*/

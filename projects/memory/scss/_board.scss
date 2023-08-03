@@ -1,0 +1,107 @@
+div.board {
+    display: inline-grid;
+    overflow: hidden;
+    background-color: #e4e4e4;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 12px;
+    direction: ltr;
+
+    div {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5em;
+        font-weight: bold;
+        color: white;
+        border-radius: 12px;
+        transition: 0.3s;
+        box-shadow: inset 0px 0px 8px black;
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 5px #000000);
+        
+        @include tablet {
+            width: 45px;
+            height: 45px;
+            font-size: 2em;
+        }
+
+        &:hover {
+            filter: brightness(50%) drop-shadow(5px 5px 5px #323232);
+        }
+
+        span {
+            display: none;
+            pointer-events: none;
+        }
+    }
+
+    div.showing {
+        background: #e26000;
+        transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+
+        span {
+            display: initial;
+        }
+    }
+
+    div.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+        opacity: 0;
+        border-radius: 12px;
+        box-shadow: inset 0px 0px 8px black;
+        cursor: pointer;
+        transition: 0.3s;
+
+        @include tablet {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    img.showing {
+        opacity: 1;
+        transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    img.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.active {
+    background-color: #5919c7 !important;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.winner {
+    font-size: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoom-in 2s;
+}
+

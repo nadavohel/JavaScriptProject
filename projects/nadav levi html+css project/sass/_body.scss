@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2 !important;
+
+    font-weight: 300;
+    /* width: 100vw; */
+    font-family: 'Roboto',
+            sans-serif;
+}
+ul {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+:root {
+    --bs-body-color: #0d0d0d !important;
+    --bs-body-font-family: 'Roboto',
+            sans-serif !important;
+}
+.bold {
+    font-weight: 900;
+}
+
+.bgc-purple {
+    background-color: #9453a6;
+}
+
+.bgc-green {
+    background-color: #8cbf3f;
+}
+
+.bgc-black {
+    background-color: #0d0d0d;
+}
+
+.bgc-yellow {
+    background-color: #f2cc0f;
+}
+
+.color-purple {
+    color: #9453a6;
+}
+.color-green {
+    color: #8cbf3f;
+}
+.color-black {
+    color: #0d0d0d;
+}
+.color-yellow {
+    color: #f2cc0f;
+}
+.color-white {
+    color: #f2f2f2;
+}
+
+.font-header-main {
+    font-family: 'Henny Penny',
+    cursive;
+}
+.font-header-second {
+    font-family: 'Pattaya',
+    sans-serif;
+}
+.font-body {
+    font-family: 'Roboto',
+    sans-serif;
+}
+h1,.h1{
+    font-family: 'Henny Penny', cursive;
+    font-size: 2.5rem;
+}
+h2,h3,h4,h5,h6,.h2{
+    font-family: 'Pattaya',
+            sans-serif;
+}

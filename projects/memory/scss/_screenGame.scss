@@ -1,0 +1,59 @@
+#screenContainer {
+    width: 700px;
+    height: 200px;
+    position: relative;
+    right: 50%;
+    transform: translate(50%);
+    margin-top: 20px;
+
+    div {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    div#playerImgOneContainer {
+        @extend %playerImgContainer;
+        right: 0;
+        opacity: 1;
+    }
+
+    div#playerImgTwoContainer {
+        @extend %playerImgContainer;
+        left: 0;
+        opacity: 0;
+    }
+
+    p#nameTurn {
+        @include nameAndResult;
+        transition: opacity 0.4s, left 0.4s, right 0.4s;
+        padding-top: 35px;
+    }
+
+    p#resultsScreen {
+        @include nameAndResult(80px, 5px);
+        transition: left 0.4s, top 0.4s, opacity 0.4s width 0.4s, font-size 0.4s;
+    }
+}
+
+div#timePlayerContainer {
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    right: 50%;
+    top: 100px;
+    transform: translate(50%);
+    z-index: 0;
+    opacity: 0;
+
+    p#playerOneTime {
+        @extend %playerTime;
+        right: 30px;
+    }
+    
+    p#playerTwoTime {
+        @extend %playerTime;
+        left: 30px;
+    }
+}

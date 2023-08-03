@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+$bgc: #3586ff;
+$winnerBgc: #fff;
+$winnerWordColor: #5E63BA;
+$gameBgc: #ffffff5f;
+$bottomForLatter: #000;
+$guesses: #ff0000;
+$latterButtonBgc: #5E63BA;
+$latterButtonBgcHover: #8286c9;
+$subjectsBoxShadowA: chocolate;
+$subjectsBoxShadowB: lightseagreen;
+$subjectsBoxShadowC: hotpink;
+$subjectsBoxShadowD: palegoldenrod;
+$subjectsPTextShadow: #fff;
+
+//Mixin Media
+@mixin breakPointsOne {
+    @media (max-width:860px) {
+        @content;
+    }
+}
+
+@mixin breakPointsTwo {
+    @media (max-width:820px) {
+        @content;
+    }
+}
+@mixin breakPointsThree {
+    @media (max-width:670px) {
+        @content;
+    }
+}
+
+@mixin breakPointsFour {
+    @media (max-width:540px) {
+        @content;
+    }
+}
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* @extend %flexCenter; */
+@mixin positions($background, $bottomOrTop: top, $height: 100vh,  $position: absolute) {
+    position: $position;
+    $bottomOrTop: 0;
+    left: 0;
+    width: 100vw;
+    height: $height;
+    background: $background
+}
+/* @include positions(50px, 50px, #fc0); */
+// _bgc.scss file
+@mixin airDiv($zIndex, $opacity, $animation, $bottom) {
+    z-index: $zIndex;
+    opacity: $opacity;
+    animation-delay: $animation;
+    bottom: $bottom;
+}
+

@@ -1,0 +1,109 @@
+.containerLeftSmall {
+    top: 70px;
+    left: 0px;
+    width: 60px;
+    height: 45px;
+    transform: skewY(0deg);
+    box-shadow:
+        0px -1px 0 #444,
+        0px -2px 0 #444,
+        0px -3px 0 #444,
+        0px -4px 0 #444,
+        0px -5px 0 #444,
+        0px -6px 0 #444;
+    transition: .5s;
+}
+.containerLeftSmallImg {
+    width: 100%;
+    height: 100%;
+}
+.containerLeftSmall:hover {
+    transform: skewY(0deg);
+    box-shadow:
+        0px -1px 0 #444,
+        0px -2px 0 #444,
+        0px -3px 0 #444,
+        0px -4px 0 #444,
+        0px -5px 0 #444,
+        0px -6px 0 #444;
+    width: 65px;
+    height: 50px;
+    margin-top: -2.5px;
+    margin-left: -2.5px;
+}
+
+.containerLeftSmall::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    border-bottom: 2px solid #262626;
+    border-right: 2px solid #262626;
+    filter: blur(5px);
+}
+
+@media (max-width: 1400px) {
+    .containerLeftSmall {
+        top: 60px;
+        left: 0px;
+        width: 51.42px;
+        height: 38.56px;
+    }
+
+    .containerLeftSmall:hover {
+        width: 56.42px;
+        height: 43.56px;
+    }
+
+    .containerLeftSmall::after {
+        width: 42.85px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .containerLeftSmall {
+        top: 50px;
+        left: 0px;
+        width: 42.83px;
+        height: 32.12px;
+    }
+
+    .containerLeftSmall:hover {
+        width: 47.83px;
+        height: 37.12px;
+    }
+
+    .containerLeftSmall::after {
+        width: 35.69px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerLeftSmall {
+        top: 38.4px;
+        left: 0px;
+        width: 32.9px;
+        height: 24.67px;
+    }
+
+    .containerLeftSmall:hover {
+        width: 37.9px;
+        height: 29.67px;
+    }
+
+    .containerLeftSmall::after {
+        width: 27.41px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerLeftSmall {
+        left: 20vw;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.frame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    direction: rtl;
+    background-color: #ffffff00;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+}
+
+.board {
+    display: inline-grid;
+    border-radius: 3px;
+    border: 4px solid;
+    overflow: hidden;
+    background-color: #464646;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.board div {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 8px;
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="frame">
+        <h1>Snake Game</h1>
+        <div class="board">
+    
+            
+        </div>        
+    </div>
+
+
+    <script>
+
+    let b = [135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 724, 774, 824, 874, 924, 974, 1024, 1074, 1124, 1174, 1224, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 2113, 2114, 2115, 2116, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390,760,810,860,910,960,1010,1060,1059,1058,1057,1056,1055,1054,757,707,657,607,557,558,559,560, 561,562,692,693,694,695,696,697,794,793,792,791,790,789,788,738,688,1681, 1682, 1683, 1684, 1685, 1686, 1687, 1688,1738,1788,1838,1888,1880,1879,1929,1930,1980,1979, 1369,1419,1418,1417,1467,1517,1516,1515,1565,1185,1186,1187,1188,1189,1190,677,627,577,527,477,476,475,474,473,472,471,470,520,570,620,670,669,668,667,717,2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220,2170,2120,2070,2020,1970,1962,1963,1964,1965,1966,1967,1968
+];
+    let a = 50;
+    let height = a;
+    let width = a;
+    const board = document.querySelector('.board');
+    board.style.gridTemplateColumns = `repeat(${width}, 1fr)`;
+    for (let i = 0; i < width * height; i++) {
+        const div = document.createElement("div");
+        board.appendChild(div);    
+        div.innerHTML = i;
+        if (b.includes(i)) {
+            div.style.backgroundColor = "white";
+        }
+    }
+
+
+
+    </script>
+</body>
+</html>

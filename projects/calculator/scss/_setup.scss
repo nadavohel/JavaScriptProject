@@ -1,0 +1,42 @@
+$fontFamily: sans-serif;
+$textH1Color: rgb(210, 206, 255);
+$textHoverColor: rgb(207, 215, 231);
+$textErrorColor: rgb(210, 149, 149);
+$calculatorBgc: rgba(18, 175, 203, 0.24);
+$backgroundLinearGradient: rgb(73, 42, 210), rgb(169, 117, 241);
+/* $backgroundLinearGradient: rgb(73, 42, 210), rgb(241, 117, 117); */
+
+
+//Mixin Media Queries
+@mixin mobile {
+    @media (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin smallMobile {
+    @media (max-width:350px) {
+        @content;
+    }
+}
+
+// _calculator.scss file
+%flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin resShow($width, $height) {
+    width: $width;
+    height: $height;
+    margin: 3px;
+    font-size: 26px;
+    padding: 0 8px;
+}
+
+@mixin heroContainer($width) {
+    width: $width;
+    height: 500px;
+    padding: 18px;
+}

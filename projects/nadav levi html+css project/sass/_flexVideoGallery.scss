@@ -1,0 +1,207 @@
+/* ************************************************************************* */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 440px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 20px;
+    width: 1360px;
+    margin: 0 auto;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 440px;
+    height: 270px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 400px ;
+    height: 230px ;
+    background: #000;
+    border-radius: 10px;
+} 
+/* --youtube video gallery-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(3, 377px);
+    grid-template-rows: repeat(2, 231px);
+    gap: 17px;
+    width: 1165px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 377px;
+    height: 231px;
+    padding: 17px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 343px;
+    height: 197px;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(3, 311px);
+    grid-template-rows: repeat(2, 191px);
+    gap: 14px;
+    width: 961px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 311px;
+    height: 191px;
+    padding: 14px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 283px;
+    height: 163px;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(3, 241px);
+    grid-template-rows: repeat(2, 148px);
+    gap: 11px;
+    width: 745px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 241px;
+    height: 148px;
+    padding: 11px;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 219px;
+    height: 126px;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(2, 18vw);
+    gap: 1vw;
+    width: 92vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 30vw;
+    height: 18vw;
+    padding: 1vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 28vw;
+    height: 16vw;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 600px)------------------------ */
+@media (max-width: 600px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(2, 44vw);
+    grid-template-rows: repeat(3, 26vw);
+    gap: 2vw;
+    width: 90vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 44vw;
+    height: 26vw;
+    padding: 1vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 42vw;
+    height: 24vw;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 600px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 500px)------------------------ */
+@media (max-width: 500px) {
+/* ******************************************** */
+/* --youtube video gallery-- */
+section.grid-video-gallery-container {
+    grid-template-columns: repeat(1, 90vw);
+    grid-template-rows: repeat(6, 53vw);
+    gap: 2vw;
+    width: 90vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery {
+    width: 90vw;
+    height: 53vw;
+    padding: 2vw;
+}
+
+section.grid-video-gallery-container div.grid-video-gallery iframe {
+    width: 86vw;
+    height: 49vw;
+    background: #000;
+    border-radius: 10px;
+}
+/* --youtube video gallery-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 500px)------------------------ */
+/* ************************************************************************* */

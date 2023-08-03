@@ -1,0 +1,273 @@
+/* ************************************************************************* */
+/* --flex main index container-- */
+section.flex-main-index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1392px;
+}
+
+section.flex-main-index-container div.flex-main-index {
+    border-radius: 10px;
+    padding: 20px;
+    height: 520px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 836px;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 796px;
+    height: 480px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 536px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 500px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 240px;
+    margin-left: 125px;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --flex main index container-- */
+section.flex-main-index-container {
+        width: 1192px;
+        }
+section.flex-main-index-container div.flex-main-index {
+    height: 450px;
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 726px;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 686px;
+    height: 410px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 454px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 428px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 206px;
+    margin-left: 103px;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --flex main index container-- */
+section.flex-main-index-container {
+    width: 992px;
+}
+section.flex-main-index-container div.flex-main-index {
+    height: 372px;
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 600px;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 560px;
+    height: 332px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 372px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 334px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 170px;
+    margin-left: 85px;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --flex main index container-- */
+section.flex-main-index-container {
+    width: 768px;
+    margin: 0 auto;
+}
+section.flex-main-index-container div.flex-main-index {
+    height: 288px;
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 465px;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 425px;
+    height: 248px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 288px;
+}
+
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 265px;
+    margin-left: -10px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 132px;
+    margin-left: 66px;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --flex main index container-- */
+section.flex-main-index-container {
+    width: 80vw;
+    margin: 0 auto;
+}
+    
+section.flex-main-index-container div.flex-main-index {
+    height: 220px;
+    padding: 10px;
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 48vw;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 45vw;
+    height: 200px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 30vw;
+}
+
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 29vw;
+    margin-left: -10px;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 13vw;
+    margin-left: 6.5vw;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 500px)------------------------ */
+@media (max-width: 500px) {
+/* ******************************************** */
+/* --flex main index container-- */
+section.flex-main-index-container {
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+section.flex-main-index-container div.flex-main-index {
+    height: 240px;
+    padding: 10px;
+}
+/* --flex main index container-- */
+/* ******************************************** */
+/* --flex main index iframe-- */
+section.flex-main-index-container div.flex-main-index-iframe {
+    width: 80vw;
+    margin-bottom: 10px;
+}
+
+section.flex-main-index-container div.flex-main-index-iframe iframe {
+    width: 75vw;
+    height: 220px;
+}
+/* --flex main index iframe-- */
+/* ******************************************** */
+/* --flex main index mardi gras-- */
+section.flex-main-index-container div.flex-main-index-mardi-gras {
+    width: 80vw;
+}
+
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-1 {
+    width: 48vw;
+    margin-left: 14vw;
+}
+
+section.flex-main-index-container div.flex-main-index-mardi-gras img.flex-main-index-mardi-gras-2 {
+    width: 23vw;
+    margin-left: 25vw;
+}
+/* --flex main index mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 500px)------------------------ */
+/* ************************************************************************* */

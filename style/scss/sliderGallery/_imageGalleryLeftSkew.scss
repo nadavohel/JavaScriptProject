@@ -1,0 +1,121 @@
+.containerLeftSkew {
+    top: 50px;
+    left: 410px;
+    width: 150px;
+    height: 112.5px;
+    transform: skewY(-5deg);
+    box-shadow:
+        -1px -1px 0 #444,
+        -2px -2px 0 #444,
+        -3px -3px 0 #444,
+        -4px -4px 0 #444,
+        -5px -5px 0 #444,
+        -6px -6px 0 #444;
+    transition: .5s;
+}
+.containerLeftSkewImg {
+    width: 100%;
+    height: 100%;
+}
+.containerLeftSkew:hover {
+    transform: skewY(0deg);
+    box-shadow:
+        0px -1px 0 #444,
+        0px -2px 0 #444,
+        0px -3px 0 #444,
+        0px -4px 0 #444,
+        0px -5px 0 #444,
+        0px -6px 0 #444;
+    width: 166px;
+    height: 120.5px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.containerLeftSkew::after {
+    content: '';
+    width: 180px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(36px);
+    border-bottom: 2px solid #262626;
+    border-right: 2px solid #262626;
+    filter: blur(5px);
+}
+
+
+@media (max-width: 1400px) {
+    .containerLeftSkew {
+        top: 42.85px;
+        left: 351.37px;
+        width: 128.55px;
+        height: 96.41px;
+    }
+
+    .containerLeftSkew:hover {
+        width: 144.55px;
+        height: 112.41px;
+    }
+
+    .containerLeftSkew::after {
+        width: 154.26px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .containerLeftSkew {
+        top: 35.69px;
+        left: 292.69px;
+        width: 107.08px;
+        height: 80.31px;
+    }
+
+    .containerLeftSkew:hover {
+        width: 123.08px;
+        height: 96.31px;
+    }
+
+    .containerLeftSkew::after {
+        width: 128.47px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerLeftSkew {
+        top: 27.41px;
+        left: 224.786px;
+        width: 82.24px;
+        height: 61.68px;
+    }
+
+    .containerLeftSkew:hover {
+        width: 92.24px;
+        height: 71.68px;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+
+    .containerLeftSkew::after {
+        width: 98.66px;
+        height: 4px;
+    }
+}
+@media (max-width: 768px) {
+    .containerLeftSkew {
+        left: 174.786px;
+    }
+}
+@media (max-width: 650px) {
+    .containerLeftSkew {
+        left: 104.2px;
+    }
+}
+@media (max-width: 550px) {
+    .containerLeftSkew {
+        left: 0;
+    }
+}

@@ -1,0 +1,16 @@
+$colorInput: rgb(0, 0, 0);
+$boxShadowInputA: purple;
+$boxShadowInputB: rgb(187, 158, 187);
+$buttonShadowA: steelblue;
+$buttonShadowB: rgb(187, 158, 187);
+$color: rgb(0, 0, 0);
+$textShadow: rgb(255, 255, 255);
+$hoverDeleteA: #ffffff;
+$hoverDeleteB: rgb(0, 0, 0);
+
+
+@mixin laptop {
+    @media (max-width:1000px) {
+        @content;
+    }
+}

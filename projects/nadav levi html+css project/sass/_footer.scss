@@ -1,0 +1,411 @@
+/* ************************************************************************* */
+/* --footer main container-- */
+footer {
+    position: fixed;
+    left: 50%;
+    top: 95vh;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    z-index: 5000;
+    width: 1420px;
+    height: 22vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    width: 1410px;
+    margin-top: -11px ;
+}
+/* div style like hr */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-height: 1301px)------------------------ */
+@media (min-height: 1601px){
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    position: relative;
+    top:0px;    
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-height: 1301px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-width: 1400px)------------------------ */
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 1400px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 16vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1300px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 1300px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1200px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 1200px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 17.8vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 19vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 900px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 870px) @@@@@@ */
+@media (min-width: 1400px) and (max-height: 870px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    position: relative;
+    top: 0px;
+    height: 135px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px){
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    width: 1210px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    width: 1205px;
+}
+/* div style like hr */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1400px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1400px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 16vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1300px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1300px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1200px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1200px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 17.8vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 1400px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media  (max-width: 1400px) and (max-height: 900px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    width: 1003px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    width: 992px;
+}
+/* div style like hr */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1400px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1400px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 16vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1300px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1300px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1200px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1200px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18.5vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 900px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 21vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    width: 778px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    width: 768px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1400px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1400px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 16vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1300px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1300px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1200px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1200px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.6vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1100px) @@@@@@ */
+@media (max-width: 1200px) and (max-height: 1100px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 1000px) @@@@@@ */
+@media (max-width: 992px) and (max-height: 1000px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 18.7vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* @@@@@@ (max-height: 900px) @@@@@@ */
+@media (max-width: 992px) and (max-height: 900px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    height: 20.8vh;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    width: 100vw;
+    height: 22vw;
+    display: block;
+}
+/* left: 50%;
+top: 95vh;
+transform: translate(-50%, -50%);
+background-color: #f2f2f2;
+z-index: 5000;
+width: 1420px;
+height: 22vh; */
+/* --footer main container-- */
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    width: 100vw;
+} 
+nav div.divider {
+    width: 100vw;
+}
+/* div style like hr */
+/* ******************************************** */
+}
+
+@media (max-width: 768px) {
+/* ******************************************** */
+/* div style like hr */
+footer div.divider {
+    position: absolute;
+    margin-top: -12px;
+}
+/* div style like hr */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* --------@media (min-width: 768px) and (max-height: 800px)-------- */
+@media (min-width: 768px) and (max-height: 800px) {
+/* ******************************************** */
+/* --footer main container-- */
+footer {
+    position: relative;
+    top: 0px;
+}
+/* --footer main container-- */
+/* ******************************************** */
+}
+/* --------@media (min-width: 768px) and (max-height: 800px)-------- */
+/* ************************************************************************* */

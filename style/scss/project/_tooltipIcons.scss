@@ -1,0 +1,146 @@
+div#divBoxForIconsHover {
+    position: fixed;
+    display: flex;
+    width: 1000px;
+    display: flex;
+    opacity: 0.7;
+    top: 270px;
+    transition: left 0s, top 0s;
+    z-index: 5555555;  // חמסה עלינו!!!!!!!
+    @include laptopScreen {
+        top: 350px;
+    }
+
+    .BoxForIcon {
+        height: 40px;
+    }
+
+    div#ForIconsHover01 {
+        width: 50px;
+
+        &:hover::before {
+            content: 'HTML5';
+            @extend %boxIconBefore;
+            margin-left: -15px;
+            width: 60px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 13px;
+        }
+
+    }
+
+    div#ForIconsHover02 {
+        width: 60px;
+
+        &:hover::before {
+            content: 'Cascading Style Sheets';
+            @extend %boxIconBefore;
+            margin-left: -55px;
+            width: 160px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 23px;
+        }
+    }
+
+    div#ForIconsHover03 {
+        width: 60px;
+
+        &:hover::before {
+            content: 'Sass';
+            @extend %boxIconBefore;
+            margin-left: 9px;
+            width: 30px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 22px;
+        }
+    }
+
+    div#ForIconsHover04 {
+        width: 60px;
+
+        &:hover::before {
+            content: 'Bootstrap';
+            @extend %boxIconBefore;
+            margin-left: -10px;
+            width: 68px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 22px;
+        }
+    }
+
+    div#ForIconsHover05 {
+        width: 60px;
+
+        &:hover::before {
+            content: 'Javascript';
+            @extend %boxIconBefore;
+            margin-left: -10px;
+            width: 72px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 24px;
+        }
+    }
+
+    div#ForIconsHover06 {
+        width: 120px;
+
+        &:hover::before {
+            content: 'TypeScript';
+            @extend %boxIconBefore;
+            margin-left: 18px;
+            width: 76px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 52px;
+        }
+    }
+
+    div#ForIconsHover07 {
+        width: 80px;
+
+        &:hover::before {
+            content: 'Object Oriented Programming';
+            @extend %boxIconBefore;
+            margin-left: -68px;
+            width: 216px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 33px;
+        }
+    }
+
+    div#ForIconsHover08 {
+        width: 60px;
+
+        &:hover::before {
+            content: 'React Api';
+            @extend %boxIconBefore;
+            margin-left: -10px;
+            width: 68px;
+        }
+
+        &:hover::after {
+            @extend %boxIconAfter;
+            margin-left: 22px;
+        }
+    }
+}

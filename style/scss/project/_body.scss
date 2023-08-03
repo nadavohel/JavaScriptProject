@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    @include tablet {
+        height: 100vh;
+        background-color: $mainBgcolor;
+    }
+
+    nav {
+        width: 100vw;
+        top: 0px;
+        background-color: $navBgcolor;
+        opacity: 0;
+        z-index: 10000;
+        position: fixed;
+    }
+    
+    main {
+        position: relative;
+        width: 100vw;
+        background-color: $mainBgcolor;
+        transition: top 0s;
+        opacity: 1;
+        height: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 306px;
+    
+        
+        @include laptopScreen {
+            top: 386px;
+        }
+        @include tablet {
+            top: 80px !important;
+        }
+    }
+}
+
+
+

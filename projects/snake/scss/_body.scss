@@ -1,0 +1,23 @@
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #383838;
+    user-select: none;
+    position: relative;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 16px;
+}

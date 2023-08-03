@@ -1,0 +1,99 @@
+section#contact {
+    @extend %flexCenter;
+    height: 520px;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    font-family: $fontFamilyC;
+
+    @include tablet {
+        width: 100vw;
+    }
+    div.title {
+
+        h2 {
+            font-size: 2.5em;
+            font-family: $fontFamilyA;
+            filter: $filters;
+        }
+
+        p {
+            direction: rtl;
+        }
+    }
+
+    div.form {
+        width: 100%;
+        max-width: 700px;
+        margin-top: 20px;
+
+        @include tablet {
+            width: 90vw;
+        }
+
+        div.row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+
+            input {
+                font-family: $fontFamilyB;
+
+                @extend %inputContact;
+
+                &:hover {
+                    @extend %inputContactHover;
+                }
+            }
+        }
+        
+        div.row2 {
+            @extend %flexCenter;
+            width: 100%;
+            margin-top: 20px;
+
+            textarea {
+                @extend %inputContact;
+                resize: none;
+                height: 200px;
+
+                &:hover {
+                    @extend %inputContactHover;
+                }
+            }
+
+            input[type='submit'] {
+
+                height: 40px;
+                margin: 10px;
+                width: 150px;
+                line-height: 43px;
+                padding: 0 40px;
+                display: inline-block;
+                font-size: $contactSubmitFSize;
+                font-weight: $contactSubmitFWeight;
+                color: $contactSubmitColor;
+                background: $contactSubmitBgcolor;
+                border-radius: 5px;
+                border: 0.5px solid $contactSubmitBorderColor;
+                font-family: $fontFamilyD;
+                cursor: pointer;
+
+
+                &:hover {
+                    color: $contactSubmitColorHover;
+                    background-color: $contactSubmitBgcolorHover;
+                    box-shadow: 
+                        inset 0px 2px 4px $contactSubmitShadowColorHover,
+                        inset 0px 4px 8px $contactSubmitShadowColorHover,
+                        inset 0px 8px 16px $contactSubmitShadowColorHover;
+                    transition: 0.2s;
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+}
+

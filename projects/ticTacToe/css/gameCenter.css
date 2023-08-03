@@ -1,0 +1,350 @@
+section#gameCenter {
+    height: 20vh;
+    position: absolute;
+    top: 150px;
+    height: 210px;
+    width: 520px;
+    left: 50%;
+    transform: translate(-50%);
+    /* background-color: aqua; */
+}
+section#gameCenter form {
+    position: absolute;
+    height: 210px;
+    width: 520px;
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(255, 0, 0, 0);
+    /* background-color: #de6969; */
+}
+section#gameCenter form input#namePlayerOne,
+section#gameCenter form input#namePlayerTwo,
+section#gameCenter form input[value="let's play!"] {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    top: 40px;
+}
+section#gameCenter form input[value="let's play!"] {
+    z-index: 500;
+}
+section#gameCenter form input[name="namePlayerOne"] {
+    left: 50px;
+    cursor: pointer;
+}
+section#gameCenter form input[name="namePlayerTwo"] {
+    left: 270px;
+    cursor: pointer;
+}
+section#gameCenter form input[type="button"] {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 120px;
+    cursor: pointer;
+}
+section#gameCenter form#formeGame div.radioContainer{
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30px;
+    width: 392px;
+}
+section#gameCenter form input#classicGame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0;
+}
+section#gameCenter form label[for="classicGame"] {
+    position: absolute;
+    left: 34px;
+    top: 5px;
+    cursor: pointer;
+}
+section#gameCenter form input#exclusiveGame {
+    position: absolute;
+    left: 128px;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0;
+}
+section#gameCenter form label[for="exclusiveGame"] {
+    position: absolute;
+    left: 160px;
+    top: 5px;
+    cursor: pointer;
+}
+section#gameCenter form input#onlineGame {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0;
+}
+section#gameCenter form label[for="onlineGame"] {
+    position: absolute;
+    left: 304px;
+    top: 5px;
+    cursor: pointer;
+    
+}
+section#gameCenter form#formeGame input#classicGame:hover::before {
+    content: 'Classic game mode where two players play against each other. \A Everyone in turn will mark a square. The first to mark a row, row or slant WIN!!! \A\A The best player wins';
+    white-space: pre-wrap;
+    position: absolute;
+    background-color: #333;
+    margin-top: -170px;
+    margin-left: -16px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 418px;
+    height: 110px;
+    border: 2px solid var(--whiteAndBlackColor);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+section#gameCenter form#formeGame input#exclusiveGame:hover::before {
+    white-space: pre-wrap;
+    content: 'This is where the game gets complicated. Each one has three hearts and every time the player eats the other player will lose a heart. Whoever finishes the three hearts will not be able to eat again. Each board has a hidden heart and also a bomb that drops a heart \A COOL GAME!';
+    position: absolute;
+    background-color: #333;
+    margin-top: -170px;
+    margin-left: -148px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 418px;
+    height: 110px;
+    border: 2px solid var(--whiteAndBlackColor);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+section#gameCenter form#formeGame input#onlineGame:hover::before {
+    white-space: pre;
+    content: '\A Don`t rush me!!! \A\A I`m just learning. It will take more time :)';
+    position: absolute;
+    background-color: #333;
+    margin-top: -170px;
+    margin-left: -286px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 418px;
+    height: 110px;
+    border: 2px solid var(--whiteAndBlackColor);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+section#gameCenter div#heartOfPlayer p#errorForme {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    width: 300px;
+    height: 30px;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(222, 112, 112);
+}
+
+section#gameCenter div#heartOfPlayer button#playAnother {
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translate(-50%);
+    width: 180px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 470px) {
+    section#gameCenter {
+        top: 100px;
+        height: 190px;
+        width: 100vw;
+    }
+
+    section#gameCenter form {
+        position: absolute;
+        height: 190px;
+        width: 100vw;
+    }
+
+    section#gameCenter form input#namePlayerOne,
+    section#gameCenter form input#namePlayerTwo,
+    section#gameCenter form input[value="let's play!"] {
+        width: 30vw;
+        height: 30px;
+        top: 5px;
+    }
+
+
+    .inputNameMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ee2424;
+        width: 100vw;
+        height: 40px;
+        position: relative;
+    }
+    section#gameCenter form input[name="namePlayerOne"] {
+        left: 10px;
+    }
+
+    section#gameCenter form input[name="namePlayerTwo"] {
+        right: 200px;
+        left: 60vw;
+    }
+
+
+
+    section#gameCenter form input[type="button"] {
+        top: 200px;
+    }
+
+    section#gameCenter form#formeGame div.radioContainer {
+        position: absolute;
+       /*  background-color: aqua; */
+        top: 42px;
+        left: 0;
+        transform: translate(0,0);
+        height: 230px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .radioContainerFlexMobile{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 140px;
+        height: 35px;
+        /* background-color: #fff; */
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    section#gameCenter form input#classicGame {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        margin: 0;
+        z-index: 500;
+    }
+
+    section#gameCenter form label[for="classicGame"] {
+        position: absolute;
+        left: 34px;
+        top: 7px;
+        cursor: pointer;
+        z-index: 500;
+    }
+
+    section#gameCenter form input#exclusiveGame {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        margin: 0;
+        z-index: 500;
+    }
+
+    section#gameCenter form label[for="exclusiveGame"] {
+        position: absolute;
+        left: 34px;
+        top: 7px;
+        cursor: pointer;
+        z-index: 500;
+    }
+
+    section#gameCenter form input#onlineGame {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    section#gameCenter form label[for="onlineGame"] {
+        position: absolute;
+        left: 34px;
+        top: 7px;
+        cursor: pointer;
+
+    }
+
+
+
+
+    section#gameCenter form#formeGame input#classicGame:hover::before {
+        display: none;
+    }
+
+    section#gameCenter form#formeGame input#exclusiveGame:hover::before {
+        display: none;
+    }
+
+    section#gameCenter form#formeGame input#onlineGame:hover::before {
+        display: none;
+    }
+
+    section#gameCenter div#heartOfPlayer p#errorForme {
+        width: 100vw;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    section#gameCenter div#heartOfPlayer button#playAnother {
+        position: absolute;
+        left: 50%;
+        top: 160px;
+        transform: translate(-50%);
+        width: 180px;
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        display: none;
+    }
+}

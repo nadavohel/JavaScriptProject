@@ -1,0 +1,274 @@
+/* ************************************************************************* */
+/* --gallery sponser container-- */
+section div.gallery-flex-sponser-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+section h1.sponsers-gallery-header {
+    color: #8cbf3f;
+    font-family: 'Pattaya',
+        sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    text-shadow: 3px 3px 3px #0d0d0d;
+}
+/* --gallery sponser container-- */
+/* ******************************************** */
+/* --logo img disigned and size-- */
+section img.img-logo-sponser-gallery {
+    height: 70px;
+    box-shadow: 3px 3px 3px #0d0d0d;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+section div.flex-sheraton-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+}
+
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-a {
+    height: 70px;
+    box-shadow: 3px 3px 3px #0d0d0d;
+    margin-bottom: 10px;   
+}
+
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-b {
+    height: 70px;
+    box-shadow: 3px 3px 3px #0d0d0d;
+    margin-bottom: 10px;
+}
+/* --logo img disigned and size-- */
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 260px;
+    height: 195px;
+    box-shadow: 3px 3px 11px #8cbf3f;
+    transition: box-shadow 0.3s;
+}
+
+section div.gallery-flex-sponser-container .sponsers-img-gallery:hover {
+    box-shadow: 3px 3px 11px #000000;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+
+section div.gallery-flex-sponser-container+a.go-to-website {
+    font-size: 2rem;
+    color: #9453a6;
+    text-shadow: 2px 2px 2px #0d0d0d;
+    margin-left: 1045px;
+    transition: text-shadow 0.3s, color 0.3s;
+}
+
+section div.gallery-flex-sponser-container+a.go-to-website:hover {
+    text-shadow: 2px 2px 2px #0d0d0d;
+    color: #8cbf3f;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 240px;
+    height: 180px;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+section div.gallery-flex-sponser-container+a.go-to-website {
+    margin-left: 905px;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --gallery sponser container-- */
+section div.gallery-flex-sponser-container {
+    gap: 10px;
+}
+/* --gallery sponser container-- */
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 220px;
+    height: 165px;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+section div.gallery-flex-sponser-container+a.go-to-website {
+    font-size: 1.6rem;
+    margin-left: 782px;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --gallery sponser container-- */
+section div.gallery-flex-sponser-container {
+    gap: 5px;
+}
+/* --gallery sponser container-- */
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 180px;
+    height: 135px;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+section div.gallery-flex-sponser-container+a.go-to-website {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px #0d0d0d;
+    margin-left: 625px;
+}
+
+section div.gallery-flex-sponser-container+a.go-to-website:hover {
+    text-shadow: 1px 1px 1px #0d0d0d;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --gallery sponser container-- */
+section div.gallery-flex-sponser-container {
+    display: grid;
+    grid-template-rows: repeat(2,120);
+    grid-template-columns: repeat(2, 180);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+/* --gallery sponser container-- */
+/* ******************************************** */
+/* --logo img disigned and size-- */
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-a, 
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-b {
+    margin-top: 20px;
+}
+/* --logo img disigned and size-- */
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 180px;
+    height: 135px;
+}
+
+section div.gallery-flex-sponser-container .sponsers-img-gallery-768-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+section div.gallery-flex-sponser-container .sponsers-img-gallery-768-2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+section div.gallery-flex-sponser-container .sponsers-img-gallery-768-3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+section div.gallery-flex-sponser-container .sponsers-img-gallery-768-4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+section div.gallery-flex-sponser-container+a.go-to-website {
+    font-size: 5vw;
+    text-shadow: 0.5px 0.5px 0.5px #0d0d0d;
+    margin-left: 35vw;
+}
+
+section div.gallery-flex-sponser-container+a.go-to-website:hover {
+    text-shadow: 0.5px 0.5px 0.5px #0d0d0d;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 500px)------------------------ */
+@media (max-width: 500px) {
+/* ******************************************** */
+/* --gallery sponser container-- */
+section div.gallery-flex-sponser-container {
+    display: block;
+    margin: 0 auto;
+}
+/* --gallery sponser container-- */
+/* ******************************************** */
+/* --logo img disigned and size-- */
+section img.img-logo-sponser-gallery {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-a {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+section div.flex-sheraton-logo-container img.img-logo-sponser-gallery-b {
+    height: 50px;
+    margin-bottom: 10px;
+}
+/* --logo img disigned and size-- */
+/* ******************************************** */
+/* --gallery img cube disigned and size-- */
+
+section div.gallery-flex-sponser-container .sponsers-img-gallery {
+    width: 100vw;
+    height: 50vw;
+    margin-bottom: 10px;
+    box-shadow: none;
+    margin-left: 0vw;
+}
+
+section div.gallery-flex-sponser-container .sponsers-img-gallery-drop{
+    display: none;
+}
+/* --gallery img cube disigned and size-- */
+/* ******************************************** */
+/* --link to sponser website disigned-- */
+section div.gallery-flex-sponser-container+a.go-to-website{
+    margin-left: 34vw;
+    font-size: 5vw;
+}
+/* --link to sponser website disigned-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 500px)------------------------ */
+/* ************************************************************************* */

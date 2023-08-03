@@ -1,0 +1,679 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap'); */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    background: linear-gradient(147deg, #027bc1, #72c5bb);
+    user-select: none;
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    min-height: 100vh;
+    background: linear-gradient(147deg, #0093e9, #80d0c7);
+}
+
+main {
+    text-align: center;
+    background: linear-gradient(147deg, #0093e9, #80d0c7);
+    width: 100vw;
+} */
+/* #productsSaveContainerIdMobile {
+    display: none;
+} */
+/* .letMeIn{
+    min-height: 80vh;
+} */
+/* [type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+ */
+/* .inputCheckbox:checked+section label,
+.inputCheckbox:not(:checked)+section label {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 40px auto;
+    cursor: pointer;
+    background-color: #efefef;
+    user-select: none;
+} */
+
+/* .inputCheckbox:checked+section label:before,
+.inputCheckbox:not(:checked)+section label:before {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    content: "";
+    background-image: url("./ic-logo.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+    transition: all 0.5s ease;
+} */
+
+/* .inputCheckbox:checked+section label:before {
+    transform: translateX(44px) rotate(-270deg);
+}
+ */
+/* .labelCheckbox {
+    text-align: center;
+    display: inline;
+    position: relative;
+} */
+
+/* .labelCheckbox::before,
+.labelCheckbox::after {
+    position: absolute;
+    font-size: 26px;
+    font-weight: bold;
+    color: #efefef;
+} */
+/* 
+.labelCheckbox::before {
+    content: "Login";
+    top: -48px;
+    left: -100px;
+}
+
+.labelCheckbox::after {
+    content: "Register";
+    top: -48px;
+    right: -135px;
+} */
+
+/* .formCardContainer {
+    width: 440px;
+    height: 450px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    margin: auto;
+    margin-top: 50px;
+} */
+
+/* .cardFlip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+ */
+/* .logInFormContainer,
+.registerFormContainer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+    position: absolute;
+    border-radius: 6px;
+    padding: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+} */
+
+/* .registerFormContainer {
+    transform: rotateY(180deg);
+}
+ */
+/* .inputCheckbox:checked~.formCardContainer .cardFlip {
+    transform: rotateY(180deg);
+}
+ */
+/* .logInFormContainer .formContainer,
+.registerFormContainer .formContainer {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+} */
+
+/* .cardFlip h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+} */
+
+/* .cardFlip .inputBox {
+    position: relative;
+} */
+/* 
+.cardFlip .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+}
+
+.cardFlip .inputBox label {
+    position: absolute;
+    top: -32px;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+} */
+
+/* .cardFlip .inputBox input:focus~label,
+.cardFlip .inputBox input:valid~label {
+    top: -30px;
+    left: 0;
+    color: #8b80f9;
+    font-size: 12px;
+} */
+
+/* .cardFlip form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8b80f9;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+} */
+/* .cardFlip form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8b80f9;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    user-select: none;
+} */
+/* tr td a {
+    padding: 10px 20px;
+    color: #8b80f9;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    cursor: pointer;
+    user-select: none;
+} */
+/* .cardFlip form a#registerButton {
+    margin-top: 0px;
+} */
+/* .cardFlip a:hover, */
+/* tr td a:hover {
+    background: #8b80f9;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8b80f9, 0 0 25px #8b80f9, 0 0 50px #8b80f9,
+        0 0 100px #8b80f9;
+}
+ */
+/* .cardFlip a span {
+    position: absolute;
+    display: block;
+}
+
+.cardFlip a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8b80f9);
+    animation: animacaoBotao1 1s linear infinite;
+}
+
+@keyframes animacaoBotao1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.cardFlip a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #8b80f9);
+    animation: animacaoBotao2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animacaoBotao2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.cardFlip a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #8b80f9);
+    animation: animacaoBotao3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animacaoBotao3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.cardFlip a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #8b80f9);
+    animation: animacaoBotao4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animacaoBotao4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+} */
+/* .products {
+    width: 80vw;
+    max-width: 1200px;
+    min-height: 80vh;
+    background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+    position: relative;
+    border-radius: 6px;
+    padding: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 30px;
+    margin: auto;
+    direction: rtl;
+    box-shadow: 0 0 5px #fbab7e, 0 0 8px #fbab7e, 0 0 15px #8b80f9,
+            0 0 35px #8b80f9;
+}   */
+/* .productsSaveContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    direction: ltr;
+    user-select: none;
+} */
+/* .productsSaveContainer div {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f7ce68;
+        text-shadow:
+            -1px 0 black,
+            0 1px black,
+            1px 0 black,
+            0 -1px black,
+            1px 1px 3px black;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        letter-spacing: 4px;
+} */
+
+/* .productsSaveContainer div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .productsSaveContainer div:hover {
+    background: #027bc1;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #027bc1, 0 0 25px #027bc1, 0 0 50px #027bc1,
+            0 0 100px #027bc1;
+
+} */
+
+/* #logOut {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+} */
+
+
+/* header a {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8b80f9;
+    text-shadow: 
+        -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black,
+        1px 1px 3px rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    top: 5px;
+    left: 10px;
+    letter-spacing: 4px;
+    cursor: pointer;
+} */
+
+/* header a#registerButton {
+    margin-top: 0px;
+} */
+
+/* header a:hover {
+    background: #8b80f9;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8b80f9, 0 0 25px #8b80f9, 0 0 50px #8b80f9,
+        0 0 100px #8b80f9;
+} */
+
+/* .user {
+    display: none;
+} */
+
+
+/* tr td input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+ */
+/* tr { */
+    /* background-color: white; */
+/*     font-size: 1em;
+    font-weight: 600;
+} */
+
+/* thead tr {
+    background: linear-gradient(147deg, #027bc1, #72c5bb);
+    color: white;
+} */
+
+
+
+
+/* td {
+    padding: 6px;
+    text-align: center;
+} */
+
+/* .remove,
+.save {
+    margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    background: none;
+    border: 0px solid #000;
+    font-size: 1em;
+}
+
+.remove:hover,
+.save:hover {
+    scale: 1.5;
+}
+
+.save {
+    visibility: hidden;
+}
+ */
+
+
+
+
+
+/* .userIn {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8b80f9;
+    text-shadow:
+        -2px 0 black,
+        0 2px black,
+        2px 0 black,
+        0 -2px black;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    top: 5px;
+    letter-spacing: 4px;
+} */
+/* .nameH2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #299ae0;
+    text-shadow:
+        -1px 0 black,
+        0 1px black,
+        1px 0 black,
+        0 -1px black,
+        1px 1px 3px rgb(255, 255, 255);
+} */
+/* .products hr {
+    position: absolute;
+    bottom: 130px;
+    width: 76vw;
+    max-width: 1160px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 1300px) {
+
+    .productsSaveContainer div {
+        width: 90px;
+        height: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 1000px) {
+
+    .productsSaveContainer div {
+        width: 84px;
+        height: 56px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 900px) {
+
+    .productsSaveContainer div {
+        width: 75px;
+        height: 50px;
+        margin-left: 12px;
+        margin-right: 12px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 800px) {
+
+    .productsSaveContainer div {
+        width: 60px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 11px;
+    }
+} */
+/* @media (max-width: 750px) { */
+
+/*     .userIn {
+        font-size: 16px;
+    } */
+/*     header {
+        height: 90px;
+    } */
+/*     h1 {
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+    } */
+/*     #logOut {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        height: 40px;
+    }
+} */
+/* @media (max-width: 700px) {
+    footer {
+        background: linear-gradient(147deg, #0093e9, #80d0c7);
+    } */
+/*     #productsSaveContainerId {
+        display: none;
+    } */
+    /* #productsSaveContainerIdMobile {
+        display: flex;
+    } */
+
+/* 
+    .productsSaveContainer div {
+        width: 400px;
+        height: 40px;
+        margin-top: 10px;
+    } */
+/* } */

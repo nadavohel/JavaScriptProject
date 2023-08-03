@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+%arrowMobileDiv {
+    width: 102px;
+    height: 102px;
+    box-shadow: 
+        2px 2px 2px white,
+        2px -2px 2px white,
+        -2px 2px 2px white,
+        -2px -2px 2px white;
+}
+
+@mixin arrowMobilePos($left, $top: 60px) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    cursor: pointer;
+}
+/* @include arrowMobilePos(50px); */

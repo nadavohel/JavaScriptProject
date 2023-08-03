@@ -1,0 +1,110 @@
+/* ************************************************************************* */
+/* --carousel paragraph mardi gras-- */
+section.my-carousel-container div.carousel-p-mardi-gras {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section.my-carousel-container div.carousel-p-mardi-gras p {
+    text-align: center;
+}
+
+section.my-carousel-container div.carousel div.carousel-inner div.carousel-item div.carousel-caption {
+    position: absolute;
+    bottom: 0;
+}
+/* --carousel paragraph mardi gras-- */
+/* ******************************************** */
+/* --img header disigned-- */
+section.my-carousel-container div.carousel div.carousel-inner div.carousel-item div.carousel-caption h5.font-header-main {
+    font-size: 2.3rem;
+    text-shadow: 
+        3px 3px 3px #0d0d0d,
+        -1px 1px 1px #0d0d0d,
+        1px -1px 1px #0d0d0d,
+        -1px -1px 1px #0d0d0d;
+}
+
+section.my-carousel-container div.carousel div.carousel-inner div.carousel-item div.carousel-caption h5.font-header-main span.color-white{
+    font-size: 1.7rem;
+}
+
+section.my-carousel-container div.carousel div.carousel-inner div.carousel-item div.carousel-caption p {
+    text-shadow:
+            1px 1px 1px #0d0d0d,
+            -1px 1px 1px #0d0d0d,
+            1px -1px 1px #0d0d0d,
+            -1px -1px 1px #0d0d0d;
+}
+/* --img header disigned-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --carousel paragraph mardi gras-- */
+section.my-carousel-container div.carousel-p-mardi-gras {
+    width: 1000px;
+}
+/* --carousel paragraph mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --carousel paragraph mardi gras-- */
+section.my-carousel-container div.carousel-p-mardi-gras {
+    width: 850px;
+}
+/* --carousel paragraph mardi gras-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --carousel paragraph mardi gras-- */
+section.my-carousel-container div.carousel-p-mardi-gras {
+    width: 700px;
+}
+/* --carousel paragraph mardi gras-- */
+/* ******************************************** */
+/* --my carousel container-- */
+section.my-carousel-container {
+    width: 768px;
+    margin: 0 auto;
+}
+/* --my carousel container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --carousel paragraph mardi gras-- */
+section.my-carousel-container div.carousel-p-mardi-gras {
+    width: 80vw;
+}
+/* --carousel paragraph mardi gras-- */
+/* ******************************************** */
+/* --my carousel container-- */
+section.my-carousel-container {
+    margin-top: 0px;
+    width: 100vw;
+}
+/* --my carousel container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 768px)------------------------ */
+/* ************************************************************************* */

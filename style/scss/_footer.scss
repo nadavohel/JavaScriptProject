@@ -1,0 +1,197 @@
+footer {
+    position: relative;
+    top: 2880px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+    height: 224px;
+    background-color: $footerBgcolor;
+
+    @include extraScreen {
+        top: 2655px;
+    }
+    @include largeScreen {
+        top: 2429px;
+        height: 185px;
+    }
+    @include laptopScreen {
+        top: 3034px;
+        height: 145px;
+    }   
+    @include tablet {
+        display: none;
+    }
+
+    div {
+        margin-top: 24px;
+        height: 200px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @include largeScreen {
+            height: 185px;
+        }
+    
+        @include laptopScreen {
+            height: 145px;
+        }
+
+            div.iconFooterContainer{
+                position: relative;
+                width: 200px;
+                height: 200px;
+
+                @include largeScreen {
+                    width: 160px;
+                    height: 160px;
+                }
+            
+                @include laptopScreen {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                &:hover::before {
+                    position: absolute;
+                    background-color: #333;
+                    margin-top: -58px;
+                    margin-left: -15px;
+                    border-radius: 5px;
+                    text-align: center;
+                    padding: 5px;
+                    height: 20px;
+                    font-size: 1rem;
+                    color: rgb(255, 255, 255);
+                    font-weight: 700;
+                }
+            
+                &:hover::after {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    border: 7px solid #333;
+                    border-left: 0;
+                    border-top: 0;
+                    transform: rotate(45deg);
+                    margin-top: -27px;
+                    margin-left: -10px;
+                }
+
+                img.divFooterImg {
+                    position: absolute;
+                    cursor: pointer;
+                    width: 180px;
+                    height: 180px;
+                    transition: width 0.3s, height 0.3s, margin-left 0.3s, margin-top 0.3s;
+                    z-index: 6;
+
+                    @include largeScreen {
+                        width: 140px;
+                        height: 140px;
+                    }
+                
+                    @include laptopScreen {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                }
+                div.divFooterColor{
+                    background-color: $colorfour;
+                    border-radius: 50%;
+                    width: 175px;
+                    height: 175px;
+                    margin-top: 2px;
+                    opacity: 0;
+                    z-index: 3;
+                    transition: width 0.3s, height 0.3s, margin-left 0.3s, margin-top 0.3s, opacity 0.3s;
+
+                    @include largeScreen {
+                        width: 135px;
+                        height: 135px;
+                    }
+                
+                    @include laptopScreen {
+                        width: 115px;
+                        height: 115px;
+                    }
+                }
+
+                &:hover {
+                    img.divFooterImg {
+                        width: 200px;
+                        height: 200px;
+                        margin-left: -10px;
+                        margin-top: -10px;
+
+                        @include largeScreen {
+                            width: 160px;
+                            height: 160px;
+                        }
+                    
+                        @include laptopScreen {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+
+                    div.divFooterColor {
+                        width: 195px;
+                        height: 195px;
+                        margin-top: -8px;
+                        margin-left: -10px;
+                        opacity: 1;
+
+                        @include largeScreen {
+                            width: 155px;
+                            height: 155px;
+                        }
+                    
+                        @include laptopScreen {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+                } 
+            }
+
+            div.iconFooterContainerViber {
+                &:hover::before {
+                    content: 'Call Me';
+                }
+            }
+
+            div.iconFooterContainerWhatsapp {
+                &:hover::before {
+                    content: 'Whatsapp';
+                }
+            }
+
+            div.iconFooterContainerFaceBook {
+                &:hover::before {
+                    content: 'FaceBook';
+                }
+            }
+
+            div.iconFooterContainerInstegram {
+                &:hover::before {
+                    content: 'Instegram';
+                }
+            }
+
+            div.iconFooterContainerYouTube {
+                &:hover::before {
+                    content: 'YouTube';
+                }
+            }
+
+            div.iconFooterContainerTwitter {
+                &:hover::before {
+                    content: 'Twitter';
+                }
+            }
+    }
+}

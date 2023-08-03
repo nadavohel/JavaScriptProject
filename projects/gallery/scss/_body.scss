@@ -1,0 +1,71 @@
+* {
+    font-family: 'Rubik', sans-serif !important;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    background-color: $bgc;
+    padding-bottom: 200px;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        color: $color;
+        margin-bottom: 16px;
+        padding-top: 16px;
+        font-size: 72pt;
+        font-family: 'Luckiest Guy';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 0px -6px 0 $shadowText,
+            0px -6px 0 $shadowText,
+            0px 6px 0 $shadowText,
+            0px 6px 0 $shadowText,
+            -6px 0px 0 $shadowText,
+            6px 0px 0 $shadowText,
+            -6px 0px 0 $shadowText,
+            6px 0px 0 $shadowText,
+            -6px -6px 0 $shadowText,
+            6px -6px 0 $shadowText,
+            -6px 6px 0 $shadowText,
+            6px 6px 0 $shadowText,
+            -6px 14px 0 $shadowText,
+            0px 14px 0 $shadowText,
+            6px 14px 0 $shadowText,
+            0 19px 1px rgba(0, 0, 0, .1),
+            0 0 6px rgba(0, 0, 0, .1),
+            0 6px 3px rgba(0, 0, 0, .3),
+            0 12px 6px rgba(0, 0, 0, .2),
+            0 12px 12px rgba(0, 0, 0, .25),
+            0 18px 18px rgba(0, 0, 0, .2),
+            0 24px 24px rgba(0, 0, 0, .15);
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 16px;
+        font-size: 32pt;
+        font-family: 'Luckiest Guy';
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 0px -6px 0 $shadowText,
+            0px -6px 0 $shadowText,
+            0px 6px 0 $shadowText,
+            0px 6px 0 $shadowText,
+            -6px 0px 0 $shadowText,
+            6px 0px 0 $shadowText,
+            -6px 0px 0 $shadowText,
+            6px 0px 0 $shadowText,
+            -6px -6px 0 $shadowText,
+            6px -6px 0 $shadowText,
+            -6px 6px 0 $shadowText,
+            6px 6px 0 $shadowText;
+    }
+
+    img {
+        width: 100%;
+    }
+}

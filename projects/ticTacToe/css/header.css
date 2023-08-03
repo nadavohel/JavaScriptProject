@@ -1,0 +1,89 @@
+header {
+    background-color: #234b54;
+    height: 5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 404px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.center button {
+    margin: 0 10px;
+    width: 180px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.center button#startNewGame:hover::before {
+    content: 'Play new game with new players';
+    position: absolute;
+    background-color: #333;
+    margin-top: 46px;
+    margin-left: -4px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 160px;
+    height: 40px;
+    border: 2px solid var(--whiteAndBlackColor);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.center button#playAgain:hover::before {
+    content: 'Play again with same players';
+    position: absolute;
+    background-color: #333;
+    margin-top: 46px;
+    margin-left: -30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 160px;
+    height: 40px;
+    border: 2px solid var(--whiteAndBlackColor);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+@media (max-width: 470px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        min-height: 100vh;
+    }
+    header {
+        width: 100vw;
+    }
+
+    .center {
+        width: 290px;
+    }
+
+    .center button {
+        width: 120px;
+        font-size: 0.8em;
+    }
+
+    .center button#startNewGame:hover::before {
+        display: none;
+    }
+
+    .center button#playAgain:hover::before {
+        display: none;
+    }
+}

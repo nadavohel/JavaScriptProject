@@ -1,0 +1,42 @@
+svg {
+    font-family: 'Russo One', sans-serif;
+    width: 480px;
+    height: 60px;
+}
+
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: $nameAnimationColor;
+    font-size: $nameAnimationFSize;
+}
+
+@keyframes stroke {
+    0% {
+        fill: $nameAnimationFillColor;
+        stroke: $nameAnimationStrokeColor;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: $nameAnimationFillColor;
+        stroke: $nameAnimationStrokeColor;
+    }
+
+    80% {
+        fill: $nameAnimationFillColor;
+        stroke: $nameAnimationStrokeColor;
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: $nameAnimationFillChangeColor;
+        stroke: $nameAnimationStrokeChangeColor;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}

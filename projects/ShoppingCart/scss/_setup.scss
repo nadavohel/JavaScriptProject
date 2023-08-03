@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+//Mixin Media
+@mixin desktop {
+    @media (max-width:1300px) {
+        @content;
+    }
+}
+@mixin desktopSmall {
+    @media (max-width:1000px) {
+        @content;
+    }
+}
+@mixin desktopExtraSmall {
+    @media (max-width:900px) {
+        @content;
+    }
+}
+
+@mixin tabletBreakPointA {
+    @media (max-width:800px) {
+        @content;
+    }
+}
+
+@mixin tabletBreakPointB {
+    @media (max-width:750px) {
+        @content;
+    }
+}
+@mixin tabletBreakPointC {
+    @media (max-width:700px) {
+        @content;
+    }
+}
+@mixin productsSaveDiv($width, $height, $marginLeftOrRight, $fontSize: 20px) {
+    width: $width;
+    height: $height;
+    margin-left: $marginLeftOrRight;
+    margin-right: $marginLeftOrRight;
+    font-size: $fontSize;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+header {
+    background-color: #234b54;
+    height: 5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    @include mobile {
+        width: 100vw;
+    }
+
+    div.center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 404px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        @include mobile {
+            width: 290px;
+        }
+    
+        button#startNewGame {
+            @extend %buttonCenter;
+
+            @include mobile {
+                width: 120px;
+                font-size: 0.8em;
+            }
+
+            &:hover::before {
+                @extend %radioInputBefore;
+                @extend %buttonBefore;
+                content: 'Play new game with new players';
+                margin-left: -4px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+        button#playAgain {
+            @extend %buttonCenter;
+
+            @include mobile {
+                width: 120px;
+                font-size: 0.8em;
+            }
+
+            &:hover::before {
+                @extend %radioInputBefore;
+                @extend %buttonBefore;
+                content: 'Play again with same players';
+                margin-left: -30px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

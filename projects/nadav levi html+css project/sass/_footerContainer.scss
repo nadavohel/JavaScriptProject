@@ -1,0 +1,270 @@
+/* ************************************************************************* */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 1360px;
+    height: 80px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    margin: 10px -30px;
+    box-shadow:
+        2px 2px 2px white,
+        -2px 2px 2px white,
+        -2px -2px 2px white,
+        2px -2px 2px white;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-35deg) rotateY(26deg);
+    transition: all 2s;
+    z-index: 1;
+}
+
+section div.footer-container div.box-footer-transition:hover {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+    box-shadow:
+        6px 6px 22px white,
+        -6px 6px 22px white,
+        -6px -6px 22px white,
+        6px -6px 22px white,
+        12px 12px 22px black,
+        -12px 12px 22px black,
+        -12px -12px 22px black,
+        12px -12px 22px black;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) translateY(-40px) translateZ(0px) rotate(1turn);
+    z-index: 2;
+    transition: transform 0.4s;
+}
+/* --box element style-- */
+/* ******************************************** */
+/* --img inside box element style-- */
+section div.footer-container div.box-footer-transition img {
+    width: 60px;
+    height:60px;
+    transition: width 0.2s, height 0.2s;
+}
+section div.footer-container div.box-footer-transition:hover img{
+    width: 70px;
+    height:70px;
+}
+/* --img inside box element style-- */
+/* ******************************************** */
+
+/* ************************************************************************* */
+/* ------------------------@media (min-height: 1101px)------------------------ */
+@media (min-height: 1101px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 1360px;
+    height: 80px;
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition {
+    width: 60px;
+    height: 60px;
+}
+
+section div.footer-container div.box-footer-transition:hover {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+}
+/* --box element style-- */
+/* ******************************************** */
+/* --img inside box element style-- */
+section div.footer-container div.box-footer-transition img{
+    width: 60px;
+    height:60px;
+}
+
+section div.footer-container div.box-footer-transition:hover img{
+    width: 70px;
+    height:70px;
+}
+/* --img inside box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (min-height: 1101px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1100px)------------------------ */
+@media (max-height: 1100px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 1360px;
+    height: 70px;
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition {
+    width: 50px;
+    height: 50px;
+}
+
+section div.footer-container div.box-footer-transition:hover {
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+/* --box element style-- */
+/* ******************************************** */
+/* --img inside box element style-- */
+section div.footer-container div.box-footer-transition img {
+    width: 50px;
+    height:50px;
+}
+
+section div.footer-container div.box-footer-transition:hover img{
+    width: 60px;
+    height: 60px;
+}
+/* --img inside box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1100px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-height: 1000px)------------------------ */
+@media (max-height: 1000px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+.footer-container {
+    width: 1360px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition {
+    width: 40px;
+    height: 40px;
+}
+
+section div.footer-container div.box-footer-transition:hover {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+/* --box element style-- */
+/* ******************************************** */
+/* --img inside box element style-- */
+section div.footer-container div.box-footer-transition img {
+    width: 40px;
+    height:40px;
+}
+
+section div.footer-container div.box-footer-transition:hover img{
+    width: 50px;
+    height:50px;
+}
+/* --img inside box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-height: 1000px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1400px)------------------------ */
+@media (max-width: 1400px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 1180px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition-drop-1400 {
+    display: none;
+}
+/* --box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1400px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 1200px)------------------------ */
+@media (max-width: 1200px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 970px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition-drop-1200 {
+    display: none;
+}
+/* --box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 1200px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 992px)------------------------ */
+@media (max-width: 992px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+    width: 768px;
+    height: 80px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+/* --box style footer element container-- */
+/* ******************************************** */
+/* --box element style-- */
+section div.footer-container div.box-footer-transition-drop-992 {
+    display: none;
+}
+/* --box element style-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 992px)------------------------ */
+/* ************************************************************************* */
+
+/* ************************************************************************* */
+/* ------------------------@media (max-width: 768px)------------------------ */
+@media (max-width: 768px) {
+/* ******************************************** */
+/* --box style footer element container-- */
+section div.footer-container {
+        display: none;
+    }
+/* --box style footer element container-- */
+/* ******************************************** */
+}
+/* ------------------------@media (max-width: 768px)------------------------ */
+/* ************************************************************************* */

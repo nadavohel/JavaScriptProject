@@ -1,0 +1,400 @@
+div.loginScreen {
+    display: none;
+    
+    .labelCheckbox {
+        text-align: center;
+        display: inline;
+        position: relative;
+
+        
+        &::before,
+        &::after {
+            position: absolute;
+            font-size: 26px;
+            font-weight: bold;
+            color: #efefef;
+        }
+        
+        &::before {
+            content: "Login";
+            top: -48px;
+            left: -100px;
+        }
+        
+        &::after {
+            content: "Register";
+            top: -48px;
+            right: -135px;
+        }
+    }
+
+    div.formCardContainer {
+        width: 440px;
+        height: 450px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        perspective: 800px;
+        margin: auto;
+        margin-top: 50px;
+
+        div.cardFlip {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            transition: all .6s ease-out;
+
+            div.logInFormContainer {
+                @extend %logAndRegFormContainer;
+
+                div.formContainer {
+                    @extend %formContainer;
+
+                    h2 {
+                        @extend %cardFlipH2;
+                    }
+
+                    form {
+                        
+                        div.inputBox {
+                            position: relative;
+
+                            input {
+                                @extend %inputBoxInput;
+                            
+                                &:focus~label,
+                                &:valid~label {
+                                    @extend %inputBoxInputFocus;
+                                }
+                            }
+                        
+                            label {
+                                @extend %inputBoxLabel;
+                            }
+                        }
+
+                        a {
+                            @extend %cardFlipFormA;
+
+                            &:hover {
+                                @extend %aHover;
+                            }
+
+                            span {
+                                position: absolute;
+                                display: block;
+
+                                &:nth-child(1) {
+                                    @extend %spanNthChild1;
+                                }
+                                &:nth-child(2) {
+                                    @extend %spanNthChild2;
+                                }
+                                &:nth-child(3) {
+                                    @extend %spanNthChild3;
+                                }
+                                &:nth-child(4) {
+                                    @extend %spanNthChild4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.registerFormContainer {
+                @extend %logAndRegFormContainer;
+                transform: rotateY(180deg);
+
+                div.formContainer {
+                    @extend %formContainer;
+
+                    h2 {
+                        @extend %cardFlipH2;
+                    }
+
+                    form {
+                        
+                        div.inputBox {
+                            position: relative;
+
+                            input {
+                                @extend %inputBoxInput;
+
+                                &:focus~label,
+                                &:valid~label {
+                                    @extend %inputBoxInputFocus;
+                                }
+                            }
+
+                            label {
+                                @extend %inputBoxLabel;
+                            }
+                        }
+
+                        a {
+                            @extend %cardFlipFormA;
+                            margin-top: 0px;
+
+                            &:hover {
+                                @extend %aHover;
+                            }
+
+                            span {
+                                position: absolute;
+                                display: block;
+
+                                &:nth-child(1) {
+                                    @extend %spanNthChild1;
+                                }
+
+                                &:nth-child(2) {
+                                    @extend %spanNthChild2;
+                                }
+
+                                &:nth-child(3) {
+                                    @extend %spanNthChild3;
+                                }
+
+                                &:nth-child(4) {
+                                    @extend %spanNthChild4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.inputCheckbox:checked~.formCardContainer .cardFlip {
+    transform: rotateY(180deg);
+}
+
+%logAndRegFormContainer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+    position: absolute;
+    border-radius: 6px;
+    padding: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+%formContainer {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    z-index: 20;
+    display: block;
+}
+
+%cardFlipH2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+}
+
+%inputBoxInput {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+}
+
+%inputBoxLabel {
+    position: absolute;
+    top: -32px;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+%inputBoxInputFocus {
+    top: -30px;
+    left: 0;
+    color: #8b80f9;
+    font-size: 12px;
+}
+
+%cardFlipFormA {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #8b80f9;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+%aHover {
+    background: #8b80f9;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 
+        0 0 5px #8b80f9, 
+        0 0 25px #8b80f9, 
+        0 0 50px #8b80f9,
+        0 0 100px #8b80f9;
+}
+
+%spanNthChild1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8b80f9);
+    animation: animacaoBotao1 1s linear infinite;
+}
+
+%spanNthChild2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #8b80f9);
+    animation: animacaoBotao2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+%spanNthChild3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #8b80f9);
+    animation: animacaoBotao3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+%spanNthChild4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #8b80f9);
+    animation: animacaoBotao4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animacaoBotao1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animacaoBotao2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes animacaoBotao3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes animacaoBotao4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.inputCheckbox:checked+section label,
+.inputCheckbox:not(:checked)+section label {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 40px auto;
+    cursor: pointer;
+    background-color: #efefef;
+    user-select: none;
+}
+
+.inputCheckbox:checked+section label:before,
+.inputCheckbox:not(:checked)+section label:before {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    content: "";
+    background-image: url("./ic-logo.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+    transition: all 0.5s ease;
+}
+
+.inputCheckbox:checked+section label:before {
+    transform: translateX(44px) rotate(-270deg);
+}

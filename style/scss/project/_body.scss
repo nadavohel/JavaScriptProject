@@ -12,7 +12,7 @@ body {
 
         @include tablet {
             user-select: none;
-            overflow-x: none;
+            overflow: hidden;
         }
     }
 

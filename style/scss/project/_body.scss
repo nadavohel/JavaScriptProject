@@ -9,6 +9,10 @@ body {
     @include tablet {
         height: 100vh;
         background-color: $mainBgcolor;
+
+        @include mobile {
+            user-select: none;
+        }
     }
 
     nav {

@@ -141,6 +141,7 @@ body main {
   body main {
     top: 80px !important;
     transition: all 0s;
+    background-color: #fff;
   }
 }
 body main #aboutMeJump {

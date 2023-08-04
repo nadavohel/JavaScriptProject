@@ -116,6 +116,13 @@ body main #contactJump, body main #myProjectJump, body main #aboutMeJump {
     position: relative;
   }
 }
+@media (max-width: 500px) {
+  body {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}
 body nav {
   width: 100vw;
   top: 0px;

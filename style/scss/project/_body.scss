@@ -10,7 +10,7 @@ body {
         height: 100vh;
         background-color: $mainBgcolor;
 
-        @include mobile {
+        @include tablet {
             user-select: none;
         }
     }

@@ -107,7 +107,7 @@ div#divBoxForIconsHover div#ForIconsHover08:hover::after, div#divBoxForIconsHove
     background-color: #F28585;
   }
 }
-@media (max-width: 768px) and (max-width: 500px) {
+@media (max-width: 768px) and (max-width: 768px) {
   body {
     -webkit-user-select: none;
        -moz-user-select: none;

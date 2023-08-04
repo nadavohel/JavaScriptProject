@@ -15,6 +15,7 @@ body {
 
     @include mobile {
         user-select: none;
+        pointer-events: none;
     }
     
     

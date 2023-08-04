@@ -121,6 +121,7 @@ body main #contactJump, body main #myProjectJump, body main #aboutMeJump {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    pointer-events: none;
   }
 }
 body nav {

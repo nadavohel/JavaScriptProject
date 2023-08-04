@@ -11,9 +11,7 @@ body {
         background-color: $mainBgcolor;
 
         @include tablet {
-            user-select: none;
             width: 100vw;
-            overflow: hidden;
         }
     }
 

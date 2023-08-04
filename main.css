@@ -694,6 +694,8 @@ section#myProject {
   section#myProject {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
   }
 }
 @media (max-width: 500px) {

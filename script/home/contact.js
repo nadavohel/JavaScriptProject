@@ -5,25 +5,28 @@ const numberIdForm = document.getElementById('numberIdForm');
 const textareaIdForm = document.getElementById('textareaIdForm');
 let flagForm = 0;
 function sendMessage(){
-    if (fNameIdForm.value.length < 3) {
+    let nameValidation = /^([a-zA-Zא-ת]{3,12})$/;
+    if (nameValidation.test(fNameIdForm.value)) {
+        fNameIdForm.style.border = '2px solid green';
+        flagForm++;
+    } else {
         fNameIdForm.style.border = '2px solid red';
         if (flagForm > 0) {
             flagForm--;
         }
-    } else {
-        fNameIdForm.style.border = '2px solid green';
-        flagForm++;
     }
-    if (lNameIdForm.value.length < 3) {
+    if (nameValidation.test(lNameIdForm.value)) {
+        lNameIdForm.style.border = '2px solid green';
+        flagForm++;
+    } else {
         lNameIdForm.style.border = '2px solid red';
         if (flagForm > 0) {
             flagForm--;
         }
-    } else {
-        lNameIdForm.style.border = '2px solid green';
-        flagForm++;
     }
-    if ((emailIdForm.value.length > 2) && (emailIdForm.value.includes("@")) && (emailIdForm.value.includes("."))) {
+    let emailValidation = /^([a-zA-Z0-9/.-]+)@([a-zA-Z0-9-]+)[/.]([a-z]{2,8})(.[a-z]{2,8})?$/;
+    let emailValue = emailIdForm.value;
+    if (emailValidation.test(emailValue)) {
         emailIdForm.style.border = '2px solid green';
         flagForm++;
     } else {
@@ -32,7 +35,8 @@ function sendMessage(){
             flagForm--;
         }
     }
-    if (((numberIdForm.value.length >= 9) && (numberIdForm.value.length <= 10)) && (typeof +numberIdForm.value == 'number')) {
+    let numberValidation = /^([0-9-]{9,11})$/;
+    if (numberValidation.test(numberIdForm.value)) {
         numberIdForm.style.border = '2px solid green';
         flagForm++;
     } else {
@@ -41,7 +45,7 @@ function sendMessage(){
             flagForm--;
         }
     }
-    if (textareaIdForm.value.length < 10) {
+    if (textareaIdForm.value.length < 20) {
         textareaIdForm.style.border = '2px solid red';
         if (flagForm > 0) {
             flagForm--;

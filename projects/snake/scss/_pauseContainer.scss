@@ -1,0 +1,21 @@
+div#pauseContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #14141ac5;
+    display: none;
+    
+    p {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 10em;
+        font-weight: 300;
+        /* writing-mode: vertical-rl; */
+        letter-spacing: -10px;
+        color: azure;
+    }
+}

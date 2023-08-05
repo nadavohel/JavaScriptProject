@@ -11,18 +11,18 @@ div.menuGameContainer {
 
 
     div#menuGame {
-        background-color: #ffffff82;
+        background-color: $menuGameBgc;
         box-shadow: 
-            4px 4px 4px white,
-            4px -4px 4px white,
-            -4px 4px 4px white,
-            -4px -4px 4px white;
-        color: azure;
+            4px 4px 4px $menuGameBoxShadow,
+            4px -4px 4px $menuGameBoxShadow,
+            -4px 4px 4px $menuGameBoxShadow,
+            -4px -4px 4px $menuGameBoxShadow;
+        color: $menuGameColor;
         text-shadow: 
-            4px 4px 4px black,
-            4px -4px 4px black,
-            -4px 4px 4px black,
-            -4px -4px 4px black;
+            4px 4px 4px $menuGameTextShadow,
+            4px -4px 4px $menuGameTextShadow,
+            -4px 4px 4px $menuGameTextShadow,
+            -4px -4px 4px $menuGameTextShadow;
         width: 400px;
         height: 470px;
         margin-top: 100px;
@@ -88,11 +88,11 @@ div.menuGameContainer {
             margin-top: 50px;
             button {
                 align-items: center;
-                background-color: #fff;
+                background-color: $menuGameButtonBgc;
                 border-radius: 12px;
-                box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+                box-shadow: transparent 0 0 0 3px, $menuGameButtonBoxShadow 0 6px 20px;
                 box-sizing: border-box;
-                color: #121212;
+                color: $menuGameButtonColor;
                 cursor: pointer;
                 display: inline-flex;
                 flex: 1 1 auto;
@@ -115,7 +115,7 @@ div.menuGameContainer {
                 
             
                 &:hover {
-                    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+                    box-shadow: $menuGameButtonBoxShadow 0 0 0 3px, transparent 0 0 0 0;
                 }
 
             }
@@ -126,12 +126,13 @@ div#popup {
     display: none;
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 200px;
     transform: translate(-50%);
     filter: drop-shadow(5px 5px 5px #fffefe);
 
     div {
         font-size: 6em;
         color: red;
+        font-weight: 900;
     }
 }

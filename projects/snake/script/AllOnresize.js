@@ -7,7 +7,7 @@ class AllWebsiteOnresize {
         if (screenWidth < 600) {
             arrowContainer.style.opacity = 1;
         } else {
-            arrowContainer.style.opacity = 0;
+            arrowContainer.style.opacity = 1;
         }
     } 
     

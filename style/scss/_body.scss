@@ -13,9 +13,10 @@ body {
         position: relative;
     }
 
-    @include mobile {
+    @include tablet {
         user-select: none;
-        pointer-events: none;
+        /* pointer-events: none; */
+        height: 100vh;
     }
     
     

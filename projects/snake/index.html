@@ -8,8 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
-    <script src="./script/script.js" defer></script>
-    <script src="./script/menuGame.js" defer></script>
+    <script src="./script/DataBase.js" defer></script>
+    <script src="./script/Starter.js" defer></script>
+    <script src="./script/MenuGame.js" defer></script>
+    <script src="./script/BoardGame.js" defer></script>
+    <script src="./script/GameManager.js" defer></script>
+    <script src="./script/Move.js" defer></script>
+    <script src="./script/PopGoup.js" defer></script>
     <script src="./script/ImgMobile.js" defer></script>
     <script src="./script/ImgMobileDataBase.js" defer></script>
     <script src="./script/Helper.js" defer></script>
@@ -48,32 +53,32 @@
         <div id="menuGame">
             <h1>Snake Game Menu</h1>
             <div class="rowMenuFlex">
-                <div class="tdLeft" onclick="changSnakeType('left')">&#x21E6</div>
+                <div class="tdLeft" onclick="MenuGame.changSnakeType('left')">&#x21E6</div>
                 <div class="tdCenter" id="snakeTypeId"></div>
-                <div class="tdRight" onclick="changSnakeType('right')">&#x21E8</div>
+                <div class="tdRight" onclick="MenuGame.changSnakeType('right')">&#x21E8</div>
             </div>
             <div class="rowMenuFlex">
-                <div class="tdLeft" onclick="changFruit('left')">&#x21E6</div>
+                <div class="tdLeft" onclick="MenuGame.changFruit('left')">&#x21E6</div>
                 <div class="tdCenter" id="fruitTypeId"></div>
-                <div class="tdRight" onclick="changFruit('right')">&#x21E8</div>
+                <div class="tdRight" onclick="MenuGame.changFruit('right')">&#x21E8</div>
             </div>
             <div class="rowMenuFlex">
-                <div class="tdLeft" onclick="changFruitAmount('left')">&#x21E6</div>
+                <div class="tdLeft" onclick="MenuGame.changFruitAmount('left')">&#x21E6</div>
                 <div class="tdCenter" id="fruitAmountId"></div>
-                <div class="tdRight" onclick="changFruitAmount('right')">&#x21E8</div>
+                <div class="tdRight" onclick="MenuGame.changFruitAmount('right')">&#x21E8</div>
             </div>
             <div class="rowMenuFlex">
-                <div class="tdLeft" onclick="changBoardSize('left')">&#x21E6</div>
+                <div class="tdLeft" onclick="MenuGame.changBoardSize('left')">&#x21E6</div>
                 <div class="tdCenter" id="screenSizeId"></div>
-                <div class="tdRight" onclick="changBoardSize('right')">&#x21E8</div>
+                <div class="tdRight" onclick="MenuGame.changBoardSize('right')">&#x21E8</div>
             </div>
             <div class="rowMenuFlex">
-                <div class="tdLeft" onclick="changWall('left')">&#x21E6</div>
+                <div class="tdLeft" onclick="MenuGame.changWall('left')">&#x21E6</div>
                 <div class="tdCenter" id="wallGameId"></div>
-                <div class="tdRight" onclick="changWall('right')">&#x21E8</div>
+                <div class="tdRight" onclick="MenuGame.changWall('right')">&#x21E8</div>
             </div>
             <div class="buttonMenuContainer">
-                <button onclick="continueGame()">Continue Game</button>
+                <button onclick="MenuGame.continueGame()">Continue Game</button>
             </div>
         </div>
     </div>

@@ -1,4 +1,3 @@
-const arrowContainer = document.getElementById('arrowContainer');
 class ImgMobile {
 
     ids;
